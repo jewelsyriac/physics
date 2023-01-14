@@ -172,12 +172,38 @@
         </ul>
         </span>
     </nav>
+    <nav class="right-side-navbar">
+        <ul>
+
+            <li><a href="oscillations.html#periodicmotion">Periodic Motion</a></li>
+            <li><a href="oscillations.html#oscillation">Oscillation</a></li>
+
+            <li><a href="oscillations.html#shm">Simple Harmonic Motion</a></li>
+            <li><a href="oscillations.html#dhm">Damped Harmonic Motion</a></li>
+            <li><a href="oscillations.html#diffeqndamped">Differential equation of damped oscillators</a></li>
+            <li><a href="oscillations.html#solutiondamped">Solution of differential equation</a></li>
+            <li><a href="oscillations.html#dampingcases">Cases of damping</a></li>
+            <li><a href="oscillations.html#qf">Quality factor</a></li>
+            <li><a href="oscillations.html#fhm">Forced Harmonic Motion</a></li>
+            <li><a href="oscillations.html#diffeqnforced">Differential equation of forced oscillators</a></li>
+            <li><a href="oscillations.html#solutionforced">Solution of differential equation</a></li>
+
+            <li><a href="oscillations.html#resonance">Resonance</a></li>
+            <li><a href="oscillations.html#lcr">LCR Oscillations</a></li>
+
+
+
+
+
+        </ul>
+        </span>
+    </nav>
 
     <div class="main-content">
         <section id="periodicmotion">
 
             <h2>Periodic motion</h2>
-            <p>A motion which repeat itself after intervals of time is called periodic motion</p>
+            <p>A motion which repeat itself after equal intervals of time is called periodic motion</p>
             <p> Examples :
             <ul>
                 <li>Motion of planets around sun</li>
@@ -222,7 +248,7 @@
                     id="inline">restoring force</a> is directly
                 proportional to <a href="inlinedoubt.html" id="inline">displacement</a> of body from <a
                     href="inlinedoubt.html" id="inline">mean position</a>. The direction of this restoring
-                force is always towards the mean position.</p>
+                force is always directed towards the mean position.</p>
             <p>Some examples of SHM include</p>
             <ul>
                 <li>Swinging of a pendulum</li>
@@ -263,85 +289,267 @@
             <p>Oscillations in which total energy remains constant ( no energy is lost ) during the motion are called
                 free oscillations. If no external force acts on the oscillator, it continue to oscillate for indefinite
                 ( infinite ) period without change in energy or amplitude.</p>
-            <h2>Damped Harmonic Oscillation</h2>
-            <p>I real situations, energy of an oscillator will lost or gets dissipated to surroundings which will reduce
-                amplitude and eventually leading to the oscillator's stopping. This dissipation of energy due to an
-                external force is
-                called damping. Such oscillators are called damped harmonic oscillators. </p>
-            <p>Example:</p>
-            <ul>
-                <li>An oscillating simple pendulum dipped in water</li>
-                <li>An electronic circuit with a resistor and capacitor in series is an example of a damped oscillator.
-                    The resistor
-                    dissipates energy as heat, causing the amplitude of the oscillations in the circuit to decrease over
-                    time.</li>
-            </ul>
-            <h3>Differential equation of damped harmonic Oscillator</h3>
-            <p> A particle undergoing damped harmonic oscillation will experience (or acted upon by ) two type of
-                forces,</p>
-            <ol>
-                <li>
-                    <h4>Restoring force</h4>
-                    <p>Restoring force of harmonic oscillator is given by,</p>
-                    $$F_{restoring}=-kx$$
-                    <p> where k is the force constant</p>
-                </li>
-                <li>
-                    <h4>Damping force</h4>
-                    <p>Restoring force of an oscillator is proportional to velocity,</p>
-                    $$F_{damping} \propto -v$$
-                    <p>Substituting with a proportionality constant</p>
-                    $$F_{damping}=-bv = -b\;\frac{dx}{dt}$$
-                    <p> where b is called damping constant</p>
-                </li>
-            </ol>
-            <p> So total force acting on the particles is,</p>
-            $$F_{total}=F_{restoring}+F_{damping} $$
-            $$ F = -b\;\frac{dx}{dt} + -kx = -b\;\frac{dx}{dt} -kx $$
-            <p>From newton's second law, \(F=ma=m\frac{d^2 x}{dt^2}\). Substituting in above equation ;</p>
-            $$ m\frac{d^2 x}{dt^2}=-b\;\frac{dx}{dt} -kx $$
-            <p>rearranging above equation,</p>
-            $$ m\frac{d^2 x}{dt^2}+ b\;\frac{dx}{dt} + kx = 0 $$
-            <p>Dividing whole equation with m ;</p>
-            $$ \frac{d^2 x}{dt^2}+ \frac{b}{m}\;\frac{dx}{dt} + \frac{k}{m}\;x = 0 \; -->eqn(1)$$
-            <p> Let \(\frac{b}{m}=2 \gamma \), where \( \gamma\) is called damping coefficient and \(
-                {\frac{k}{m}}=\omega_o^2 \) where \( \omega_o\) is the angular frequency of oscillator.</p>
-            <p> On substituting \(2 \gamma \) and \( \omega_o^2\) , differential equation (1) becomes,</p>
-            $$\boxed{ \frac{d^2 x}{dt^2}+ 2 \gamma \;\frac{dx}{dt} + \omega_o^2 x = 0 }\; -->eqn(2) $$
-            <h3>Solution of differential equation</h3>
-            <p>Assume that solution eqn (2) is given by,</p>
-            $$x=A\;e^{\alpha \;t} $$
-            <p> where A and \(\alpha\) are some arbitrary constants. Differentiating this displacement or \( x \) w.r.t
-                \(t\),</p>
-            $$\frac{dx}{dt}=\frac{d}{dt}(A\;e^{\alpha \;t})=A\times e^{\alpha \;t} \times \alpha = \alpha
-            A\;e^{\alpha \;t}=\alpha x $$
-            <p>Taking the differntial of \(\frac{dx}{dt}\) again w.r.t t;
-            </p>
-            $$\frac{d^x x}{dt^2}=\frac{d}{dt}(\frac{dx}{dt})=\frac{d}{dt}(\alpha x) = \alpha \times \frac{dx}{dt} =
-            \alpha \times \alpha x = \alpha^2 x $$
-            <p>Substituting the expression of \(\frac{dx}{dt}\) & \(\frac{d^x x}{dt^2}\) in equation (2) ;</p>
-            $$\alpha^2 x+ 2 \gamma \alpha x + \omega_o^2 x = 0 $$
-            <p>Dividing by x,</p>
-            $$\alpha^2 + 2 \gamma \alpha + \omega_o^2 = 0 $$
-            <p>This is a <a href="inlinedoubt.html" id="inline">quadratic equation</a> with solution,</p>
-            $$\alpha = \frac{-2 \gamma \pm \sqrt{4 \gamma^2 - 4 \omega_o^2}}{2}=- \gamma \pm \sqrt{ \gamma^2 -
-            \omega_o^2} $$
-            <p>Since \( x=A\;e^{\alpha \;t} \) & substituting value of \(\alpha\) ;</p>
-            $$x=A\;e^{- \gamma \pm \sqrt{ \gamma^2 -\omega_o^2}} $$
-            <p> So the two solutions of equation are :</p>
-            $$x_1=A_1\;e^{- \gamma + \sqrt{ \gamma^2 -\omega_o^2}} $$
-            $$x_2=A_2\;e^{- \gamma - \sqrt{ \gamma^2 -\omega_o^2}} $$
-            <p>Therefore the general solution is </p>
-            $$x=x_1 + x_2 $$
-            $$ x = A_1\;e^{- \gamma + \sqrt{ \gamma^2 -\omega_o^2}} + A_2\;e^{- \gamma - \sqrt{ \gamma^2 -\omega_o^2}}
-            $$
-            <p>where \(A_1\) and \(A_2\) are constants which depends on the initial values of position and velocity.</p>
+            <section id="dhm">
+                <h2>Damped Harmonic Oscillation</h2>
+                <p>In real situations, energy of an oscillator will lost or gets dissipated to surroundings which will
+                    reduce
+                    amplitude and eventually leading to the oscillator's stopping. This dissipation of energy due to an
+                    external force is
+                    called damping. Such oscillators are called damped harmonic oscillators. </p>
+                <p>Example:</p>
+                <ul>
+                    <li>An oscillating simple pendulum dipped in water</li>
+                    <li>An electronic circuit with a resistor and capacitor in series is an example of a damped
+                        oscillator.
+                        The resistor
+                        dissipates energy as heat, causing the amplitude of the oscillations in the circuit to decrease
+                        over
+                        time.</li>
+                </ul>
+            </section>
+            <section id="diffeqndamped">
+                <h3>Differential equation of damped harmonic Oscillator</h3>
+                <p> A particle undergoing damped harmonic oscillation will experience (or acted upon by ) two type of
+                    forces,</p>
+                <ol>
+                    <li>
+                        <h4>Restoring force</h4>
+                        <p>Restoring force of harmonic oscillator is given by,</p>
+                        $$F_{restoring}=-kx$$
+                        <p> where k is the force constant</p>
+                    </li>
+                    <li>
+                        <h4>Damping force</h4>
+                        <p>Restoring force of an oscillator is proportional to velocity,</p>
+                        $$F_{damping} \propto -v$$
+                        <p>Substituting with a proportionality constant</p>
+                        $$F_{damping}=-bv = -b\;\frac{dx}{dt}$$
+                        <p> where b is called damping constant</p>
+                    </li>
+                </ol>
+                <p> So total force acting on the particles is,</p>
+                $$F_{total}=F_{restoring}+F_{damping} $$
+                $$ F = -b\;\frac{dx}{dt} + -kx = -b\;\frac{dx}{dt} -kx $$
+                <p>From newton's second law, \(F=ma=m\frac{d^2 x}{dt^2}\). Substituting in above equation ;</p>
+                $$ m\frac{d^2 x}{dt^2}=-b\;\frac{dx}{dt} -kx $$
+                <p>rearranging above equation,</p>
+                $$ m\frac{d^2 x}{dt^2}+ b\;\frac{dx}{dt} + kx = 0 $$
+                <p>Dividing whole equation with m ;</p>
+                $$ \frac{d^2 x}{dt^2}+ \frac{b}{m}\;\frac{dx}{dt} + \frac{k}{m}\;x = 0 \; -->eqn(1)$$
+                <p> Let \(\frac{b}{m}=2 \gamma \), where \( \gamma\) is called damping coefficient and \(
+                    {\frac{k}{m}}=\omega_o^2 \) where \( \omega_o\) is the angular frequency of oscillator.</p>
+                <p> On substituting \(2 \gamma \) and \( \omega_o^2\) , differential equation (1) becomes,</p>
+                $$\boxed{ \frac{d^2 x}{dt^2}+ 2 \gamma \;\frac{dx}{dt} + \omega_o^2 x = 0 }\; -->eqn(2) $$
+            </section>
+            <section id="solutiondamped">
+                <h3>Solution of differential equation</h3>
+                <p>Assume that solution eqn (2) is given by,</p>
+                $$x=A\;e^{\alpha \;t} $$
+                <p> where A and \(\alpha\) are some arbitrary constants. Differentiating this displacement or \( x \)
+                    w.r.t
+                    \(t\),</p>
+                $$\frac{dx}{dt}=\frac{d}{dt}(A\;e^{\alpha \;t})=A\times e^{\alpha \;t} \times \alpha = \alpha
+                A\;e^{\alpha \;t}=\alpha x $$
+                <p>Taking the differntial of \(\frac{dx}{dt}\) again w.r.t t;
+                </p>
+                $$\frac{d^2 x}{dt^2}=\frac{d}{dt}(\frac{dx}{dt})=\frac{d}{dt}(\alpha x) = \alpha \times \frac{dx}{dt} =
+                \alpha \times \alpha x = \alpha^2 x $$
+                <p>Substituting the expression of \(\frac{dx}{dt}\) & \(\frac{d^x x}{dt^2}\) in equation (2) ;</p>
+                $$\alpha^2 x+ 2 \gamma \alpha x + \omega_o^2 x = 0 $$
+                <p>Dividing by x,</p>
+                $$\alpha^2 + 2 \gamma \alpha + \omega_o^2 = 0 $$
+                <p>This is a <a href="inlinedoubt.html" id="inline">quadratic equation</a> with solution,</p>
+                $$\alpha = \frac{-2 \gamma \pm \sqrt{4 \gamma^2 - 4 \omega_o^2}}{2}=- \gamma \pm \sqrt{ \gamma^2 -
+                \omega_o^2} $$
+                <p>Since \( x=A\;e^{\alpha \;t} \) & substituting value of \(\alpha\) ;</p>
+                $$x=A\;e^{(- \gamma \pm \sqrt{ \gamma^2 -\omega_o^2})\;t} $$
+                <p> So the two solutions of equation are :</p>
+                $$x_1=A_1\;e^{(- \gamma + \sqrt{ \gamma^2 -\omega_o^2})\;t} $$
+                $$x_2=A_2\;e^{(- \gamma - \sqrt{ \gamma^2 -\omega_o^2})\;t} $$
+                <p>Therefore the general solution is </p>
+                $$x=x_1 + x_2 $$
+                $$ x = A_1\;e^{(- \gamma + \sqrt{ \gamma^2 -\omega_o^2})t} + A_2\;e^{(- \gamma - \sqrt{ \gamma^2
+                -\omega_o^2})t} ->eqn(2)
+                $$
+                <p>where \(A_1\) and \(A_2\) are constants which depends on the initial values of position and velocity.
+                </p>
+            </section>
+            <section id="dampingcases">
+                <h4>Cases of damping</h4>
+                <h5>Overdamping ( \(\gamma > \omega \) )</h5>
+                <p>In this case damping is very high. Since \(\gamma > \omega \) , solution in this case is ( refer
+                    eqn(2)), </p>
+                $$ x = A_1\;e^{- \gamma + \sqrt{ \gamma^2 -\omega_o^2}} + A_2\;e^{- \gamma - \sqrt{ \gamma^2
+                -\omega_o^2}} $$
+                <p>Since \(\gamma > \omega \), the term \(\sqrt{ \gamma^2 -\omega_o^2}\) will be a real quantity and
+                    will be less that \( \gamma \). That means terms (\(- \gamma + \sqrt{ \gamma^2 -\omega_o^2}\))
+                    and (\(- \gamma + \sqrt{ \gamma^2 -\omega_o^2}\)) are both negative. So the displacement \(x\)
+                    decays exponentially to zero without any oscillation.</p>
+                <h5>Critical damping ( \(\gamma = \omega \) )</h5>
+                <p>Since \(\gamma = \omega \) , the term \(\sqrt{ \gamma^2 -\omega_o^2}\) will become zero. So the
+                    solution in this case is, </p>
+                $$ x = A_1\;e^{- \gamma t} + A_2\;e^{- \gamma t} $$
+                $$x = (A_1 + A_2) \;e^{- \gamma t}$$
+                <p> let \(C = A_1 + A_2\),</p>
+                $$ x = C\;e^{- \gamma t} $$
+                <p>So the displacement decreases instantanously when time 't' passes. So the displacement \(x\)
+                    decays exponentially to zero without any oscillation.</p>
+                <h5>Under damping ( \(\gamma < \omega \) )</h5>
+                        <p>In this case damping is very low. Since \(\gamma < \omega \) , the term \(\sqrt{ \gamma^2
+                                -\omega_o^2}\) will be imaginary. Using euler's theorem and some mathematical re
+                                arrangements, the expression of displacement can be written as,</p>
+                                $$\boxed{x=A\;e^{-\gamma t} \;sin(\omega t + \phi)}$$
+                                <p> where \( \omega = \sqrt{\omega_o^2 - \gamma^2} \) and</p>
+                                <p> \(A\;e^{- \gamma t}\) is the amplitude of oscillation which decreases over time.
+                                    That means underdamped oscillator is oscillatory, but decays energy eventually when
+                                    time
+                                    passes. </p>
 
 
+            </section>
+            <section id="qf">
+                <h2>Quality factor</h2>
+                <p>The term quality factor defines the quality or efficiency of oscillator. For example, a high Q -
+                    factor represents a lower rate of energy loss.</p>
+                <p>Eg : A pendulum oscillating in air will have a high Q factor comparing to a pendulum oscillating
+                    inside water
+                    or any liquid.</p>
+                <p>Quality factor can be mathematically represented as,</p>
+                $$Q = 2 \pi \times \frac{Energy\;stored\;in\;an \;oscillator}{Energy\;lost\;per\;cycle}$$
+                <p>or,</p>
+                $$Q = 2 \pi \times \frac{Energy\;stored\;in\;an \;oscillator}{Energy\;lost\;per\;second \times
+                Time\;period}$$
+                <p>If \(E\) is the energy of oscillator,</p>
+                $$Q= 2 \pi \times \frac{E}{-\frac{dE}{dt} \times T} \;-->eqn[1]$$
+
+                <p>Since the energy loss in a damped oscillator is represented as</p>
+                $$E=E_o e^{-2 \gamma t} $$
+                <p>differentiating w.r.t \(t\) ,</p>
+                $$\frac{dE}{dt}= - 2 \gamma E $$
+                <p> Substituting in equation (1) ,</p>
+                $$Q= 2 \pi \times \frac{E}{-\frac{dE}{dt} \times T} = 2 \pi \times \frac{E}{2 \gamma E \times T} $$
+                <p>writing timeperiod T in terms of angular frequency \( \omega \),</p>
+                $$Q = 2 \pi \times \frac{E}{2 \gamma E \times \frac{2 \pi}{\omega}} $$
+                <p>That gives expression for quality factor as,</p>
+                $$\boxed{Q \;-\; factor =\frac{\omega}{2 \gamma} }$$
+                <p>Where \( \gamma \) is damping coefficient.</p>
+                <h3>Relaxation time</h3>
+                <p>The time which an oscillator takes to reduce it's energy to \(\frac{1}{e}\) th of initial (un-damped)
+                    energy is called relaxation time </p>
+                $$Relaxation\;time\;\tau=\frac{1}{2 \gamma} $$
+                <p> so quality factor can be represented in terms of relaxaation time as,</p>
+                $$ Q =\frac{\omega}{2 \gamma} = \omega \;\tau $$
+
+                <section id="fhm">
+                    <h2>Forced Harmonic Oscillation</h2>
+                    <p>If an external force is applied to a damped harmonic oscillator, such oscillators are called
+                        forced harmonic oscillators. </p>
+                    <p>Example:</p>
+                    <ul>
+                        <li>A swing repeatedly pushed by someone</li>
+                        <li>LCR circuit</li>
+                    </ul>
+                </section>
+                <section id="diffeqnforced">
+                    <h3>Differential equation of forced harmonic Oscillator</h3>
+                    <p> A particle undergoing forced harmonic oscillation will experience (or acted upon by ) three
+                        types
+                        of
+                        forces,</p>
+                    <ol>
+                        <li>
+                            <h4>Restoring force</h4>
+                            <p>Restoring force of harmonic oscillator is given by,</p>
+                            $$F_{restoring}=-kx$$
+                            <p> where k is the force constant</p>
+                        </li>
+                        <li>
+                            <h4>Damping force</h4>
+                            <p>Damping force on oscillator is given as,</p>
+
+                            $$F_{damping}= -b\;\frac{dx}{dt}$$
+                            <p> where b is called damping constant</p>
+                        </li>
+                        <li>
+                            <h4>External periodic force</h4>
+                            <p>When a force is periodically applied to a damped oscillator, it can be represnted as</p>
+                            $$F_{external}=F_o\;sin(\omega_f \;t)$$
+                            <p> where \(F_o\) is the external force amplitude and \(\omega_f\) is the frequency of
+                                external force or called as external driving frequency.</p>
+                        </li>
+                    </ol>
+                    <p> So total force acting on the particles is,</p>
+                    $$F_{total}=F_{restoring}+F_{damping}+F_{external} $$
+                    $$ F = -kx -b\;\frac{dx}{dt} +F_o\;sin(\omega_f \;t) $$
+                    <p>From newton's second law, \(F=ma=m\frac{d^2 x}{dt^2}\). Substituting in above equation ;</p>
+                    $$ m\frac{d^2 x}{dt^2}=-kx -b\;\frac{dx}{dt}+F_o\;sin(\omega_f \;t)$$
+                    <p>rearranging above equation,</p>
+                    $$ m\frac{d^2 x}{dt^2}+ b\;\frac{dx}{dt} + kx = F_o\;sin(\omega_f \;t) $$
+                    <p>Dividing whole equation with m ;</p>
+                    $$ \frac{d^2 x}{dt^2}+ \frac{b}{m}\;\frac{dx}{dt} + \frac{k}{m}\;x = \frac{F_o}{m}\;sin(\omega_f
+                    \;t) \; -->eqn(1)$$
+                    <p> Let \(\frac{b}{m}=2 \gamma \), where \( \gamma\) is called damping coefficient, \(
+                        {\frac{k}{m}}=\omega_o^2 \) where \( \omega_o\) is the angular frequency of oscillator and let
+                        \(\frac{F_o}{m}= f_o\) where \(f_o\) just another constant .</p>
+                    <p> On substituting above values, differential equation (1) becomes,</p>
+                    $$\boxed{ \frac{d^2 x}{dt^2}+ 2 \gamma \;\frac{dx}{dt} + \omega_o^2 x =f_o\;sin(\omega_f \;t) }\;
+                    -->eqn(2) $$
+                </section>
+                <section id="solutionforced">
+                    <h3>Solution of differential equation</h3>
+                    <p>Initially body will not oscillate neither with it's natural frequency (\(\omega_o\)) nor with
+                        external driving frequency (\(\omega_f\)). After some time oscillator returns to a steady state,
+                        where it will oscillate with external driving frequency \(\omega_f\). So we can assume that
+                        solution of eqn (2) as,</p>
+                    $$x=A\;sin(\omega_f \;t -\theta) $$
+                    <p> differentiating x w.r.t t ;</p>
+                    $$\frac{dx}{dt}=A\omega_f\;cos(\omega_f \;t -\theta) $$
+                    <p>Taking the differntial of \(\frac{dx}{dt}\) again w.r.t t;
+                    </p>
+                    $$\frac{d^2 x}{dt^2}=-A \omega_f^2 sin(\omega_f \;t -\theta) $$
+                    <p>Substituting the expression of \(\frac{dx}{dt}\) & \(\frac{d^x x}{dt^2}\) in equation (2) ;</p>
+                    $$ -A \omega_f^2 sin(\omega_f \;t -\theta) + 2 \gamma \; (A\omega_f\;cos(\omega_f \;t -\theta)) +
+                    \omega_o^2 (A\;sin(\omega_f \;t -\theta)) = f_o\;sin(\omega_f \;t) $$
+                    <p>We can write,\(f_o\;sin(\omega_f \;t) = f_o\;sin(\omega_f \;t-\theta + \theta)\). So,</p>
+                    $$-A \omega_f^2 sin(\omega_f \;t -\theta) + 2 \gamma \; (A\omega_f\;cos(\omega_f \;t -\theta)) +
+                    \omega_o^2 (A\;sin(\omega_f \;t -\theta))=f_o\;sin(\omega_f \;t-\theta + \theta) $$
+                    <p>Expanding term in RHS,</p>
+                    $$-A \omega_f^2 sin(\omega_f \;t -\theta) + 2 \gamma \; (A\omega_f\;cos(\omega_f \;t -\theta)) +
+                    \omega_o^2 (A\;sin(\omega_f \;t -\theta)) $$
+                    $$= f_o\;[sin(\omega_f \;t -\theta)\;cos\;\theta +sin\;\theta \;cos(\omega_f \;t -\theta)]$$
+                    <p>Taking the coefficients of \(sin(\omega_f \;t -\theta)\) and \(cos(\omega_f \;t -\theta)\) from
+                        above equation,</p>
+                    $$ sin(\omega_f \;t -\theta)\;[\;-A\omega_f^2 -f_o \;cos\;\theta + \omega^2 A \;] + $$
+                    $$cos(\omega_f \;t -\theta)\;[2\gamma A\omega_f -f_o \;sin\;\theta\;] = 0 -->eqn(3)$$
+                    <p>For equation (3) to be satisfied, coefficients of \(sin(\omega_f \;t -\theta)\) and
+                        \(cos(\omega_f \;t -\theta)\) should be separately equal to zero. </p>
+                    $$-A\omega_f^2 -f_o \;cos\;\theta + \omega^2 A = 0 $$
+                    $$ $$
+                    $$2\gamma A\omega_f -f_o \;sin\;\theta = 0 $$
+                    <p>or</p>
+                    $$-A\omega_f^2 + \omega^2 A = f_o \;cos\;\theta \;-->eqn(4)$$
+                    $$ $$
+                    $$2\gamma A\omega_f = f_o \;sin\;\theta\;-->eqn(5) $$
+                    <p>squaring and adding equations(4) and (5) ;</p>
+                    $$(-A\omega_f^2 + \omega^2 A)^2 + (2\gamma A\omega_f)^2 =(f_o \;cos\;\theta)^2 + (f_o
+                    \;sin\;\theta)^2$$
+                    $$= f_o^2 cos^2 \theta + f_o^2 sin^2 \theta = f_o^2 \;(cos^2 \theta+sin^2 \theta)$$
+                    <p>which gives,</p>
+                    $$(-A\omega_f^2 + \omega^2 A)^2 + (2\gamma A\omega_f)^2 = f_o^2 $$
+                    <p>or</p>
+                    $$ A^2[\;(\omega^2 - \omega_f^2)^2 + 4 \gamma^2 \omega_f^2\;]=f_o^2 $$
+                    <p>That gives,</p>
+                    $$A^2 = \frac{f_o^2}{(\omega^2 - \omega_f^2)^2 + 4 \gamma^2 \omega_f^2} $$
+                    <p>so amplitude of oscillator is obtained as,</p>
+                    $$\boxed{A = \frac{f_o}{\sqrt{(\omega^2 - \omega_f^2)^2 + 4 \gamma^2 \omega_f^2}}} $$
+                    <p>Hence the solution of differential equantion is,</p>
+
+                    $$x = \frac{f_o\;sin(\omega_f t - \theta)}{\sqrt{(\omega^2 - \omega_f^2)^2 + 4 \gamma^2 \omega_f^2}}
+                    $$
 
 
-            <section id="numericals">
-                <h3>Numerical Problems</h3>
+                </section>
+                <h4>Related problems</h4>
                 <ol>
                     <li>
                         <p>
