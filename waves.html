@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PHT110</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,36 +175,75 @@
     <div class="main-content">
         <section id="intro">
             <h2>Introduction</h2>
-            <p>A wave is a disturbance that travels through space and time, accompanied by a transfer of energy. Waves
-                can be
-                described by their wavelength, frequency, and amplitude.</p>
+            <p>A wave is a disturbance that travels through space and time, accompanied by a transfer of energy. A wave
+                motion is produced due to harmonic oscillations of a series of points of the medium.</p>
         </section>
-        <section id="types">
+        <section id="waveclassification">
             <h2>Types of Waves</h2>
-            <ul>
-                <li>Mechanical waves</li>
-                <li>Electromagnetic waves</li>
-            </ul>
+            <h3>Mechanical wave</h3>
+            <p>Waves that require a material medium for propagation are called mechanical waves. Here waves are produced
+                by periodic vibrations of the particles of the medium.</p>
+            <p>Example : Sound waves & Seismic waves</p>
+            <h3>Electromagnetic waves</h3>
+            <p>Waves which does not require a material medium for propagation are called electromagnetic waves. So they
+                can travel through vaccum. In electromagnetic waves, electric & magnetic fields oscillates perpendicular
+                to direction of propagation of wave.</p>
+            <p>Examples: Light waves, Radio waves, X-rays etc..</p>
+            <p>According to the direction of vibration of the particles of medium with respect to direction of
+                propagation of waves are classified into two types</p>
+            <h3>Transverse waves.</h3>
+            <p>If the direction of vibration of the particles of medium is perpendicular to direction of propagation of
+                wave, such waves are called transverse waves. </p>
+            <p>Example : light waves and water waves</p>
+            <h3>Longitudinal waves.</h3>
+            <p>If the direction of vibration of the particles of medium is parallel to direction of propagation of wave,
+                such waves are called longitudinal waves. </p>
+            <p>Example : sound waves and ultrasonic waves</p>
+
         </section>
-        <section id="properties">
+        <section id="waveproperties">
             <h2>Properties of Waves</h2>
-            <ul>
-                <li>Wavelength</li>
-                <li>Frequency</li>
-                <li>Amplitude</li>
-                <li>Period</li>
-                <li>Velocity</li>
-            </ul>
+            <h3>Wavelength</h3>
+            <p>Wavelength is a measure of the distance between two consecutive peaks (or troughs) of a wave. Generally
+                wavelength can be defined as distance between two consecutive points of a wave that are in phase.</p>
+            <div id="images"><img src="wavelength.png"> </div>
+            <h3>Frequency</h3>
+            <p>Frequency of a wave is the number of oscillations or vibrationsof particles of medium (or wave itself)
+                per unit time.</p>
+            <h3>Amplitude</h3>
+            <p>Amplitude is maximum displacement of a particle from equilibrium point in a wave (keep in mind that wave
+                is propagation of vibration/oscillation of this particles in a medium). It is the distance between the
+                highest point (crest) or the lowest point (trough) of a wave and the equilibrium or rest position.</p>
+            <h3>Wave velocity</h3>
+            <p>Wave velocity is a measure of the speed at which a wave travels through a medium and depends on the
+                properties of the
+                medium and the wavelength and frequency of the wave.</p>
+            <h3>Particle velocity</h3>
+            <p>particle velocity of a wave is the velocity of the individual particles of the medium oscillates. It
+                varies depending on the position in the medium, it's different from the wave velocity which is the
+                speed at which the wave itself travels.</p>
+            <h3>Initial phase</h3>
+            <p>Initial phase of a wave is the starting point or position of a wave cycle at a given time, it's measured
+                in
+                degrees and it gives the position of a point on the waveform in relation to a reference point.</p>
         </section>
-        <section id="examples">
-            <h2>Examples</h2>
-            <p>Some examples of waves include:</p>
-            <ul>
-                <li>Sound waves</li>
-                <li>Water waves</li>
-                <li>Light waves</li>
-                <li>Radio waves</li>
-            </ul>
+
+        <section id="waveequation">
+            <h2>Wave equation</h2>
+            <p>A single pulse or wave moving in positive x direction can be represented as,</p>
+            $$u(x,t)=f(x-vt)\;-->(eqn1)$$
+            <p>where u is the vertical displacement of particle in wave and f is the function representing shape of the
+                waveform.</p>
+            <p>Differentiating equation (1) w.r.t to x twice,</p>
+            $$\frac{\partial^u}{\partial x^2}=f^{''}(x-vt) \; ---eqn(2)$$
+            <p>Differentiating equation (1) w.r.t t twice</p>
+            $$\frac{\partial^u}{\partial t^2}=v^2 \;f^{''}(x-vt)\;---eqn(3)$$
+            <p>substituting value of \(f^{''}(x-vt)\) from equation(2) in equation(3),</p>
+            $$\frac{\partial^u}{\partial t^2} =v^2 \; \frac{\partial^u}{\partial x^2} $$
+            <p>rearranging,</p>
+            $$\boxed{\frac{\partial^u}{\partial x^2} =\frac{1}{v^2} \; \frac{\partial^u}{\partial t^2}} $$
+            <p> Above equation is called one dimensional wave equation.</p>
+
         </section>
         <section id="conclusion">
             <h2>Conclusion</h2>
