@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PHT110</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,10 +172,412 @@
         </ul>
         </span>
     </nav>
-    <section class="main-content">
-        <h1>Ultrasonics</h1>
-        <script src="pht110.js"></script>
-    </section>
+    <nav class="right-side-navbar">
+        <ul>
+            <li><a href="#ultrasonic-waves-characteristics-velocity">Ultrasonic Waves Characteristics and Velocity</a>
+            </li>
+            <li><a href="#production-of-ultrasonic-waves">Production of Ultrasonic Waves</a></li>
+            <li><a href="#magnetostriction-oscillator">Magnetostriction Oscillator</a></li>
+            <li><a href="#piezoelectric-oscillator">Piezoelectric Oscillator</a></li>
+            <li><a href="#ultrasonic-diffractometer">Ultrasonic Diffractometer</a></li>
+            <li><a href="#detection-of-ultrasonic-waves">Detection of Ultrasonic Waves</a></li>
+            <li><a href="#ultrasonic-diffractometer">Ultrasonic Diffractometer</a></li>
+            <li><a href="#applications-of-ultrasonics">Applications of ultrasonics</a></li>
+            <li><a href="#ndt">NDT</a></li>
+            <li><a href="#sonar">SONAR</a></li>
+
+            <li><a href="#numericals">Numerical problems</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section id="ultrasonics">
+            <h1>Ultrasonics</h1>
+            <section id="ultrasonic-waves-characteristics-velocity">
+                <h2>Ultrasonic Waves Characteristics and Velocity</h2>
+                <p>Ultrasonic waves are high frequency sound waves with a frequency higher than 20 kHz. They are used in
+                    a
+                    variety of industrial and medical applications. The characteristics of ultrasonic waves include high
+                    frequency, high amplitude, and the ability to travel through various materials. The velocity of
+                    ultrasonic
+                    waves is dependent on the properties of the medium it is traveling through.</p>
+                <p>Velocity of ultrasonic wave through a solid material,</p>
+                $$ v =\sqrt{\frac{Y}{\rho}} $$ where Y is youngs modulus of material and \( \rho \) is the density.
+                <p>Velocity of ultrasonic wave through a liquid,</p>
+                $$ v =\sqrt{\frac{K}{\rho}} $$ where K is bulk modulus of liquid and \( \rho \) is the density.
+                <p>Velocity of ultrasonic wave through a gaseous medium,</p>
+                $$ v =\sqrt{\frac{\gamma P}{\rho}} $$ where P is pressure of gas and \( \rho \) is the density.
+            </section>
+            <section id="production-of-ultrasonic-waves">
+                <h2>Production of Ultrasonic Waves</h2>
+                <p>The principle behind generating ultrasonic waves is to make a dense material vibrate rapidly, causing
+                    the air around it
+                    to vibrate at the same frequency and spread out as ultrasonic waves. Ultrasonic waves can be
+                    produced through various methods, including magnetostriction oscillators and
+                    piezoelectric oscillators.</p>
+                <section id="magnetostriction-oscillator">
+                    <h3>Magnetostriction effect</h3>
+                    <p>Magnetostriction is a property of ferromagnetic materials which causes them to expand or contract
+                        in response to a
+                        magnetic field. If we can provide direction changing magnetic field to a ferromagnetic rod, it
+                        will expand and contract continously as in a vibration. This type of vibration with higher
+                        frequency can be produced with help of an electrical oscillator like LC circuit.</p>
+                    <h3>Magnetostriction Oscillator</h3>
+                    <p>A magnetostriction oscillator is a device that uses the magnetostriction effect to generate
+                        ultrasonic
+                        waves. It consists of a ferromagnetic rod, typically made of nickel-iron alloy, that is placed
+                        in a
+                        magnetic field. When an alternating current is applied to the rod, it changes shape due to the
+                        magnetostriction effect, and this continous vibration ( expansion & contraction of rod)
+                        generates ultrasonic waves. </p>
+
+                    <figure>
+                        <img src="magnetostriction_oscillator.jpg" alt="Magnetostriction Oscillator Diagram">
+                        <figcaption>Diagram of a magnetostriction oscillator</figcaption>
+                    </figure>
+
+                    <h4>Construction</h4>
+                    <p>
+                    <ul>
+                        <li>The ferromagnetic rod have coils L1 and L2 wound around their ends.</li>
+                        <li>The coil L1 is connected to the collector of a transistor.</li>
+                        <li>The coil L2 is connected to the base of the transistor.</li>
+                        <li>The frequency of the oscillatory circuit (LC) can be adjusted by adjusting the capacitor C.
+                        </li>
+                        <li>The current can be measured by a milliammeter connected across the coil L.</li>
+                        <li>The battery connected between the emitter and collector provides necessary biasing for the
+                            NPN transistor.</li>
+                    </ul>
+                    </p>
+                    <h4>Working</h4>
+                    <p>When a ferromagnetic rod is placed inside a magnetic coil that carries an alternating current,
+                        the rod experiences a
+                        change in length for each half cycle of the current. This means that the rod vibrates with a
+                        frequency that is twice
+                        that of the frequency of the alternating current. The amplitude of these vibrations is usually
+                        small, but if the
+                        frequency of the alternating current matches the natural frequency of the rod, the amplitude of
+                        vibration increases
+                        significantly due to resonance.</p>
+                    <p></p>
+                    <ul>
+
+                        <li>When the battery is turned on, the transistor produces current.</li>
+                        <li>This current will produce electrical oscillations in LC circuit or tank circuit.</li>
+                        <li>This current is then passed through the coil L1, which causes a corresponding change in the
+                            rod's
+                            magnetization. The direction of current will change according to the frequency of LC circuit
+                            which changes direction of magnetic field generated by coil L1.</li>
+                        <li>This periodic change in direction of magnetic field due to L1 create periodic expansion and
+                            contraction in rod with higher frequency.</li>
+                        <li>This high frequency vibration of rod will generate similar vibrations in surrounding medium
+                            which eventually produces ultrasonic waves.</li>
+
+                        <p>The coil L2 is placed around vibrating rod, an e.m.f. is generated in the coil due to the
+                            converse magnetostriction
+                            effect. This e.m.f. is then sent back to the base of the transistor. This feedback mechanism
+                            helps
+                            to maintain the current flowing through the transistor and sustain the vibrations of the
+                            rod.
+                        </p>
+                        <h3>Theory</h3>
+                        <p>The frequency of magnetostriction oscillator is given by,</p>
+                        $$\nu = \frac{n}{2l}\sqrt{\frac{Y}{\rho}} $$
+                        <p>where Y is the young's modulus of material and \( \rho \) is the density.</p>
+                        <p>Where fundamental frequency is given as,</p>
+                        $$\nu_{fundamental} = \frac{1}{2l}\sqrt{\frac{Y}{\rho}} $$
+                </section>
+                <section id="piezoelectric-oscillator">
+                    <h3>Piezoelectric-Effect</h3>
+                    <p>The piezoelectric effect is the ability of certain materials, such as crystals, ceramics, and
+                        some plastics, to generate
+                        an emf in response to applied mechanical stress. Conversely, when an electric field or voltage
+                        is applied to these
+                        materials, they can change shape or deform which is called inverse piezoelectric-effect.</p>
+                    <h3>Piezoelectric Oscillator</h3>
+                    <p>A piezoelectric oscillator is a device that uses the inverse piezoelectric effect to generate
+                        ultrasonic
+                        waves.
+                        It consists of a piezoelectric crystal, typically made of quartz, that is placed under a
+                        mechanical
+                        stress. When an alternating voltage is applied to the crystal, it periodically changes shape due
+                        to the
+                        piezoelectric
+                        effect or it will start to vibrate ( continous expansion and contraction). This vibration of
+                        crystal create vibrations in surrounding medium & generates ultrasonic waves. </p>
+                    <figure>
+                        <img src="piezoelectric_oscillator.png" alt="Piezoelectric Oscillator">
+                        <figcaption>Piezoelectric oscillator</figcaption>
+                    </figure>
+                    <h4>Construction</h4>
+                    <p>
+                    <ul>
+                        <li>A piezoelectric crystal, such as quartz, is used in the construction of a piezoelectric
+                            oscillator.</li>
+                        <li>The crystal is cut in a specific way to produce the desired resonant frequency.</li>
+                        <li>Electrodes are attached to the crystal's surfaces to apply an electric field and detect the
+                            resulting mechanical
+                            vibrations.</li>
+                        <li>An oscillator circuit, such as a LC or tank circuit is connected to the electrodes to
+                            generate and sustain the
+                            oscillations.</li>
+
+                    </ul>
+                    </p>
+                    <h4>Working</h4>
+                    <p>
+                        When an electric field is applied to a piezoelectric crystal, it experiences a change in shape
+                        due to the inverse
+                        piezoelectric effect. This change in shape causes the crystal to vibrate at a certain frequency,
+                        known as the
+                        resonant frequency.
+                    </p>
+                    <p>
+                    <ul>
+                        <li>When the battery is turned on, the transistor produces current.
+                            This current will produce electrical oscillations in LC circuit or tank circuit.
+                            This current is then passed through the coil L2, which causes a corresponding change in the
+                            magnetic field assosiated with coil L.</li>
+                        <li>This change in magnetic field induces an emf in circuit ( faraday's law ) and this emf will
+                            change the shape of crystal Q. The
+                            direction of current will change according to the frequency of LC circuit which changes
+                            direction of magnetic field
+                            generated by coil L.</li>
+                        <li>Thus the oscillator circuit applies a varying electric field to the
+                            crystal, causing it to
+                            vibrate at its resonant frequency. This vibrations in crystal produces vibration in
+                            surrounding medium and results in production of ultrasonic wave.</li>
+                        <li>The coil L1 is placed parallel to inductor L, an e.m.f. is generated in the coil due to the
+                            change in magnetic field around inductor L (Mutual induction.). This e.m.f. is then sent
+                            back to the base of the transistor. This feedback mechanism
+                            helps
+                            to maintain the current flowing through the transistor and sustain the vibrations of the
+                            crystal.</li>
+                    </ul>
+                    </p>
+                    <h3>Theory</h3>
+                    <p>The frequency of piezoelectric oscillator is given by,</p>
+                    $$\nu = \frac{n}{2l}\sqrt{\frac{Y}{\rho}} $$
+                    <p>where Y is the young's modulus of crystal and \( \rho \) is the density.</p>
+                    <p>Where fundamental frequency is given as,</p>
+                    $$\nu_{fundamental} = \frac{1}{2l}\sqrt{\frac{Y}{\rho}} $$
+                </section>
+            </section>
+            <section id="ultrasonic-diffractometer">
+                <h2>Ultrasonic Diffractometer</h2>
+                <p>When ultrasonic waves are sent through a liquid, the pressure variations cause the density of the
+                    liquid to change in
+                    alternating layers, creating an "acoustic grating." When a single-color light source is passed
+                    through this grating, the light is
+                    diffracted. By analyzing this diffraction pattern, the speed of the ultrasonic waves can be
+                    calculated.</p>
+                <figure>
+                    <img src="ultrasonic-diffractometer.jpg" alt="ultrasonic-diffractometer">
+                    <figcaption>Ultrasonic-diffractometer</figcaption>
+                </figure>
+                <p>The ultrasonic waves travelling from the RF oscillator get reflected by the reflector placed at the
+                    opposite wall. The reflected waves
+                    get superimposed with the incident waves producing longitudinal standing wave pattern called
+                    acoustic grating.
+
+                    If a monochromatic light is passed through the liquid in a direction
+                    perpendicular to the grating, diffraction takes place and we can observe the
+                    diffraction pattern on the
+                    screen.</p>
+                <p>Grating equation is given by,</p>
+                $$ d\;sin\;\theta = n\;\lambda $$
+                <p>where \( \theta \) is angle of diffraction, \(\lambda \) is the wavelength of light used and d is the
+                    distance between adjacent node and antinode in accoustic grating.</p>
+                By finding value of "d", one can calculate wavelength ( because the length 'd' is the half wavelength of
+                ultrasonic wave ) of ultrasonic wave as ,
+                $$ v_{ultrasonic} = 2 d $$
+
+
+            </section>
+            <section id="detection-of-ultrasonic-waves">
+                <h2>Detection of Ultrasonic Waves</h2>
+                <p>Ultrasonic waves can be detected through various methods, including thermal detection and
+                    piezoelectric
+                    detection.</p>
+                <section id="thermal-detection-method">
+                    <h3>Thermal Detection Method</h3>
+                    <p>The thermal detection method uses a temperature change in a material caused by the absorption of
+                        ultrasonic
+                        waves to detect the presence of ultrasonic waves. This can be done by measuring the temperature
+                        change with
+                        a thermocouple or thermistor. </p>
+                </section>
+                <section id="piezoelectric-method">
+                    <h3>Piezoelectric Method</h3>
+                    <p>The piezoelectric method uses the piezoelectric effect to detect the presence of ultrasonic
+                        waves. A
+                        piezoelectric material, such as quartz, is used to detect the ultrasonic waves. When the
+                        ultrasonic waves
+                        pass through the piezoelectric material, it produces an electrical voltage, which can be
+                        measured to detect
+                        the presence of ultrasonic waves. </p>
+                </section>
+            </section>
+            <section id="applications-of-ultrasonics">
+                <h2>Applications of Ultrasonics</h2>
+                <p>Ultrasonics have a wide range of applications in various fields, including industrial, medical, and
+                    scientific
+                    research. Some of the most common applications include Non-Destructive Testing (NDT), SONAR, and
+                    others.</p>
+                <section id="ndt">
+                    <h3>Non-Destructive Testing (NDT)</h3>
+                    <p>Non-Destructive Testing (NDT) is the process of inspecting, testing, or evaluating materials,
+                        components or
+                        assemblies for discontinuities, or differences in characteristics without destroying the
+                        serviceability of
+                        the part or system. Ultrasonics are widely used in NDT to detect internal defects in materials,
+                        such as
+                        cracks, voids, and inclusions.</p>
+                    <figure>
+                        <img src="ndt.jpg" alt="ndt">
+                        <figcaption>Non Destructive Testing</figcaption>
+                    </figure>
+                    <p> This can be done by sending ultrasonic waves through the material
+                        and
+                        measuring the diffraction of the waves as they interact with the internal microstructure of the
+                        material.
+                    </p>
+                    <p>
+                    <h5>Working</h5>
+                    <ul>
+                        <li>The ultrasonic waves used in NDT are typically high-frequency (typically in the range of 0.1
+                            to 20
+                            MHz) and are
+                            generated by a transducer that converts electrical energy into mechanical energy (sound
+                            waves).</li>
+
+                        <li>The transducer is typically placed on the surface of the material being tested and sends the
+                            ultrasonic waves into the
+                            material.</li>
+
+                        <li>The waves travel through the material and, as they encounter internal defects, they are
+                            reflected,
+                            refracted, or
+                            diffracted back to the surface.</li>
+
+                        <li>The transducer then receives the waves that have returned to the surface and converts them
+                            back into
+                            an electrical
+                            signal.</li>
+
+                        <li>The electrical signal is then analyzed by specialized equipment, such as a pulse-echo or
+                            through-transmission system, to
+                            determine the location, size, and type of any defects present in the material.</li>
+                    </ul>
+                    </p>
+                </section>
+                <section id="sonar">
+                    <h3>SONAR</h3>
+                    <p>SONAR (Sound Navigation and Ranging) is a technology that uses ultrasonic waves to detect and
+                        locate objects
+                        under water. The SONAR system works by emitting an ultrasonic
+                        pulse and
+                        measuring the time it takes for the pulse to be reflected back from an object. </p>
+                    <figure>
+                        <img src="sonar.png" alt="sonar">
+                        <figcaption>SONAR</figcaption>
+                    </figure>
+                    <p>
+                    <ul>
+                        <li>A sonar system typically consists of a transmitter (or transducer) that generates and sends
+                            out a sound wave, and a
+                            receiver that listens for the returning echoes of the wave.</li>
+
+                        <li>The transmitter generates a short burst of sound, usually in the form of a pulse, and sends
+                            it into the water.</li>
+
+                        <li>The sound wave travels through the water, and when it touches bottom of sea, some of the
+                            energy is reflected back to the
+                            surface as an echo.</li>
+
+                        <li>The receiver, which is located near the transmitter, listens for the returning echoes and
+                            measures the time it takes for
+                            the sound to travel to the object and back.</li>
+
+                        <li>By measuring the time delay between the transmitted pulse and the received echo, the sonar
+                            system can calculate the
+                            depth of sea.</li>
+                    </ul>
+                    If the velocity of ultrasonic wave produced by transmitter is 'v', then depth of sea ( or depth from
+                    which the wave get reflected ) is given by,
+                    $$ d=\frac{v\;t}{2} $$ where t is the time taken by ultrasonic wave to to travel to the one side and
+                    back.
+                    </p>
+                </section>
+                <section id="other-applications">
+                    <h3>Other Applications</h3>
+                    <p>Ultrasonics have a wide range of other applications, including:</p>
+                    <ul>
+                        <li>Cleaning - Ultrasonic cleaning is a method of cleaning that uses ultrasonic waves to agitate
+                            a cleaning
+                            solution, resulting in a more thorough cleaning of the object being cleaned.</li>
+                        <li>Welding - Ultrasonic welding is a method of welding that uses ultrasonic waves to heat and
+                            weld two
+                            pieces of material together.</li>
+                        <li>Medical - Ultrasonics are used in medical imaging, such as ultrasound and Doppler imaging,
+                            to create
+                            images of internal organs and blood vessels.</li>
+                        <li>Industrial - Ultrasonics are used in industrial applications such as measuring the level of
+                            liquids in
+                            tanks and the thickness of materials in manufacturing.</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="numericals">
+                <h4>Numerical problems</h4>
+                <ol>
+                    <li>Calculate the fundamental frequency of vibration of quartz crystal of thickness 12mm at
+                        resonance
+                        if its Young`s modulus is \( Y=7.5 X 10^{10} N/m^2 \) and density, \(\rho= 2500 kg/m^3 \)
+                        <p>Answer:</p>
+                        <p>We know the expression for fundamental frquency of piezo-electric oscillator as,</p>
+                        $$\nu_{fundamental} = \frac{1}{2l}\sqrt{\frac{Y}{\rho}} $$
+                        <p>Where Y is the youngs modulus of material and \( \rho \) is the density.</p>
+                        <p>Given quantities are ;</p>
+                        <p>
+                            $$ Thickness,\;l=12 \;mm = 12 \times 10^{-3}\;m $$
+                            $$Young's\;modulus,\;Y=7.5 \times 10^{10} N/m^2 $$
+                            $$Density,\;\rho=2500\;kg/m^3 $$
+                        </p>
+                        <p>Substituting this given quantities in equation of fundamental frequency,</p>
+                        $$\nu_{fundamental} = \frac{1}{2l}\sqrt{\frac{Y}{\rho}} $$
+                        $$\;\; = \frac{1}{2\times 12 \times 10^{-3}}\sqrt{\frac{7.5 \times 10^{10}}{2500}} =
+                        228217.73\;Hz$$
+                        <p>So the crystal have a fundamendal frequency of 228217.73 Hz</p>
+                    </li>
+                    <li>Calculate the fundamental frequency of vibration of ferromagnetic rod of thickness 5mm at
+                        resonance
+                        if its Young`s modulus is \( Y=8 X 10^{10} N/m^2 \) and density, \(\rho= 2650 kg/m^3 \)
+                        <p>Answer:</p>
+                        <p>We know the expression for fundamental frquency of magnetostriction oscillator as,</p>
+                        $$\nu_{fundamental} = \frac{1}{2l}\sqrt{\frac{Y}{\rho}} $$
+                        <p>Where Y is the youngs modulus of rod and \( \rho \) is the density.</p>
+                        <p>Given quantities are ;</p>
+                        <p>
+                            $$ Length,\;l=5 \;mm = 5 \times 10^{-3}\;m $$
+                            $$Young's\;modulus,\;Y=8 \times 10^{10} N/m^2 $$
+                            $$Density,\;\rho=2650\;kg/m^3 $$
+                        </p>
+                        <p>Substituting this given quantities in equation of fundamental frequency,</p>
+                        $$\nu_{fundamental} = \frac{1}{2l}\sqrt{\frac{Y}{\rho}} $$
+                        $$\;\; = \frac{1}{2\times 5 \times 10^{-3}}\sqrt{\frac{8 \times 10^{10}}{2650}} =
+                        549442.25\;Hz$$
+                        <p>So the ferromagnetic rod have a fundamendal frequency of 549442.25 Hz</p>
+                    </li>
+                </ol>
+
+            </section>
+
+
+            <script src="pht110.js"></script>
+        </section>
+    </div>
+
 </body>
 
 </html>

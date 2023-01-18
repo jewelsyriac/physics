@@ -365,3 +365,9 @@ body {
     color: blue;
     text-decoration: none;
 }
+
+.main-content img {
+    width: 100%;
+    height: fit-content;
+    max-height: 600px;
+}

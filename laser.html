@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHT110</title>
+    <title>LASER</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -172,7 +172,23 @@
         </ul>
         </span>
     </nav>
-    <section class="main-content">
+    <nav class="right-side-navbar">
+        <ul>
+            <li><a href="#characteristics">Characteristics of laser beam</a></li>
+            <li><a href="#induced-absorption">Induced Absorption</a></li>
+            <li><a href="#spontaneous-emission">Spontaneous emission</a></li>
+            <li><a href="#stimulated-emission">Stimulated emission</a></li>
+            <li><a href="#population-inversion">Population inversion</a></li>
+            <li><a href="#pumping">Pumping</a></li>
+            <li><a href="#metastable-states">Metastable states</a></li>
+            <li><a href="#components-of-laser">Components of laser</a></li>
+            <li><a href="#ruby-laser">Ruby laser</a></li>
+            <li><a href="#He-Ne-laser">He-Ne laser</a></li>
+            <li><a href="#semiconductor-laser">Semiconductor laser</a></li>
+            <li><a href="#applications-of-laser">Applications of laser</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
         <h1>Introduction:</h1>
         <p>LASER stands for Light Amplification by Stimulated Emission of Radiation. Laser technology started with
             Albert
@@ -183,89 +199,401 @@
         <h1>Characteristics of Laser Radiation:</h1>
         <p>The laser beam has the following properties that distinguish it from an ordinary beam of light:</p>
         <ul>
-            <li>Highly directional</li>
-            <li>Highly monochromatic</li>
-            <li>Highly intense</li>
-            <li>Highly coherent</li>
-        </ul>
-        <p>1. Highly directional: A conventional light source emits light in all directions. On the other hand, Laser
-            emits
-            light only in one direction. The width of Laser beam is extremely narrow and hence a laser beam can travel
-            to
-            long distances without spreading. The directionality of laser beam is expressed in terms of divergence:</p>
-        <p>∆𝜃 = 𝑟2 − 𝑟1 𝑑2 − 𝑑1</p>
-        <p>Where r1 and r2 are the radii of laser beam spots at distances of d1 and d2 respectively from laser source.
-        </p>
-        <p>2. Highly monochromatic: A monochromatic source is a single frequency or single wavelength source of light.
-            The
-            laser light is more monochromatic than that of a convectional light source. This may be due to the
-            stimulated
-            characteristic of laser light. The band width of convectional monochromatic light source is 1000A0. But the
-            band
-            width of ordinary light source is 10 A0. For high sensitive laser source is 10-8 A0.</p>
-        <p>3. Highly intense: Laser light is highly intense than the conventional light. A one milli-Watt He-Ne laser is
-            highly intense than the sun intensity. This is because of coherence and directionality of laser. Suppose
-            when
-            two photons each of amplitude ‘A’ are in phase with other, then young’s principle of superposition, the
-            resultant amplitude of two photons is 2A and the intensity is 4a2. Since in laser many numbers of photons
-            are in
-            phase with each other, the amplitude of the resulting wave becomes ‘nA’ and hence the intensity of laser is
-            proportional to n2A2. So 1mw He-Ne laser is highly intense than the sun.</p>
-        <p>4. Highly coherence: A predictable correlation of the amplitude and phase at any one point with other point
-            is
-            called coherence. In case of conventional light, the property of coherence exhibits between a source and its
-            virtual source where as in case of laser the property coherence exists between any two sources of same
-            phase.
-            There are two types of coherence: i) Temporal coherence and ii) Spatial coherence.</p>
-        <p>Temporal coherence (or longitudinal coherence): The predictable correlation of amplitude and phase at one
-            point
-            on the wave train w.r.t another point on the same wave train, then the wave is said to be temporal
-            coherence.
-        </p>
-        <p>Spatial coherence (or transverse coherence): The predictable correlation of amplitude and phase at one point
-            on
-            the
-            wave train w.r.t another point on a second wave, then the waves are said to be spatial coherence (or
-            transverse
-            coherence). Two waves are said to be coherent when the waves must have same phase & amplitude.</p>
-        <h1>Interaction of Light with Matter and the Three Quantum Processes:</h1>
-        <p>When radiation interacts with matter, it results in the following three important phenomena:</p>
-        <ul>
-            <li>Induced or Stimulated Absorption</li>
-            <li>Spontaneous Emission</li>
-            <li>Stimulated Emission</li>
-        </ul>
-        <h2>Stimulated Absorption (or) Induced Absorption (or) Absorption:</h2>
-        <p>An atom in the lower energy level or ground state energy level (E1) absorbs the incident photon and goes to
-            excited
-            state (E2) as shown in the figure below. This process is called induced or stimulated absorption.</p>
-        <p>Let E1 and E2 be the energies of ground and excited states of an atom. Suppose, if a photon of energy E2−E1 =
-            hν
-            interacts with an atom present in the ground state, the atom gets excited to the higher energy level and the
-            process
-            is called absorption. During this process, energy of the photon is given to the atom and the atom goes to
-            the
-            excited state. The absorption process is shown in the figure below.</p>
-        <h2>Spontaneous Emission:</h2>
-        <p>An atom in the excited state spontaneously emits a photon and goes to the lower energy level. This process is
-            called
-            spontaneous emission. The energy of the emitted photon is equal to the energy difference between the two
-            states.
-            The
-            spontaneous emission process is shown in the figure below.</p>
-        <h2>Stimulated Emission:</h2>
-        <p>If a photon of energy hν interacts with an atom in the excited state, the atom gets de-excited and goes to
-            the
-            lower
-            energy level emitting a photon. This process is called stimulated emission. The energy of the emitted photon
-            is
-            equal to the energy difference between the two states. The stimulated emission process is shown in the
-            figure
-            below.
-        </p>
 
-        <script src="pht110.js"></script>
-    </section>
+            <p>
+                <li><b>Highly directional:</b> A conventional light source emits light in all directions. On the other
+                    hand,
+                    Laser
+                    emits
+                    light only in one direction. The width of Laser beam is extremely narrow and hence a laser beam can
+                    travel
+                    to
+                    long distances without spreading. The directionality of laser beam is expressed in terms of
+                    divergence:
+            </p>
+
+            <p>
+                <li><b>Highly monochromatic:</b> A monochromatic source is a single frequency or single wavelength
+                    source of
+                    light.
+                    The
+                    laser light is more monochromatic than that of a convectional light source. This may be due to the
+                    stimulated
+                    characteristic of laser light. The band width ( or wavelength spread) of convectional monochromatic
+                    light
+                    source is 1000 Amstrongs. But the
+                    band
+                    width of ordinary light source is 10 Amstrongs.
+            </p>
+            <p>
+                <li><b>Highly intense:</b> Laser light is highly intense than the conventional light. A one milli-Watt
+                    He-Ne
+                    laser is
+                    highly intense than the sun intensity. This is because of coherence and directionality of laser.
+                    Intensity
+                    of laser beam is approximately given by,
+                    $$ I = (\frac{10}{\lambda})^2\;P\;Wm^{-2} $$
+            </p>
+            <p>
+                <li><b>Highly coherence:</b> Laser beam is highly coherent. In case of conventional light, the property
+                    of
+                    coherence
+                    exhibits between a source and its
+                    virtual source where as in case of laser the property coherence exists between any two sources of
+                    same
+                    phase.
+                    There are two types of coherence: i) Temporal coherence and ii) Spatial coherence.
+            </p>
+            <p>
+                <li><b>Focussing and collimating property:</b> Laser beam can be focussed and collimated to a very small
+                    area. As a result the density and power can be increased. This property can be very useful in micro
+                    welding, bloodless surgery, cutting of diamonds etc..</li>
+            </p>
+
+            <h2>Types of emission and absorption</h2>
+
+            <h3>Stimulated Absorption or Induced Absorption</h3>
+            <p>An atom in the lower energy level or ground state energy level (E1) absorbs the incident photon and goes
+                to
+                excited
+                state (E2) as shown in the figure below. This process is called induced or stimulated absorption.</p>
+            <figure>
+                <img src="induced-absorption.png">
+                <figcaption>Induced absorption</figcaption>
+            </figure>
+            Rate of induced absorption will be proportional to number of atoms in ground state (N1) and density of
+            radiation ( \( \rho \)).
+            $$\frac{dN_1}{dt} \propto \rho\;N_1 $$
+            or,
+            $$\frac{dN_1}{dt} = B_1\; \rho\;N_1 $$
+            where this proportionality constant B1 is called Einstein's coefficient of induced absorption.
+
+            <h2>Spontaneous Emission:</h2>
+            <p>An atom in the excited state spontaneously emits a photon and goes to the lower energy level. This
+                process is
+                called
+                spontaneous emission. The energy of the emitted photon is equal to the energy difference between the two
+                states.
+                The
+                spontaneous emission process is shown in the figure below.</p>
+            <figure>
+                <img src="spontaneous-emission.png">
+                <figcaption>Spontanous emission</figcaption>
+            </figure>
+            Rate of spontanous emission will be proportional to number of atoms in excited state (N2).
+            $$\frac{dN_2}{dt} \propto N_1 $$
+            or,
+            $$\frac{dN_2}{dt} = A_2\; N_2 $$
+            where this proportionality constant A2 is called Einstein's coefficient of spontaneous emission.
+            <h2>Stimulated Emission:</h2>
+            <p>If an external photon of energy hν interacts with an atom in the excited state (E1), the atom gets
+                de-excited and goes
+                to
+                the
+                lower
+                energy level emitting a photon. This process is called stimulated emission. The energy of the emitted
+                photon
+                is
+                equal to the energy difference between the two states. The stimulated emission process is shown in the
+                figure
+                below.
+            </p>
+            <figure>
+                <img src="stimulated-emission.jpg.png">
+                <figcaption>Stimulated emission</figcaption>
+            </figure>
+            Rate of stimulated emission will be proportional to number of atoms in excited state (N2) and density of
+            radiation ( \(
+            \rho \)).
+            $$\frac{dN_2}{dt} \propto \rho\;N_2 $$
+            or,
+            $$\frac{dN_2}{dt} = A_2\; \rho\;N_2 $$
+            where this proportionality constant A2 is called Einstein's coefficient of stimulated emission.
+        </ul>
+        </section>
+        <section id="population-inversion">
+            <h3>Population</h3>
+            <p>Number of atoms per unit volume of material with a specific energy or number of atoms per unit volume in
+                an
+                energy level is called population. If N1 is the number of atoms in energy level E1, then population of
+                E1 is
+                N1.</p>
+            <h3>Population inversion</h3>
+            <p>Normally atoms tends to remain in ground state. The lasing action ( stimulated emission ) happens when
+                only
+                there is enough atoms in higher energy state. So we need to invert the population, or should increase
+                the
+                population in higher energy states. So population inversion is process in which makes a
+                more atoms in an excited state than
+                in the ground state.</p>
+            <figure>
+                <img src="population-inversion.jpg">
+                <figcaption>Population inversion</figcaption>
+            </figure>
+            <h4>Pumping in laser</h4>
+            <p>The process of supplying energy to a material for achieving population inversion is called pumping.</p>
+            <p>Pumping can be done by various methods,</p>
+            <ul>
+                <li>
+                    <h5>Optical pumping</h5>
+                    <p>When we use light for achieving population inversion or to raise the atoms of a system from one
+                        energy level to another,such type of pumping is called optical pumping.</p>
+                    <figure>
+                        <img src="optical-pumping.jpg">
+                        <figcaption>Optical Pumping</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <h5>Chemical Pumping</h5>
+                    <p>Chemical pumping in a laser is a method of creating population inversion by using chemical
+                        reactions to pump energy into
+                        the active medium of the laser. This can be done by introducing a reactant gas into the laser
+                        cavity, or by using a
+                        chemical reaction on the surface of the active medium. The excited atoms or molecules can then
+                        release energy in the
+                        form of light through stimulated emission, which is the principle behind the operation of a
+                        laser.</p>
+                </li>
+                <li>
+                    <h5>Electric Pumping</h5>
+                    <p>Electrical pumping in a laser is a method of creating population inversion by using an electric
+                        current to pump energy
+                        into the active medium of the laser. This can be done by passing an electric current through a
+                        solid-state active
+                        medium, such as a crystal or a semiconductor, or by using an electrical discharge to excite a
+                        gas or a liquid active
+                        medium.</p>
+                </li>
+                <li>
+                    <h5>Thermal Pumping</h5>
+                    <p>Thermal pumping in a laser is a method of creating population inversion by heating the active
+                        medium of the laser. This
+                        is done by passing an electrical current through a wire or by using an external heat source,
+                        such as a lamp or a flame,
+                        to heat the active medium. As the active medium is heated, its atoms or molecules become excited
+                        and enter an excited
+                        state, resulting in a population inversion.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="metastable-states">
+            <h3>Metastable states</h3>
+            <p>Excited states in atoms have a short life of some nanoseconds ( about \(10^{-9} \) sec). So atoms reached
+                in this higher energy will spontanously move to ground state by losing energy. For laser to work,
+                excited states with higher lifetime (\(10^{-3}\;sec \)) is available, which is called metastable states.
+                in short a metastable state is a relatively long-lived energy state</p>
+            <figure>
+                <img src="metastable-state.jpg">
+                <figcaption>Metastable states</figcaption>
+            </figure>
+
+        </section>
+        <section id="laser-components">
+            <h3>Components of laser</h3>
+            <figure>
+                <img src="components-laser.png">
+                <figcaption>Components of laser</figcaption>
+            </figure>
+            <ul>
+                <li>
+                    <h4>Energy source ( Pump source )</h4>
+                    <p>The energy source in a laser is used to pump energy into the active medium, typically through
+                        optical pumping,
+                        electrical pumping, or thermal pumping. This energy is used to excite atoms or molecules in the
+                        active medium and create
+                        population inversion.
+                    </p>
+                </li>
+                <li>
+                    <h4>Active medium ( Lasing medium )</h4>
+                    <p>The active medium is the material that is used to create the laser beam. It is typically a solid,
+                        liquid or gas, and can
+                        be made of various materials such as crystals, glasses, gases, or semiconductors. The atoms or
+                        molecules in the active
+                        medium are excited by the energy source, and then release energy in the form of light through
+                        stimulated emission.</p>
+                </li>
+                <li>
+                    <h4>Optical resonator</h4>
+                    <p>The optical resonator is a cavity that contains the active medium and reflects light back and
+                        forth through it. It is
+                        made up of two or more mirrors that are placed at either end of the active medium. The mirrors
+                        are designed to be highly
+                        reflective, so that most of the light is reflected back through the active medium, amplifying it
+                        with each pass. This
+                        creates a stable, intense beam of light, which is the laser beam.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="ruby-laser">
+            <h1>Ruby Laser</h1>
+            <p>A ruby laser is a type of solid-state laser that uses a synthetic ruby crystal as the active medium. The
+                active laser
+                medium is a synthetic ruby rod, which is typically a few centimeters long and a few millimeters in
+                diameter.</p>
+
+            <h2>Construction</h2>
+            <p>The ruby laser consists of three main parts: the ruby rod, the pumping source ( flash lamp), and the
+                optical resonator.
+                The ruby
+                rod is made of a synthetic ruby crystal, which is a type of aluminum oxide (Al2O3) that has been doped
+                with chromium
+                ions (Cr3+).</p>
+            <figure>
+                <img src="ruby-laser.jpg">
+                <figcaption>Ruby laser</figcaption>
+            </figure>
+            <p>The Xenon flash lamp is used to excite the chromium ions in the ruby rod, causing them to emit light.</p>
+            <p>The optical resonator is used to create a standing wave inside the ruby rod. This is done by reflecting
+                the light
+                from the ruby rod back and forth between two mirrors, one of which is partially reflective. The
+                partially reflective
+                mirror allows some of the light to pass through and escape the resonator, creating the laser beam.</p>
+            <h2>Working</h2>
+            <p>When the flash lamp is activated, it pumps energy into the ruby rod, exciting the chromium ions. The
+                energy from the
+                flash lamp causes the atoms jump to a higher energy levels E3 and E4. </p>
+            <figure>
+                <img src="ruby-energy.jpg">
+                <figcaption>Energy level diagram of ruby laser</figcaption>
+            </figure>
+            <p>The excited atoms from energy levels E4 and E3 falls to a metastable by a non-radiative transition. From
+                this metastable state, atoms jumps to ground state by stimulated emission. This stimulated emission
+                results in laser emission of wavelength 694 nm.</p>
+            <h5>Applications</h5>
+            <p>The ruby laser can be used for a variety of applications, including materials processing, scientific
+                research, and
+                medical treatment. Due to its high power and the ability to produce pulses of light, it is often used
+                for cutting
+                and welding materials, as well as for medical treatments such as skin resurfacing.</p>
+        </section>
+        <section id="he-ne-laser">
+            <h1>He-Ne Laser</h1>
+            <p>A He-Ne laser (short for Helium-Neon laser) is a type of gas laser that uses a mixture of helium and neon
+                gases
+                as the active medium. The He-Ne laser is one of the most common types of gas laser, known for its
+                stability and
+                ease of use.</p>
+            <h3>Construction</h3>
+            <p>The He-Ne laser consists of three main parts: the gas discharge tube, the pumping source, and the optical
+                resonator.</p>
+            <figure><img src="he-ne-laser.jpg">
+                <figcaption>He-Ne Laser</figcaption>
+            </figure> The gas discharge tube contains a mixture of helium and neon gases at low pressures, typically
+            around
+            a few torrs. The tube is sealed and contains two electrodes at either end.
+            <p>The pumping source is used to excite the atoms in the gas mixture, causing them to emit light. This is
+                typically
+                done using a high voltage electrical discharge, which is passed through the gas discharge tube between
+                the two
+                electrodes. The electrical discharge causes the atoms in the gas mixture to become excited and emit
+                light.</p>
+            <p>The optical resonator is used to create a standing wave inside the gas discharge tube. This is done by
+                reflecting
+                the light from the tube back and forth between two mirrors, one of which is partially reflective. The
+                partially
+                reflective mirror allows some of the light to pass through and escape the resonator, creating the laser
+                beam.
+            </p>
+            <h3>Working</h3>
+            When the electrical discharge is applied to the gas discharge tube, it excites Helium the atoms in the gas
+            mixture. The energy
+            from the electrical discharge causes the helium atoms to jump to higher energy levels F2 and F3 .
+            <figure>
+                <img src="helium-neon-laser-working.png">
+                <figcaption>Energy level digram of He-Ne laser.</figcaption>
+            </figure>
+            <p>Since the energy levels of the He, F1 & F2 states are parallel ( or have same energy) to metastable
+                states of neon ( which are E6 & E4), collisions between these excited helium atoms and ground-state neon
+                atoms
+                results in a selective and efficient transfer of excitation energy from the helium to neon. That means
+                due to collision with He atoms, Ne atoms will jump to higher energy levels E6 & E4. </p>
+            <p>The stimulated emission from E6 to E3 results in laser emission of 633 nm which is red.</p>
+            <p> Other laser emission include IR emission due to transition from E6 to E5 ( 3.39 micrometer) and E4 to E3
+                with a wavelength of 1.15 micrometer.</p>
+            <h4>Applications</h4>
+            <ul>
+                <li>Alignment</li>
+                <li>Interferometry</li>
+                <li>Spectroscopy</li>
+                <li>Metrology</li>
+                <li>Medical treatment (photocoagulation)</li>
+            </ul>
+            <h4>Advantages</h4>
+            <ul>
+                <li>Stable and long lifetime</li>
+                <li>Easy to use and low maintenance</li>
+                <li>Inexpensive</li>
+                <li>Highly-coherent beam of light at a specific wavelength</li>
+                <li>Safe to use and no harmful radiation produced</li>
+            </ul>
+            <section id="semiconductor-laser">
+                <h2>Semiconductor Laser</h2>
+                <p>A semiconductor laser, also known as a diode laser, is a type of laser that uses a semiconductor as
+                    the active
+                    medium. It is a relatively small, low-powered laser that is widely used in a variety of applications
+                    due to its
+                    compact size and low cost.</p>
+                <h3>Construction</h3>
+                <p>The semiconductor laser consists of two main parts: the active region and the p-n junction. The
+                    active region is
+                    made up of a thin layer of semiconductor material, typically made of gallium arsenide (GaAs) or
+                    indium phosphide
+                    (InP). This material is doped with impurities to create a p-type semiconductor on one side and an
+                    n-type
+                    semiconductor on the other side.</p>
+                <figure><img src="semiconductor-laser.jpg">
+                    <figcaption>Semiconductor Laser</figcaption>
+                </figure>
+                <p>The p-n junction is created where the p-type and n-type semiconductors meet. When a forward-bias
+                    voltage is
+                    applied to the p-n junction, it creates a depletion region that acts as a waveguide for the laser
+                    light. The
+                    active region is also surrounded by two mirrors, one of which is partially reflective, which forms
+                    the optical
+                    resonator.</p>
+
+                <h3>Working</h3>
+                <p>The p-n junction of a semiconductor laser acts as a light-emitting diode. When a forward-bias voltage
+                    is applied
+                    to the p-n junction, it creates a depletion region that acts as a waveguide for the laser light.
+                    Electrons in
+                    the n-type semiconductor recombine with holes in the p-type semiconductor, releasing energy in the
+                    form of
+                    photons. These photons are then amplified and made coherent by the optical resonator, resulting in a
+                    laser beam.
+                </p>
+                <figure><img src="semiconductor-laser-energy.png">
+                    <figcaption>Semiconductor Laser (Energy levels)</figcaption>
+                </figure>
+                <p>The semiconductor laser can be operated in both continuous wave and pulsed mode, depending on the
+                    application.
+                    The wavelength of the laser light emitted by a semiconductor laser is determined by the properties
+                    of the
+                    semiconductor material used in the active region.</p>
+                <h4>Applications</h4>
+                <ul>
+                    <li>Optical storage devices (CD, DVD, Blu-ray)</li>
+                    <li>Telecommunications</li>
+                    <li>Barcode scanning</li>
+                    <li>Laser printing and engraving</li>
+                    <li>Medical treatment (laser therapy)</li>
+                </ul>
+                <h4>Advantages</h4>
+                <ul>
+                    <li>Compact size and low cost</li>
+                    <li>High efficiency and low power consumption</li>
+                    <li>Wide range of wavelength options</li>
+                    <li>High reliability and long lifetime</li>
+                    <li>Easy to control and modulate the output</li>
+                </ul>
+            </section>
+
+
+
+            <script src="pht110.js"></script>
+    </div>
+
 </body>
 
 </html>

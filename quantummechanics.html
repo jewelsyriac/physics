@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHT110</title>
+    <title>Quantum Mechanics</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,10 +172,207 @@
         </ul>
         </span>
     </nav>
-    <section class="main-content">
-        <h1>Quantum mechanics</h1>
-        <script src="pht110.js"></script>
-    </section>
+    <nav class="right-side-navbar">
+        <ul>
+            <li><a href="#quantum-mechanics">Quantum Mechanics</a></li>
+            <li><a href="#matter-waves">Matter Waves & De Broglie Wave Hypothesis</a></li>
+            <li><a href="#uncertainty-principle">Uncertainty Principle and Applications</a></li>
+            <li><a href="#wavefunction">Wavefunction and Physical Significance</a></li>
+            <li><a href="#schrodinger-equation">Schrödinger Equation</a></li>
+            <li><a href="#particle-in-square-well-potential">Particle in a Square Well Potential</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <section id="quantum-mechanics">
+            <h2>Quantum Mechanics</h2>
+            <p>Quantum mechanics is a branch of physics that describes the behavior of matter and energy at the atomic
+                and
+                subatomic level. It is necessary to understand the properties of these tiny particles that make up
+                everything in the universe.</p>
+        </section>
+        <section id="matter-waves">
+            <h2>Matter Waves & De Broglie Wave Hypothesis</h2>
+            <p>In 1924, Louis de Broglie proposed that all matter has wave-like properties, just like light. He called
+                these
+                matter waves. The wavelength of a matter wave is inversely proportional to the momentum of the particle.
+                This is known as the de Broglie wave hypothesis.</p>
+        </section>
+        <section id="uncertainty-principle">
+            <h2>Uncertainty Principle and Applications</h2>
+            <p>One of the most famous principles of quantum mechanics is the uncertainty principle, proposed by
+                Heisenberg.
+                It states that the more precisely the position of a particle is known, the less precisely its momentum
+                can
+                be known, and vice versa. This principle has many important applications in fields such as quantum
+                computing
+                and cryptography.</p>
+        </section>
+        <section id="wavefunction">
+            <h2>Wavefunction and Physical Significance</h2>
+            <p>In quantum mechanics, the wavefunction is a mathematical function that describes the state of a particle.
+                The
+                physical significance of the wavefunction is that the square of its absolute value gives the probability
+                density of finding a particle in a particular location. The wavefunction is central to many quantum
+                mechanical concepts and equations, such as the Schrödinger equation.</p>
+        </section>
+        <section id="schrodinger-equation">
+            <h2>Schrödinger Equation</h2>
+            <h3>Time-independent Schrödinger Equation</h3>
+            <p>The Schrödinger equation is a fundamental equation in quantum mechanics that describes how the
+                wavefunction
+                of a particle evolves over time. It is a partial differential equation that relates the energy of a
+                particle
+                to its wavefunction. </p>
+            <section> Then, a free particle moving along x-axis with a definite momentum is described by the plane
+                wave ,
+
+                $$
+                \Psi(x, t)=A e^{i(k x-\omega t)}
+                -->eqn(1)$$
+
+                <p>where k is the wave number and \( \omega \) is the angular frequency of wave.</p>
+
+
+
+                <p>From de-broglie wave hypothesis,</p>
+
+                $$
+                \lambda=\frac{h}{p}
+                $$
+                <p>Rearranging above equation,</p>
+
+                $$
+                p=\frac{h}{\lambda} = \frac{h}{ 2 \pi}\times \frac{2 \pi}{\lambda} = \hbar k
+                $$
+                or ,
+                $$\boxed{ k = \frac{p}{\hbar }-->eqn(2)}$$
+                From Einstein's formula for photon energy,
+
+                $$
+                E=h \nu=\frac{h}{2 \pi} \times 2 \pi \nu =\hbar \omega
+                $$
+                or
+                $$\boxed{ \omega = \frac{E}{\hbar} -->eqn(3)}$$
+
+
+                Substituting these values in eqn(1), we get
+
+                $$
+                \Psi(x, t)=A \exp \left[\frac{i}{\hbar}(p x-E t)\right] -->eqn(4)
+                $$
+
+                Differentiating eqn(4) with respect to x, we get
+
+                $$
+                \frac{\partial \Psi}{\partial x}=\left(\frac{i p}{\hbar}\right) A \exp \left[\frac{i}{\hbar}(p x-E
+                t)\right]=\frac{i
+                p}{\hbar} \Psi
+                $$
+
+
+
+                Again differentiating w.r.t x, we get
+
+                $$
+                \frac{\partial^{2} \Psi}{\partial x^{2}}=\left(\frac{i p}{\hbar}\right)^{2} A \exp
+                \left[\frac{i}{\hbar}(p x-E
+                t)\right]=-\frac{p^{2}}{\hbar^{2}} \Psi
+                $$
+
+                That gives \( p^2 \Psi \) as,
+                $$\boxed{ p^2 \Psi = -{\hbar^{2}}\;\frac{\partial^{2} \Psi}{\partial x^{2}}}--eqn(5)$$
+
+                Differentiation of eqn(4) with respect to t gives
+
+                $$
+                \frac{\partial \Psi}{\partial t}=\left(-\frac{i E}{\hbar}\right) A \exp \left[\frac{i}{\hbar}(p x-E
+                t)\right]=-\frac{i
+                E}{\hbar} \Psi
+                $$
+
+                That gives \( E \Psi \) as ,
+
+                $$
+                \boxed{E \Psi= i \hbar \frac{\partial \Psi}{\partial t}-->eqn(6)
+                }$$
+
+                Energy of a particle is given by,
+
+                $$
+                E=\frac{p^{2}}{2 m}
+                $$
+
+                Multiplying equation with \( \Psi \),
+                $$
+                E \Psi=\frac{p^{2}\;\Psi}{2 m}
+                $$
+                Substituting expression for \( E \Psi \) and \( p^2 \Psi \),
+                $$
+                i \hbar \frac{\partial \Psi}{\partial t}=-\frac{\hbar^{2}}{2 m} \frac{\partial^{2} \Psi}{\partial x^{2}}
+                $$
+                or
+                $$
+                \boxed{-\frac{\hbar^{2}}{2 m} \frac{\partial^{2} \Psi}{\partial x^{2}}=i \hbar \frac{\partial
+                \Psi}{\partial t}}
+                -->eqn(6)$$
+
+                Equation (6) is the one dimensional time dependent Schrödinger equation for a free particle. In three
+                dimensions, the
+                equation becomes
+
+                $$
+
+                -\frac{\hbar^{2}}{2 m}\left(\frac{\partial^{2} \Psi}{\partial
+                x^{2}}+\frac{\partial^{2} \Psi}{\partial y^{2}}+\frac{\partial^{2} \Psi}{\partial
+                z^{2}}\right)=i \hbar \frac{\partial \Psi}{\partial t}$$
+                $$-\frac{\hbar^{2}}{2 m}\;\nabla^{2} \Psi=i \hbar \frac{\partial \Psi}{\partial t}$$
+                where,\( \nabla^{2} \) is called laplacian operator.
+                $$\nabla^{2}=\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial
+                y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+
+                $$
+                If particle is moving under a potential V(r,t),
+                $$ -\frac{\hbar^{2}}{2 m}\;\nabla^{2} \Psi + V\Psi=i \hbar \frac{\partial \Psi}{\partial t} $$
+                or
+                $$ (-\frac{\hbar^{2}}{2 m}\;\nabla^{2} + V)\;\Psi=i \hbar \frac{\partial \Psi}{\partial t} $$
+
+                where \( (-\frac{\hbar^{2}}{2 m}\;\nabla^{2} + V) \) is called hamiltonian operator H,
+                So schrodinger's time dependent equation can be represented as,
+                $$ \boxed{H \Psi = E \Psi}$$
+
+                <h3>Time-independent Schrödinger Equation</h3>
+                Total energy of a particle moving in any potential is given by,
+                $$E = \frac{p^2}{2m} + V $$
+                rearranging equation,
+                $$ E-V = \frac{p^2}{2m}$$
+                or,
+                $$\frac{p^2}{2m} = E-V$$
+                Multiplying with \( \Psi \) on both sides,
+                $$\frac{p^2}{2m}\;\Psi = (E-V)\Psi$$
+                $$\frac{p^2 \;\Psi}{2m}= (E-V)\Psi$$
+                Substituting value of \(p^2 \;\Psi \) from eqn(5),
+                $$ -\frac{\hbar^{2}}{2 m} \frac{\partial^{2} \Psi}{\partial x^{2}} = (E-V)\Psi $$
+                $$ \frac{\hbar^{2}}{2 m} \frac{\partial^{2} \Psi}{\partial x^{2}} + (E-V)\Psi = 0 $$
+                Multiplying with \( \frac{2m}{\hbar^2} \),
+                $$\boxed{ \frac{\partial^{2} \Psi}{\partial x^{2}} + \frac{2m}{\hbar^2}\;(E-V)\Psi = 0} $$
+                This is called Schrodinger's time independent equation.
+
+
+            </section>
+        </section>
+        <section id="particle-in-square-well-potential">
+            <h2>Particle in a Square Well Potential</h2>
+            <p>A particle in a square well potential is a common problem used to illustrate the principles of quantum
+                mechanics. In this scenario, a particle is confined to a finite region, known as the well, by a
+                potential
+                energy that is zero inside the well and infinite outside it. The solutions of the Schrödinger equation
+                for
+                this problem describe the allowed energy levels and wavefunctions of the particle, including quantum
+                mechanical tunnelling.</p>
+        </section>
+    </div>
+    <script src="pht110.js"></script>
+
 </body>
 
 </html>

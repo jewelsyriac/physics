@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PHT110</title>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@300&display=swap"
@@ -172,10 +172,171 @@
         </ul>
         </span>
     </nav>
-    <section class="main-content">
-        <h1>Interference</h1>
-        <script src="pht110.js"></script>
-    </section>
+    <nav class="right-side-navbar">
+        <ul>
+            <li><a href="#interference">Interference of Light</a></li>
+            <li><a href="#huygens">Huygens Wave Theory</a></li>
+            <li><a href="#superposition">Superposition Principle</a></li>
+            <li><a href="#thin-film">Thin Film Interference</a></li>
+            <li><a href="#air-wedge">Air Wedge</a></li>
+            <li><a href="#newtons-rings">Newton's Rings</a></li>
+            <li><a href="#anti-reflection">Anti-Reflection Coating</a></li>
+            <li><a href="#interference-filters">Interference Filters</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="main-content">
+        <section id="interference">
+            <h2>Interference of Light</h2>
+            <p>Interference of light refers to the phenomenon where two or more light waves interact with each
+                other,
+                resulting in a new wave pattern.</p>
+            <h3>Huygens' Wave Theory</h3>
+            <p>Huygens' wave theory states that every point on a wavefront can be considered as a secondary wave
+                source,
+                and
+                the new wavefront is the envelope of all these secondary wavelets.</p>
+
+            <h3>Superposition Principle</h3>
+            <p>The superposition principle states that when two or more waves meet at a point, the displacement at
+                that
+                point is the vector sum of the displacements of the individual waves.</p>
+            <p>The mathematical equation representing the superposition principle is given by:</p>
+            $$Y = y_1 + y_2$$
+            <p>where y1 & y2 are displacement of individual waves and Y is the displacement of resultant wave.</p>
+            <h3>Thin Film Interference</h3>
+            <p>Thin film interference occurs when light reflects off the top and bottom surfaces of a thin film,
+                resulting
+                in constructive and destructive interference.</p>
+            <p>The mathematical equation representing the condition for destructive interference in thin film
+                interference ( or cosine law)
+                is given by:</p>
+            $$2 \mu t \;cos\;r=n \lambda$$
+            <p>where \( \mu \) is the refractive index of thin film, t is the thickness, r is the angle of refraction
+                and \( \lambda \) is the wavelength of light used.</p>
+            <section id="air-wedge">
+                <h2>Air Wedge</h2>
+                <p>An air wedge is a thin layer of air between two transparent surfaces, which can cause
+                    interference
+                    patterns due
+                    to the difference in refractive index. When light passes through an air wedge, it will reflect
+                    off
+                    the top and
+                    bottom surfaces, creating constructive and destructive interference patterns. The bandwidth of
+                    interference patterm formed by an air wedge can be determined by the equation:</p>
+                $$\beta = \frac{\lambda}{2 \theta}$$
+                <p>Where θ is the wedge angle and λ is the wavelength of
+                    the
+                    light used.</p>
+                <p>One of the most common uses of air wedge is to measure the diameter or thickness of a thin wire.
+                    By
+                    measuring the
+                    angular position of the maxima and minima, the thickness of the air gap between the wire and the
+                    transparent
+                    surface can be determined. This thickness can then be used to calculate the diameter or
+                    thickness of
+                    the wire.
+                    equation you can use to obtain the thickness of a thin wire using an air wedge:
+
+                <p>$$d = \frac{l \lambda}{2 \beta}$$</p>
+
+                <p>Where:</p>
+
+                <p>d is the thickness of the wire</p>
+
+                <p>λ is the wavelength of the light used</p>
+                <p>\( \beta \) is the bandwidth of interference pattern</p>
+                </p>
+                <p>Air wedges can also be used to check the optical planeness of a surface. By measuring the angular
+                    position of the
+                    maxima and minima, it is possible to determine the uniformity of the air gap between the surface
+                    and
+                    the
+                    transparent surface. Any variations in the thickness of the air gap will result in variations in
+                    the
+                    angular
+                    position of the maxima and minima, indicating that the surface is not optically plane.</p>
+            </section>
+
+            <section id="newtons-rings">
+                <h2>Newton's Rings</h2>
+                <p>Newton's rings are a pattern of concentric circles formed by the interference of light reflecting
+                    off
+                    the front
+                    and back surfaces of a spherical lens. The phenomenon was first observed and described by Sir
+                    Isaac
+                    Newton in
+                    his book "Opticks" in 1704. </p>
+                <p>When a spherical lens is placed on a flat surface and illuminated with monochromatic light, the
+                    light
+                    reflecting
+                    off the lens will interfere with the light reflecting off the flat surface. This interference
+                    will
+                    result in a
+                    pattern of bright and dark rings, with the center of the pattern being the point of contact
+                    between
+                    the lens and
+                    the flat surface. The radius of the nth ring is given by the equation:</p>
+                $$r_n = \sqrt{Rn \lambda}$$
+                <p>Where R is the radius of curvature of the lens and λ is the wavelength of the light used. The
+                    dark
+                    rings occur
+                    when the light waves reflecting off the front and back surfaces of the lens are out of phase,
+                    resulting in
+                    destructive interference. The bright rings occur when the light waves are in phase, resulting in
+                    constructive
+                    interference. The thickness of the air gap between the lens and the flat surface can be
+                    determined
+                    by measuring
+                    the radius of the first dark ring.</p>
+                <p>Newton's rings are used in a variety of applications, measuring wavelength of light and refractive
+                    index of a liquid.</p>
+                <h5>Calculation of wavelength</h5>
+                <p>The wavelength of light used in a newton's rings experiment can be calculated using equation,</p>
+                $$ \lambda =\frac{D_{n+k}^2 - D_n^2}{4 R k} $$
+                <p> where \( D_{n+k} \) is the diameter of (n+k) th ring and \( D_{n} \) is diameter of nth dark ring. R
+                    is the radius of curvature of lens used in this experiment.</p>
+            </section>
+
+        </section>
+        <section id="anti-reflection">
+            <h2>Anti-Reflection Coating</h2>
+            <p>Anti-reflection coatings are thin films applied to surfaces to reduce the amount of reflection that
+                occurs. They
+                work by introducing a thin layer of material with a lower refractive index than the surface it is
+                applied to.
+                This creates a difference in the phase of the light waves reflecting off the surface and the
+                coating,
+                which
+                results in constructive and destructive interference, reducing the overall amount of reflected
+                light.
+            </p>
+            <p>Anti-reflection coatings are commonly used on lenses, mirrors, and other optical surfaces to improve
+                transmission
+                and reduce glare.</p>
+        </section>
+
+        <section id="interference-filters">
+            <h2>Interference Filters</h2>
+            <p>Interference filters are optical devices that use the principle of constructive and destructive
+                interference to
+                selectively pass certain wavelengths of light while blocking others. They consist of multiple thin
+                film
+                layers
+                with varying refractive indices, which cause the different wavelengths of light to experience
+                different
+                amounts
+                of phase shift, resulting in selective transmission or reflection. </p>
+            <p>Interference filters are used in a variety of applications, including spectroscopy, imaging, and
+                color
+                separation.</p>
+        </section>
+
+    </div>
+    <script src="pht110.js"></script>
 </body>
 
 </html>
