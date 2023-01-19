@@ -40,10 +40,11 @@ body {
 .side-navbar {
     width: 250px;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: #e2deee;
     position: fixed;
     overflow-y: auto;
     top: 50px;
+    border-right: 0.5px solid rgb(199, 197, 197);
 }
 
 .side-navbar ul {
@@ -75,10 +76,11 @@ body {
     right: 0;
     width: 300px;
     height: 100%;
-    background-color: #f1f1f1;
+    background-color: #e2deee;
     position: fixed;
     overflow-y: auto;
     top: 50px;
+    border-left: 0.5px solid rgb(199, 197, 197);
 }
 
 .right-side-navbar ul {
@@ -93,7 +95,8 @@ body {
 
 .right-side-navbar a {
     display: block;
-    color: #000;
+    color: rgb(0, 0, 0);
+
     text-decoration: none;
     padding: 10px;
     font-size: 16px;
@@ -159,18 +162,19 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 5px;
-    height: 500px;
+    height: 440px;
 }
 
 .featured-course:hover {
     box-shadow: 0 8px 16px 0 rgba(233, 207, 207, 0.2);
 }
 
-.featured-course img {
+#mainimage img {
     width: 100%;
-    height: 40%;
+    height: 50%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+
 }
 
 .featured-course h3 {
@@ -282,7 +286,7 @@ body {
     .featured-course {
         width: 100%;
 
-        height: 30em;
+        height: 425px;
 
         margin: 0 0 10px;
     }
@@ -370,4 +374,19 @@ body {
     width: 100%;
     height: fit-content;
     max-height: 600px;
+}
+
+.table-border {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+th {
+    padding: 10px;
 }
