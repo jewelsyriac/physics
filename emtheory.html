@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHT110</title>
+    <title>EM theory</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -302,39 +303,312 @@
     </nav>
     <nav class="right-side-navbar">
         <ul>
-            <a href="https://drive.google.com/file/d/1lIVdZMM4-Yf38R5mXCLYIKzNBngslWNX/view?usp=share_link">Model
-                Question Paper</a>
-            <a href="https://drive.google.com/file/d/1ooxQ2HFQaz3ZotVUIhTJJ3mTrEeIHfbC/view?usp=share_link">July
-                2021</a>
-            <a href="https://drive.google.com/file/d/1lTyqKhwTaCuaWRfPQpSAC3b3qoT64pfO/view?usp=share_link">June
-                2021</a>
-            <a href="https://drive.google.com/file/d/189-wSTY2tyNZSPD1nCxHhepX_rpESxSi/view?usp=share_link">January
-                2021</a>
-            <a href="https://drive.google.com/file/d/1f8QHs9hihLkHk3YCNfVyGeoqpqcdWWik/view?usp=share_link">December
-                2019</a>
-            <a href="https://drive.google.com/file/d/1mvKzw4zjQdQzcDzDhwLdOQAK9_M8APPk/view?usp=share_link">June
-                2022</a>
-            <a href="https://drive.google.com/file/d/1aKzWc_SbQRb1Iox7isp8-XKOYE7G2yD4/view?usp=share_link">December
-                2020</a>
-            <a href="https://drive.google.com/file/d/1lZydIVHr2ClEdYU0enGDh7hUDEjMLFyp/view?usp=share_link">June
-                2022</a>
-            <a href="https://drive.google.com/file/d/1lZydIVHr2ClEdYU0enGDh7hUDEjMLFyp/view?usp=share_link">December
-                2021</a>
-
-
-
-
-
+            <li><a href="emtheory.html#basics">Basics of vector calculus</a></li>
+            <li><a href="emtheory.html#integrals">Line, surface and volume integrals</a></li>
+            <li><a href="emtheory.html#divergencetheorem">Gauss's divergence theorem</a></li>
+            <li><a href="emtheory.html#stokestheorem">Stoke's theorem</a></li>
+            <li><a href="emtheory.html#eqnofcontinuity">Equation of continuity</a></li>
+            <li><a href="emtheory.html#maxwelleqn1">Maxwell's 1st equation</a></li>
+            <li><a href="emtheory.html#maxwelleqn2">Maxwell's 2nd equation</a></li>
+            <li><a href="emtheory.html#maxwelleqn3">Maxwell's 3rd equation</a></li>
+            <li><a href="emtheory.html#maxwelleqn4">Maxwell's 4rth equation</a></li>
+            <li><a href="emtheory.html#displacementcurrent">Displacement current</a></li>
+            <li><a href="emtheory.html#emwaves">Electromagnetic waves</a></li>
+            <li><a href="emtheory.html#poyntingvector">Poynting's vector</a></li>
+            <li><a href="emtheory.html#problems">Numerical problems</a></li>
 
 
         </ul>
     </nav>
     <div class="main-content">
-        <h1>Previous Question Papers</h1>
+        <h1>EM theory</h1>
+        <section id="basics">
+            <h2>Basics of Vector Calculus</h2>
+            <p>Vector calculus is a branch of mathematics that deals with the differentiation and integration of vector
+                fields.
+                It is used to describe the behavior of physical quantities that have both a magnitude and a direction,
+                such as
+                velocity and acceleration.</p>
+            <p>Vector calculus has many applications in physics and engineering, including in electromagnetic theory. In
+                this
+                section, we will cover the basics of vector calculus, including vector operations, gradient, divergence,
+                and
+                curl.</p>
+        </section>
+        <section id="integrals">
+            <h2>Line, surface and volume integrals</h2>
+            <p>In mathematics, an integral assigns numbers to functions in a way that can describe displacement, area,
+                volume,
+                and other concepts that arise by combining infinitesimal data.</p>
+            <p>Here, we will cover the basics of line, surface and volume integrals and their applications in
+                electromagnetic
+                theory.</p>
+        </section>
+        <section id="divergencetheorem">
+            <h2>Gauss's Divergence Theorem</h2>
+            <p>Gauss's divergence theorem, also known as Gauss's flux theorem, states that the flux of a vector field
+                through a
+                closed surface is equal to the divergence of the vector field within the volume enclosed by the surface.
+            </p>
+            \begin{align}
+            \iiint_V \nabla \cdot \mathbf{F} \, dV &= \iint_{S} \mathbf{F} \cdot \mathbf{n} \, dS
+            \end{align}
+            This theorem states that the divergence of a vector field \(\mathbf{F} \) integrated over a closed volume V
+            is equal to the
+            flux of the vector field through the closed surface S bounding the volume.
+            <p>This theorem is important in the study of electromagnetic theory, as it relates the distribution of
+                electric and
+                magnetic fields to their sources and sinks. In this section, we will discuss the mathematical
+                formulation of the
+                theorem, its proof, and its applications in electromagnetic theory.</p>
+        </section>
+        <section id="stokestheorem">
+            <h2>Stokes' Theorem</h2>
+            <p>Stokes' theorem is a fundamental result in vector calculus that relates the circulation of a vector field
+                around
+                a closed loop to the flux of the curl of the vector field through any surface enclosed by the loop.</p>
+            \begin{align}
+            \oint_{C} \mathbf{F} \cdot d\mathbf{r} &= \iint_{S} \nabla \times \mathbf{F} \cdot \mathbf{n} \, dS
+            \end{align}
+            This theorem relates the circulation of a vector field \(\mathbf{F}\) around a closed loop C to the flux of
+            the curl of
+            the vector field through any surface S enclosed by the loop. In this equation, the integral on the left side
+            is taken
+            over the closed loop, and the integral on the right side is taken over the surface enclosed by the loop.
+
+            In this equation, \(\mathbf{F} \) is the vector field, C is the closed loop and \(\mathbf{n}\) is the unit
+            normal vector to
+            the surface.
+            <p>This theorem is important in the study of electromagnetic theory, as it provides a relationship between
+                the
+                circulation of the electric and magnetic fields and the sources and sinks of the fields. In this
+                section, we
+                will discuss the mathematical formulation of the theorem, its proof, and its applications in
+                electromagnetic
+                theory.</p>
+
+        </section>
+        <section id="eqnofcontinuity">
+            <h2>Equation of Continuity</h2>
+            <p>The equation of continuity is a fundamental equation in physics that states that the flow of electric
+                charge in a
+                closed system is conserved. This means that the rate of change of charge within a volume is equal to the
+                net
+                flow of charge across the surface of the volume.</p>
+            \begin{align}
+            \frac{\partial \rho}{\partial t} + \nabla \cdot \mathbf{J} &= 0
+            \end{align}
+            In this equation \(\rho\)is the charge density, \(\mathbf{J}\) is the current density and t is the time.
+            <p>In electromagnetic theory, the equation of continuity is used to describe the behavior of electric charge
+                in
+                various physical systems. In this section, we will discuss the mathematical formulation of the equation,
+                its
+                derivation, and its applications in electromagnetic theory.</p>
+        </section>
+        <section id="maxwelleqn1">
+            <h2>Maxwell's Equations</h2>
+            <p>Maxwell's equations are a set of four partial differential equations that describe the behavior of
+                electric and
+                magnetic fields. They are considered as the foundation of the classical theory of electromagnetic
+                fields. They
+                express the fundamental laws of electricity and magnetism in mathematical form.</p>
+            <p>In this section, we will discuss the four Maxwell's equations: Gauss's law for electric fields, Gauss's
+                law for
+                magnetic fields, Faraday's law of induction, and Ampere's law with Maxwell's correction. We will also
+                discuss
+                the mathematical formulation of the equations and their applications in electromagnetic theory.</p>
+            <h3>Maxwell's first equation</h3>
+            \begin{align}
+            \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0}
+            \end{align}
+            <p>Where
+            <ul>
+                <li>\(\nabla \cdot \mathbf{E} \) : divergence of the electric field.</li>
+                <li>\(\rho \) : charge density.</li>
+                <li>\(\epsilon_0 \) : permittivity of free space.</li>
+            </ul>
+            This equation states that the divergence of the electric field is equal to the charge density divided by the
+            permittivity of free space, it is a statement about the distribution of electric charge in a region.</p>
+        </section>
+        <section id="maxwelleqn2">
+            <h3>Maxwell's 2nd equation</h3>
+            \begin{align}
+            \nabla \cdot \mathbf{B} &= 0
+            \end{align}
+            \( \nabla \cdot \mathbf{B} \) : divergence of the magnetic field
+            This equation states that the divergence of the magnetic field is zero, which means that the magnetic
+            monopoles do not
+            exist.
+        </section>
+        <section id="maxwelleqn3">
+            <h3>Maxwell's 3rd equation</h3>
+            \begin{align}
+            \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}
+            \end{align}
+            <p> \( \nabla \times \mathbf{E} \) : curl of the electric field. </p>
+            <p> \( \frac{\partial \mathbf{B}}{\partial t} \) : time derivative of magnetic field.</p>
+            This equation states that the curl of the electric field is equal to the negative time rate of change of the
+            magnetic
+            field. it describes the way in which a changing magnetic field induces an electric field.
+        </section>
+        <section id="maxwelleqn4">
+            <h3>Maxwell's 4rth equation</h3>
+            \begin{align}
+            \nabla \times \mathbf{B} &= \mu_0 \left(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}}{\partial
+            t}\right)
+            \end{align}
+            <p> \( \nabla \times \mathbf{B} \) : curl of the magnetic field</p>
+            <p> \( \mu_0 \) : permeability of free space</p>
+            <p> \( \mathbf{J} \) : current density</p>
+            <p> \( \frac{\partial \mathbf{E}}{\partial t} \) : time derivative of electric field</p>
+            This equation states that the curl of the magnetic field is equal to the permeability of free space times
+            the current
+            density plus the permittivity of free space times the time rate of change of the electric field. It
+            describes the
+            relationship between the current density and the magnetic field.
+        </section>
+        <section id="displacementcurrent">
+            <h2>Displacement Current</h2>
+            <p>
+                Displacement current is a term used in electromagnetism to describe the flow of electric charge in a
+                medium that
+                is caused by a change in the electric field. It was first introduced by James Clerk Maxwell in his
+                equations of
+                electromagnetism, which describe the behavior of electric and magnetic fields.
+            </p>
+            <p>
+                Displacement current is important because it helps to explain the behavior of electromagnetic waves,
+                such as
+                radio waves and light. These waves are created by the oscillation of electric and magnetic fields, and
+                displacement current helps to account for the energy transfer that occurs during this oscillation.
+            </p>
+            <p>
+                Displacement current can be thought of as a "virtual" current, as it does not involve the flow of actual
+                electric charges. Instead, it is caused by changes in the distribution of electric charges in a medium.
+                For
+                example, in a capacitor, the displacement current is caused by the movement of charge between the plates
+                of the
+                capacitor, even though no actual charge is flowing through the circuit.
+            </p>
+            <h3>Differences between conduction current and displacement current</h3>
+            <table>
+                <tr>
+                    <th>Properties</th>
+                    <th>Displacement Current</th>
+                    <th>Conduction Current</th>
+                </tr>
+                <tr>
+                    <td>Definition</td>
+                    <td>Current caused by a change in the electric field</td>
+                    <td>Current caused by the flow of electric charge</td>
+                </tr>
+                <tr>
+                    <td>Type of Charge Flow</td>
+                    <td>Virtual</td>
+                    <td>Actual</td>
+                </tr>
+                <tr>
+                    <td>Examples</td>
+                    <td>In a capacitor, due to the movement of charges between plates</td>
+                    <td>In a wire, due to the flow of electrons</td>
+                </tr>
+                <tr>
+                    <td>Involves</td>
+                    <td>Electric field</td>
+                    <td>Electric charge</td>
+                </tr>
+                <tr>
+                    <td>Linked to</td>
+                    <td>Electromagnetic waves</td>
+                    <td>Ohm's Law</td>
+                </tr>
+                <tr>
+                    <td>Relation to time</td>
+                    <td>Related to rate of change of electric field</td>
+                    <td>Related to the flow of charges with time</td>
+                </tr>
+                <tr>
+                    <td>Effect on circuit</td>
+                    <td>Helps in the propagation of electromagnetic waves</td>
+                    <td>Helps in the transfer of energy in a circuit</td>
+                </tr>
+                <tr>
+                    <td>Effect on capacitors</td>
+                    <td>Allows charge to flow through a capacitor</td>
+                    <td>Not typically associated with capacitors</td>
+                </tr>
+            </table>
+
+        </section>
+        <section id="emwaves">
+            <h2>Electromagnetic Waves</h2>
+            <p>
+                Electromagnetic waves are a type of wave that is created by the oscillation of electric and magnetic
+                fields.
+                These waves are characterized by their ability to travel through a vacuum, as well as through various
+                types of
+                matter. They are also known for their ability to carry energy and momentum, and are responsible for
+                phenomena
+                such as light, radio, and X-rays.
+            </p>
+            <p>
+                Electromagnetic waves are created by the oscillation of electric and magnetic fields, which are
+                perpendicular to
+                each other and to the direction of wave propagation. The oscillation of the electric field creates a
+                varying
+                magnetic field, and vice versa. This causes the wave to propagate through space at the speed of light,
+                <i>c</i>.
+            </p>
+            <p>
+                The mathematical representation of electromagnetic waves is given by Maxwell's equations, which describe
+                the
+                behavior of electric and magnetic fields. One of the key equations is the wave equation:
+
+                $$\frac{\partial^2 E}{\partial t^2} = c^2 \nabla^2 E$$
+
+                where <i>E</i> is the electric field, <i>t</i> is time, <i>c</i> is the speed of light, and
+                <i>&nabla;<sup>2</sup>E</i> is the Laplacian of the electric field. This equation describes how the
+                electric
+                field oscillates over time, and how it propagates through space.
+            </p>
+            <p>
+                Electromagnetic waves come in a wide range of frequencies, from radio waves to gamma rays. Each
+                frequency
+                corresponds to a specific type of electromagnetic wave, and each has different properties and uses. For
+                example,
+                radio waves are used for communication, while X-rays are used in medicine and dentistry.
+            </p>
+            <p>
+                Electromagnetic waves also play a crucial role in modern technology, from the invention of the radio and
+                television to the development of the internet and smartphones. They are also used in many scientific
+                fields,
+                such as astronomy, chemistry, and biology.
+            </p>
+        </section>
+
+
+        <section id="poyntingvector">
+            <h2>Poynting vector</h2>
+            The Poynting vector, represented by the symbol \( \textbf{S} \) , is used to describe the flow of energy in
+            an electromagnetic
+            wave. It is defined as the product of the electric field strength, \( \textbf{E} \), and the magnetic field
+            strength,
+            \( \textbf{H} \), cross-multiplied:
+
+            $$ \textbf{S} = \textbf{E} \times \textbf{H} $$
+
+            The Poynting theorem states that the rate of energy flow through any surface is equal to the dot product of
+            the Poynting
+            vector and the surface area vector, \( \textbf{A} \) . Mathematically, it can be written as:
+
+            $$ \frac{dU}{dt} = \textbf{S} \cdot \textbf{A} $$
+
+            Where dU/dt is the rate of change of energy and it is equal to the energy flow.
+        </section>
+
+
+        <script src="pht110.js"></script>
     </div>
-
-    <script src="pht110.js"></script>
-
 </body>
 
 </html>
