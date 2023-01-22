@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHT110</title>
+    <title>Fibre optics</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,28 +36,8 @@
 
 
         <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Previous Questions</a>
-            <div class="dropdown-menu">
-                <a href="https://drive.google.com/file/d/1lIVdZMM4-Yf38R5mXCLYIKzNBngslWNX/view?usp=share_link">Model
-                    Question Paper</a>
-                <a href="https://drive.google.com/file/d/1ooxQ2HFQaz3ZotVUIhTJJ3mTrEeIHfbC/view?usp=share_link">July
-                    2021</a>
-                <a href="https://drive.google.com/file/d/1lTyqKhwTaCuaWRfPQpSAC3b3qoT64pfO/view?usp=share_link">June
-                    2021</a>
-                <a href="https://drive.google.com/file/d/189-wSTY2tyNZSPD1nCxHhepX_rpESxSi/view?usp=share_link">January
-                    2021</a>
-                <a href="https://drive.google.com/file/d/1f8QHs9hihLkHk3YCNfVyGeoqpqcdWWik/view?usp=share_link">December
-                    2019</a>
-                <a href="https://drive.google.com/file/d/1mvKzw4zjQdQzcDzDhwLdOQAK9_M8APPk/view?usp=share_link">June
-                    2022</a>
-                <a href="https://drive.google.com/file/d/1aKzWc_SbQRb1Iox7isp8-XKOYE7G2yD4/view?usp=share_link">December
-                    2020</a>
-                <a href="https://drive.google.com/file/d/1lZydIVHr2ClEdYU0enGDh7hUDEjMLFyp/view?usp=share_link">June
-                    2022</a>
-                <a href="https://drive.google.com/file/d/1lZydIVHr2ClEdYU0enGDh7hUDEjMLFyp/view?usp=share_link">December
-                    2021</a>
+            <a href="previous.html" class="dropdown-toggle">Previous Questions</a>
 
-            </div>
         </div>
         <div class="dropdown" id="hide"><a href="formulas.html" class="dropdown-toggle">Formulas</a></div>
         <div class="dropdown" id="hide"><a href="about.html" class="dropdown-toggle">About</a></div>
@@ -311,10 +292,127 @@
             <li><a href="fibreoptics.html#problems">Numerical problems</a></li>
         </ul>
     </nav>
-    <section class="main-content">
+    <div class="main-content">
         <h1>Fibre Optics</h1>
-        <script src="pht110.js"></script>
-    </section>
+
+        <section id="tir">
+            <h2>Total internal reflection</h2>
+            <p>Total internal reflection is a phenomenon where light is reflected back into a denser medium it came
+                from, when angle of incidence is greater than a limiting angle called critical angle..</p>
+            <p>The figure below illustrates total internal reflection when angle of incidence is greater than critical
+                angle.</p>
+            <figure>
+                <img src="tir.png">
+                <figcaption>Total internal reflection</figcaption>
+            </figure>
+        </section>
+
+        <!-- Optical fibre - Structure & light propagation -->
+        <section id="opticalfibre">
+            <h2>Optical fibre - Structure</h2>
+            <p>An optical fibre is contains inner cylindrical core with higher refractive index ( say n1 ). Surrounding
+                the core, there is a part called cladding with lower refractive index ( say n2 ).</p>
+            <figure><img src="structure.jpg">
+                <figcaption>Structure of optical fibre</figcaption>
+            </figure>
+            <p>There exists a sheath or protective covering enclosing core and cladding which ensures safety of fibre.
+                Light is transmitted
+                through
+                the fibre via total internal reflection.</p>
+        </section>
+        <section id="lightpropagation">
+            <h3>Propagation of light in fibre</h3>
+            <p>Light rays get propagated through fibre by multiple total internal reflections at core-cladding boundary.
+            </p>
+            <figure><img src="lightpropagation.png">
+                <figcaption>Light propagation through optical fibre</figcaption>
+            </figure>
+        </section>
+        <section id="acceptance-angle">
+            <h3>Acceptance angle</h3>
+            <p>The acceptance angle of an optical fiber is the maximum angle at which light can enter the fiber and
+                still be
+                efficiently guided along its length. The light rays with angle of incidence less than acceptance angle
+                only get propagated through fibre via total internal reflection.</p>
+            <figure>
+                <img src="acceptanceangle.jpg">
+                <figcaption>Acceptance angle and cone</figcaption>
+            </figure>
+            <h4>Acceptance Cone</h4>
+            <p>The acceptance cone is the cone-shaped region in which light can enter the fiber and be guided
+                efficiently. This is the three dimensional aspect of acceptance angle. Those light rays which falls
+                inside acceptance cone can only get propagated through fibre.</p>
+            <p>Think of it like a cone-shaped bucket that an optical fiber uses to gather light. The bigger the cone,
+                the more light it can collect.</p>
+        </section>
+        <section id="numericalaperture">
+            <h3>Numerical Aperture (NA)</h3>
+            <p>Numerical aperture (NA) is a measure of how much light an optical fiber can collect and transmit. It is
+                the sine function of acceptance angle.</p>
+            $$NA = sin\;\theta_a $$
+            where \( \theta_a \) is the acceptance angle.
+            <p>Numerical aperture can be also be defined in terms of refractive indices of core and cladding as,</p>
+            $$NA = \sqrt{n_1^2-n_2^2}$$
+            where \( n_1 \) is refractive index of core and \( n_2 \) is of cladding.
+            <h2>Derivation of expression for NA</h2>
+            $$NA = \sqrt{n_1^2-n_2^2}$$
+        </section>
+
+
+        <!-- Step-Index fibre -->
+        <section id="stepindex">
+            <h2>Step-Index fibre</h2>
+            <p>A step-index fibre is a type of optical fibre where the refractive index of the core is constant, and the
+                refractive index of the cladding is different.</p>
+            <p>This type of fibre has a lower numerical aperture and a lower bandwidth compared to graded-index fibres.
+            </p>
+        </section>
+
+        <!-- Graded-Index fibre -->
+        <section id="gradedindex">
+            <h2>Graded-Index fibre</h2>
+            <p>A graded-index fibre is a type of optical fibre where the refractive index of the core is not constant,
+                but varies in
+                a specific way.</p>
+            <p>This type of fibre has a higher numerical aperture and a higher bandwidth compared to step-index fibres.
+                This allows
+                for a larger acceptance angle and reduces modal dispersion, leading to improved signal transmission over
+                longer
+                distances.</p>
+        </section>
+
+
+        <!-- Fibre optic communication system -->
+        <section id="communication">
+            <h2>Fibre optic communication system</h2>
+            <p>A fibre optic communication system uses optical fibres to transmit information over long distances.</p>
+            <p>It is a highly efficient and reliable form of communication, with a wide range of applications including
+                telecommunications, internet connectivity, and medical imaging.</p>
+        </section>
+
+        <!-- Applications of optical fibres -->
+        <section id="applicationfibre">
+            <h2>Applications of optical fibres</h2>
+            <p>Optical fibres are used in a wide range of applications including telecommunications, internet
+                connectivity,
+                medical imaging, and industrial sensing.</p>
+            <p>They are also used in scientific research, such as in spectroscopy and interferometry.</p>
+        </section>
+
+        <!-- Numerical problems -->
+        <section id="problems">
+            <h2>Numerical problems</h2>
+            <p>This section provides some sample numerical problems related to fibre optics.</p>
+            <p>These problems may include calculations related to refractive index, numerical aperture, and light
+                transmission
+                through optical fibres.</p>
+        </section>
+
+
+
+
+    </div>
+    <script src="pht110.js"></script>
 </body>
 
 </html>
