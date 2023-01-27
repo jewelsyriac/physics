@@ -23,6 +23,7 @@
 
 
 
+
             <div class="dropdown"><a href="index.html" class="dropdown-toggle">Home</a></div>
 
             <div class="dropdown">
@@ -66,6 +67,7 @@
                     <ul class="subtopics">
                         <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a>
                         </li>
+                        <li><a href="waves.html#waveproperties">Properties of wave</a></li>
                         <li><a href="waves.html#1dwave">One dimensional wave equation</a></li>
                         <li><a href="waves.html#3dwave">Three dimensional wave equation</a></li>
                         <li><a href="waves.html#waveequation">Solution of wave equation</a></li>
@@ -814,7 +816,31 @@
                         </section>
 
                     </section>
+
                     <section id="lcr">
+
+                        <h3>LCR Circuit</h3>
+                        An LCR circuit is a type of electrical circuit that contains a inductor (L), a capacitor (C),
+                        and a resistor (R). These
+                        components are connected in series, meaning that the current flows through all of them in a
+                        single path.
+                        <figure><img src="lcr.png">
+                            <figcaption>LCR Circuit</figcaption>
+                        </figure>
+                        Applying Kirchoff's loop rule in above circuit,
+                        $$V_{inductor}+V_{resistor}+V_{capacitor}=V_{supply}$$
+                        where V is voltage drop across each component in circuit.
+                        $$V_L+V_R+V_C = V_o\;sin\;(\omega t) $$
+                        Subsituting expression for voltage drop in each component,
+                        $$ L \frac{dI}{dt}+ IR + \frac{q}{C}= V_o\;sin\;(\omega t) $$
+                        $$ L \frac{d^q}{dt^2}+R\frac{dq}{dt}+\frac{q}{C}=V_o\;sin\;(\omega t) $$
+                        dividing by L,
+                        $$\boxed{ \frac{d^2 q}{dt^2}+\frac{R}{L}\frac{dq}{dt}+\frac{q}{LC}=\frac{V_o}{L}\;sin\;(\omega
+                        t) }$$
+                        This equation can be compared to differential equation of forced harmonic oscillator,
+                        $$\frac{d^2 x}{dt^2}+ 2 \gamma \;\frac{dx}{dt} + \omega_o^2 x =f_o\;sin(\omega_f
+                        \;t)$$
+                        So in other hand, a series LCR circuit is electrical analogue of forced harmonic oscillator.
                         <h3>Comparison between Mechanical and Electrical oscillator</h3>
                         <table>
                             <tr>
@@ -822,13 +848,7 @@
                                 <th>Mechanical Oscillators (FHM)</th>
                                 <th>Electrical Oscillators (LCR)</th>
                             </tr>
-                            <tr>
-                                <td>Diff. eqn</td>
-                                <td>$$\frac{d^2 x}{dt^2}+ 2 \gamma \;\frac{dx}{dt} + \omega_o^2 x =f_o\;sin(\omega_f
-                                    \;t)$$</td>
-                                <td>$$\frac{d^2 q}{dt^2}+ \frac{L}{R} \;\frac{dq}{dt} + \frac{q}{LC} =V_o\;sin(\omega_f
-                                    \;t)$$</td>
-                            </tr>
+
                             <tr>
                                 <td>System</td>
                                 <td>Involves physical displacement</td>
@@ -868,253 +888,271 @@
 
 
                     </section>
-                    <h4>Related problems</h4>
-                    <ol>
-                        <li>
-                            <p>
-                            <p>The frequency of a tuning fork is 100 Hz and its Q factor is \(5 \times 10^3\). Find the
-                                relaxation
-                                time. Also
-                                calculate the time after which its energy becomes 1/10 th of its initial un-damped
-                                value.
-                            </p>
-                            </p>
-                            <p>Answer:</p>
-                            <p>Given quantities are.....</p>
-                            <p>$$\boxed{Q = 5 \times 10^3 \quad \text{and} \quad f = 100 \text{ Hz}}$$</p>
-                            <p>We know the relation between frequency "f" and angular frequency \(\omega\) as...</p>
-                            <p>$$\boxed{\omega = 2\pi f}$$</p>
-                            <p>Substituting value of frequency in above equation ;</p>
-                            <p>\(\omega = 2\pi f = 2\times \pi \times 100 = 628.3 \text{ Hz}\) .................(1) </p>
-                            <p>Expression connecting quality factor (Q), frequency (f) and damping coefficient γ is ,
-                            </p>
-                            <p>$$\boxed{Q =\frac{\omega}{2\gamma}}$$ or we can rearrange this equation as ,</p>
-                            <p>$${2\gamma =\frac{\omega}{Q}}$$ substituting values of ω and Q ;</p>
-                            <p>\({2\gamma =\frac{\omega}{Q}}=\frac{628.3}{5\times 10^3}=0.125\) ............(2)</p>
-                            <p>Relaxation time is given by relation,</p>
-                            <p>$$\boxed{\tau=\frac{1}{2\gamma}}$$</p>
-                            <p>Substituting value of \(2\gamma\) ;</p>
-                            <p>\(Relaxation time,\;\tau=\frac{1}{2\gamma}=\frac{1}{0.125}=8 \text{ seconds}.\)</p>
-                            <p>Energy loss in a damped harmonic oscillator is represented by equation :</p>
-                            <p>$$\boxed{{E(t)=E_o \;e^{-2 \gamma t}}}$$ where \(E_o\) is initial energy or initial
-                                un-damped
-                                value of energy, \(E(t)\) is the energy of oscillator at time 't' and γ is
-                                damping
-                                coefficient.</p>
-                            <p>Assume that at time 't' energy become 1/10 th of initial value \(E_o\). In that case we
-                                can
-                                say
-                                that;</p>
-                            <p>At time 't', $$E(t)=\frac{E_o}{10}$$ That means ;</p>
-                            <p>$${\frac{E_o}{10}=E_o \;e^{-2 \gamma t}}$$</p>
-                            <p>Cancelling \(E_o\) from both sides,</p>
-                            <p>$${\frac{1}{10}= \;e^{-2 \gamma t}}$$</p>
-                            <p>Taking reciprocal of both sides,</p>
-                            <p>$$10=e^{2 \gamma t}$$</p>
-                            <p>Taking the inverse on both sides,</p>
-                            <p>$$log_{e}(10) = 2\gamma t$$</p>
-                            <p>Rearranging above equation ;</p>
-                            <p>$$t=\frac{log_{e}(10)}{2\gamma}$$</p>
-                            <p>Substituting value of \(2\gamma\) from equation(2),</p>
-                            <p>\(t=\frac{log_{e}(10)}{2\gamma}=\frac{log_{e}(10)}{2\times 0.125}= 5.64 \;\;seconds\)
-                            </p>
-                            <p>So the time after which energy becomes 1/10 th of its initial un-damped value is
-                                5.64 seconds.
-                            </p>
-                        </li>
-                        <li>
-                            <p>A damped harmonic oscillator has a Q factor of \(2 \times 10^3\) and an angular frequency
+                    <section id="problems">
+                        <h4>Related problems</h4>
+                        <ol>
+                            <li>
+                                <p>
+                                <p>The frequency of a tuning fork is 100 Hz and its Q factor is \(5 \times 10^3\). Find
+                                    the
+                                    relaxation
+                                    time. Also
+                                    calculate the time after which its energy becomes 1/10 th of its initial un-damped
+                                    value.
+                                </p>
+                                </p>
+                                <p>Answer:</p>
+                                <p>Given quantities are.....</p>
+                                <p>$$\boxed{Q = 5 \times 10^3 \quad \text{and} \quad f = 100 \text{ Hz}}$$</p>
+                                <p>We know the relation between frequency "f" and angular frequency \(\omega\) as...</p>
+                                <p>$$\boxed{\omega = 2\pi f}$$</p>
+                                <p>Substituting value of frequency in above equation ;</p>
+                                <p>\(\omega = 2\pi f = 2\times \pi \times 100 = 628.3 \text{ Hz}\) .................(1)
+                                </p>
+                                <p>Expression connecting quality factor (Q), frequency (f) and damping coefficient γ is
+                                    ,
+                                </p>
+                                <p>$$\boxed{Q =\frac{\omega}{2\gamma}}$$ or we can rearrange this equation as ,</p>
+                                <p>$${2\gamma =\frac{\omega}{Q}}$$ substituting values of ω and Q ;</p>
+                                <p>\({2\gamma =\frac{\omega}{Q}}=\frac{628.3}{5\times 10^3}=0.125\) ............(2)</p>
+                                <p>Relaxation time is given by relation,</p>
+                                <p>$$\boxed{\tau=\frac{1}{2\gamma}}$$</p>
+                                <p>Substituting value of \(2\gamma\) ;</p>
+                                <p>\(Relaxation time,\;\tau=\frac{1}{2\gamma}=\frac{1}{0.125}=8 \text{ seconds}.\)</p>
+                                <p>Energy loss in a damped harmonic oscillator is represented by equation :</p>
+                                <p>$$\boxed{{E(t)=E_o \;e^{-2 \gamma t}}}$$ where \(E_o\) is initial energy or initial
+                                    un-damped
+                                    value of energy, \(E(t)\) is the energy of oscillator at time 't' and γ is
+                                    damping
+                                    coefficient.</p>
+                                <p>Assume that at time 't' energy become 1/10 th of initial value \(E_o\). In that case
+                                    we
+                                    can
+                                    say
+                                    that;</p>
+                                <p>At time 't', $$E(t)=\frac{E_o}{10}$$ That means ;</p>
+                                <p>$${\frac{E_o}{10}=E_o \;e^{-2 \gamma t}}$$</p>
+                                <p>Cancelling \(E_o\) from both sides,</p>
+                                <p>$${\frac{1}{10}= \;e^{-2 \gamma t}}$$</p>
+                                <p>Taking reciprocal of both sides,</p>
+                                <p>$$10=e^{2 \gamma t}$$</p>
+                                <p>Taking the inverse on both sides,</p>
+                                <p>$$log_{e}(10) = 2\gamma t$$</p>
+                                <p>Rearranging above equation ;</p>
+                                <p>$$t=\frac{log_{e}(10)}{2\gamma}$$</p>
+                                <p>Substituting value of \(2\gamma\) from equation(2),</p>
+                                <p>\(t=\frac{log_{e}(10)}{2\gamma}=\frac{log_{e}(10)}{2\times 0.125}= 5.64 \;\;seconds\)
+                                </p>
+                                <p>So the time after which energy becomes 1/10 th of its initial un-damped value is
+                                    5.64 seconds.
+                                </p>
+                            </li>
+                            <li>
+                                <p>A damped harmonic oscillator has a Q factor of \(2 \times 10^3\) and an angular
+                                    frequency
+                                    of
+                                    \(3 \times 10^3\) rad/s.
+                                    Find the damping coefficient and the time after which the energy of the oscillator
+                                    becomes
+                                    1/e of its initial value.
+                                </p>
+                                <p>Answer:</p>
+                                <p>Given quantities are.....</p>
+                                <p>$$Q = 2 \times 10^3 \quad \text{and} \quad \omega = 3 \times 10^3 \text{ rad/s}$$</p>
+                                <p>Expression connecting quality factor (Q), angular frequency (ω) and damping
+                                    coefficient γ
+                                    is
+                                    ,</p>
+                                <p>$$Q =\frac{\omega}{2\gamma}$$ </p>
+                                <p>Substituting values of Q and ω in above equation,</p>
+                                <p>$$2\gamma =\frac{\omega}{Q} = \frac{3\times 10^3}{2\times 10^3}=\frac{3}{2}$$ </p>
+                                <p>So the damping coefficient is;</p>
+                                <p>$$\gamma =\frac{3}{4} $$ </p>
+                                <p>Energy loss in a damped harmonic oscillator is represented by equation :</p>
+                                <p>$$E(t)=E_o \;e^{-2\gamma t}$$ where \(E_o\) is initial energy or initial un-damped
+                                    value
+                                    of
+                                    energy, \(E(t)\) is the
+                                    energy of oscillator at time 't' and γ is damping coefficient.</p>
+                                <p>Assume that at time 't' energy become 1/e of initial value \(E_o\). In that case we
+                                    can
+                                    say
+                                    that;</p>
+                                <p>At time 't', $$E(t)=\frac{E_o}{e}$$ That means ;</p>
+                                <p>$${\frac{E_o}{e}=E_o \;e^{-2\gamma t}}$$</p>
+                                <p>Cancelling \(E_o\) from both sides,</p>
+                                <p>$${\frac{1}{e}= \;e^{-2\gamma t}}$$</p>
+                                <p>Taking reciprocal of both sides,</p>
+                                <p>$$e=e^{2\gamma t}$$</p>
+                                <p>Taking the natural logarithm on both sides,</p>
+                                <p>$$ln(e) = 2\gamma t$$</p>
+                                <p>Rearranging above equation ;</p>
+                                <p>$$t=\frac{ln(e)}{2\gamma}$$</p>
+                                <p>Substituting value of 2γ,</p>
+                                <p>\(t=\frac{ln(e)}{\gamma}=\frac{ln(e)}{\frac{3}{2}}= \frac{2}{3}ln(e) \approx 0.46
+                                    \;\;seconds\)
+                                </p>
+                                <p>So the time after which energy becomes 1/e of its initial un-damped value is 0.46
+                                    seconds.
+                                </p>
+                            </li>
+                            <li> A damped harmonic oscillator has a Q-value of 0.5 and a frequency of 250 Hz. Determine
+                                the
+                                damping coefficient and the
+                                time required for the energy of the oscillator to decrease to half of its initial value.
+
+                                <p>Answer:</p>
+
+                                <p>The given quantities are:</p>
+                                $$Q = 0.5 \quad \text{and} \quad f = 250 \text{ Hz}$$
+
+                                We know the relation between frequency "f" and angular frequency ω as:
+                                $$\omega = 2\pi f$$
+
+                                Substituting the value of frequency in above equation,
+                                $$\omega = 2\pi f = 2\times \pi \times 250 = 1570 \text{ rad/s}$$
+
+                                Expression connecting quality factor (Q), frequency (f) and damping coefficient γ is ,
+                                $$Q =\frac{\omega}{2\gamma}$$
+
+                                Substituting values of ω and Q,
+                                $$2\gamma =\frac{\omega}{Q} = \frac{1570}{0.5}=3140$$
+
+                                So the damping coefficient is;
+                                $$\gamma =\frac{3140}{2} =1570$$
+
+                                Energy loss in a damped harmonic oscillator is represented by equation :
+                                $$E(t)=E_o \;e^{-2\gamma t}$$
+
+                                where (E_o) is initial energy or initial un-damped value of energy, (E(t)) is the energy
                                 of
-                                \(3 \times 10^3\) rad/s.
-                                Find the damping coefficient and the time after which the energy of the oscillator
-                                becomes
-                                1/e of its initial value.
-                            </p>
-                            <p>Answer:</p>
-                            <p>Given quantities are.....</p>
-                            <p>$$Q = 2 \times 10^3 \quad \text{and} \quad \omega = 3 \times 10^3 \text{ rad/s}$$</p>
-                            <p>Expression connecting quality factor (Q), angular frequency (ω) and damping coefficient γ
-                                is
-                                ,</p>
-                            <p>$$Q =\frac{\omega}{2\gamma}$$ </p>
-                            <p>Substituting values of Q and ω in above equation,</p>
-                            <p>$$2\gamma =\frac{\omega}{Q} = \frac{3\times 10^3}{2\times 10^3}=\frac{3}{2}$$ </p>
-                            <p>So the damping coefficient is;</p>
-                            <p>$$\gamma =\frac{3}{4} $$ </p>
-                            <p>Energy loss in a damped harmonic oscillator is represented by equation :</p>
-                            <p>$$E(t)=E_o \;e^{-2\gamma t}$$ where \(E_o\) is initial energy or initial un-damped value
-                                of
-                                energy, \(E(t)\) is the
-                                energy of oscillator at time 't' and γ is damping coefficient.</p>
-                            <p>Assume that at time 't' energy become 1/e of initial value \(E_o\). In that case we can
+                                oscillator at time 't' and γ
+                                is damping coefficient.
+
+                                Assume that at time 't' energy become 1/2 of initial value (E_o). In that case we can
                                 say
-                                that;</p>
-                            <p>At time 't', $$E(t)=\frac{E_o}{e}$$ That means ;</p>
-                            <p>$${\frac{E_o}{e}=E_o \;e^{-2\gamma t}}$$</p>
-                            <p>Cancelling \(E_o\) from both sides,</p>
-                            <p>$${\frac{1}{e}= \;e^{-2\gamma t}}$$</p>
-                            <p>Taking reciprocal of both sides,</p>
-                            <p>$$e=e^{2\gamma t}$$</p>
-                            <p>Taking the natural logarithm on both sides,</p>
-                            <p>$$ln(e) = 2\gamma t$$</p>
-                            <p>Rearranging above equation ;</p>
-                            <p>$$t=\frac{ln(e)}{2\gamma}$$</p>
-                            <p>Substituting value of 2γ,</p>
-                            <p>\(t=\frac{ln(e)}{\gamma}=\frac{ln(e)}{\frac{3}{2}}= \frac{2}{3}ln(e) \approx 0.46
-                                \;\;seconds\)
-                            </p>
-                            <p>So the time after which energy becomes 1/e of its initial un-damped value is 0.46
+                                that;
+                                $$E(t)=\frac{E_o}{2}$$ That means ;
+
+                                $${\frac{E_o}{2}=E_o \;e^{-2 \gamma t}}$$
+
+                                Taking the natural logarithm on both sides,
+                                $$ln(\frac{1}{2}) = -2\gamma t$$
+
+                                Rearranging above equation ;
+                                $$t=\frac{ln(\frac{1}{2})}{-2\gamma}$$
+
+                                Substituting value of γ,
+
+                                $$t=\frac{ln(\frac{1}{2})}{-2\times 1570} \approx 0.000093 \;seconds$$
+
+                                So the time after which energy becomes 1/2th of its initial un-damped value is 0.000093
                                 seconds.
-                            </p>
-                        </li>
-                        <li> A damped harmonic oscillator has a Q-value of 0.5 and a frequency of 250 Hz. Determine the
-                            damping coefficient and the
-                            time required for the energy of the oscillator to decrease to half of its initial value.
+                            </li>
+                            <p> </p>
+                            <li> A damped harmonic oscillator has a Q-value of 0.2 and a frequency of 150 Hz. Find the
+                                damping
+                                coefficient and the time
+                                required for the energy of the oscillator to decrease to 1/3 of its initial value.
 
-                            <p>Answer:</p>
+                                <p>Answer:</p>
 
-                            <p>The given quantities are:</p>
-                            $$Q = 0.5 \quad \text{and} \quad f = 250 \text{ Hz}$$
+                                <p>The given parameters of the oscillator are:</p>
+                                $$Q = 0.2 \quad \text{and} \quad f = 150 \text{ Hz}$$
 
-                            We know the relation between frequency "f" and angular frequency ω as:
-                            $$\omega = 2\pi f$$
+                                The relationship between frequency and angular frequency is:
+                                $$\omega = 2\pi f$$
 
-                            Substituting the value of frequency in above equation,
-                            $$\omega = 2\pi f = 2\times \pi \times 250 = 1570 \text{ rad/s}$$
+                                Substituting in the above equation we get:
+                                $$\omega = 2\pi f = 2\times \pi \times 150 = 942 \text{ rad/s}$$
 
-                            Expression connecting quality factor (Q), frequency (f) and damping coefficient γ is ,
-                            $$Q =\frac{\omega}{2\gamma}$$
+                                The quality factor, angular frequency and damping coefficient are related by the
+                                expression:
+                                $$Q =\frac{\omega}{2\gamma}$$
 
-                            Substituting values of ω and Q,
-                            $$2\gamma =\frac{\omega}{Q} = \frac{1570}{0.5}=3140$$
+                                Substituting the values for angular frequency and Q we get:
+                                $$2\gamma =\frac{\omega}{Q} = \frac{942}{0.2}=4710$$
 
-                            So the damping coefficient is;
-                            $$\gamma =\frac{3140}{2} =1570$$
+                                Damping coefficient is:
+                                $$\gamma =\frac{4710}{2} =2355$$
 
-                            Energy loss in a damped harmonic oscillator is represented by equation :
-                            $$E(t)=E_o \;e^{-2\gamma t}$$
+                                Energy loss in a damped harmonic oscillator is represented by equation :
+                                $$E(t)=E_o \;e^{-2\gamma t}$$
 
-                            where (E_o) is initial energy or initial un-damped value of energy, (E(t)) is the energy of
-                            oscillator at time 't' and γ
-                            is damping coefficient.
+                                Where (E_o) is the initial energy or the undamped value of energy, (E(t)) is the energy
+                                of
+                                the
+                                oscillator at time 't'
+                                and γ is damping coefficient.
 
-                            Assume that at time 't' energy become 1/2 of initial value (E_o). In that case we can say
-                            that;
-                            $$E(t)=\frac{E_o}{2}$$ That means ;
+                                If we assume that at time 't' the energy becomes 1/3 of its initial value, we can say
+                                that:
+                                $$E(t)=\frac{E_o}{3}$$
 
-                            $${\frac{E_o}{2}=E_o \;e^{-2 \gamma t}}$$
+                                This means:
+                                $${\frac{E_o}{3}=E_o \;e^{-2 \gamma t}}$$
 
-                            Taking the natural logarithm on both sides,
-                            $$ln(\frac{1}{2}) = -2\gamma t$$
+                                Taking the natural logarithm on both sides,
+                                $$ln(\frac{1}{3}) = -2\gamma t$$
 
-                            Rearranging above equation ;
-                            $$t=\frac{ln(\frac{1}{2})}{-2\gamma}$$
+                                Rearranging above equation ;
+                                $$t=\frac{ln(\frac{1}{3})}{-2\gamma}$$
 
-                            Substituting value of γ,
+                                Substituting value of γ,
 
-                            $$t=\frac{ln(\frac{1}{2})}{-2\times 1570} \approx 0.000093 \;seconds$$
+                                $$t=\frac{ln(\frac{1}{3})}{-2\times 2355} \approx 0.000157 \;seconds$$
 
-                            So the time after which energy becomes 1/2th of its initial un-damped value is 0.000093
-                            seconds.
-                        </li>
-                        <p> </p>
-                        <li> A damped harmonic oscillator has a Q-value of 0.2 and a frequency of 150 Hz. Find the
-                            damping
-                            coefficient and the time
-                            required for the energy of the oscillator to decrease to 1/3 of its initial value.
+                                So the time after which energy becomes 1/3 of its initial un-damped value is 0.000157
+                                seconds.
+                            </li>
+                            <li> A damped harmonic oscillator has an angular frequency of 2 rad/s and the time taken for
+                                the
+                                energy to decrease to 1/2 of
+                                its initial value is 3 seconds. Find the quality factor (Q) of the oscillator.
 
-                            <p>Answer:</p>
+                                <p>Answer:</p>
+                                <p>Given quantities are.....</p>
 
-                            <p>The given parameters of the oscillator are:</p>
-                            $$Q = 0.2 \quad \text{and} \quad f = 150 \text{ Hz}$$
+                                $$\omega = 2 \text{ rad/s} \quad \text{and} \quad t=3s$$
 
-                            The relationship between frequency and angular frequency is:
-                            $$\omega = 2\pi f$$
+                                Energy loss in a damped harmonic oscillator is represented by equation :
+                                $$E(t)=E_o ;e^{-2\gamma t}$$
 
-                            Substituting in the above equation we get:
-                            $$\omega = 2\pi f = 2\times \pi \times 150 = 942 \text{ rad/s}$$
+                                We know that:
+                                $$E(t)=\frac{E_o}{2}$$
 
-                            The quality factor, angular frequency and damping coefficient are related by the expression:
-                            $$Q =\frac{\omega}{2\gamma}$$
+                                which means:
+                                $${\frac{E_o}{2}= E_o ;e^{-2 \gamma t}}$$
 
-                            Substituting the values for angular frequency and Q we get:
-                            $$2\gamma =\frac{\omega}{Q} = \frac{942}{0.2}=4710$$
+                                Taking the natural logarithm on both sides,
+                                $$ln(\frac{1}{2}) = -2\gamma t$$
 
-                            Damping coefficient is:
-                            $$\gamma =\frac{4710}{2} =2355$$
+                                we can re-arrange above equation as;
+                                $$\gamma = -\frac{ln(\frac{1}{2})}{2t}$$
 
-                            Energy loss in a damped harmonic oscillator is represented by equation :
-                            $$E(t)=E_o \;e^{-2\gamma t}$$
+                                Substituting the value of t,
 
-                            Where (E_o) is the initial energy or the undamped value of energy, (E(t)) is the energy of
-                            the
-                            oscillator at time 't'
-                            and γ is damping coefficient.
+                                $$\gamma = -\frac{ln(\frac{1}{2})}{6}$$
 
-                            If we assume that at time 't' the energy becomes 1/3 of its initial value, we can say that:
-                            $$E(t)=\frac{E_o}{3}$$
+                                And
 
-                            This means:
-                            $${\frac{E_o}{3}=E_o \;e^{-2 \gamma t}}$$
+                                $$Q =\frac{\omega}{2\gamma}$$
 
-                            Taking the natural logarithm on both sides,
-                            $$ln(\frac{1}{3}) = -2\gamma t$$
+                                Substituting the values of omega and gamma,
 
-                            Rearranging above equation ;
-                            $$t=\frac{ln(\frac{1}{3})}{-2\gamma}$$
+                                $$Q =\frac{2}{2*(-\frac{ln(\frac{1}{2})}{6})} =\frac{12}{-ln(\frac{1}{2})}$$
+                                The quality factor (Q) of the oscillator is:
+                                $$Q =\frac{12}{-ln(\frac{1}{2})}$$
 
-                            Substituting value of γ,
+                                The natural logarithm of 1/2 is approximately -0.693, so substituting this value into
+                                the
+                                equation for Q, we get:
+                                $$Q = \frac{12}{-(-0.693)} = 17.29$$
 
-                            $$t=\frac{ln(\frac{1}{3})}{-2\times 2355} \approx 0.000157 \;seconds$$
-
-                            So the time after which energy becomes 1/3 of its initial un-damped value is 0.000157
-                            seconds.
-                        </li>
-                        <li> A damped harmonic oscillator has an angular frequency of 2 rad/s and the time taken for the
-                            energy to decrease to 1/2 of
-                            its initial value is 3 seconds. Find the quality factor (Q) of the oscillator.
-
-                            <p>Answer:</p>
-                            <p>Given quantities are.....</p>
-
-                            $$\omega = 2 \text{ rad/s} \quad \text{and} \quad t=3s$$
-
-                            Energy loss in a damped harmonic oscillator is represented by equation :
-                            $$E(t)=E_o ;e^{-2\gamma t}$$
-
-                            We know that:
-                            $$E(t)=\frac{E_o}{2}$$
-
-                            which means:
-                            $${\frac{E_o}{2}= E_o ;e^{-2 \gamma t}}$$
-
-                            Taking the natural logarithm on both sides,
-                            $$ln(\frac{1}{2}) = -2\gamma t$$
-
-                            we can re-arrange above equation as;
-                            $$\gamma = -\frac{ln(\frac{1}{2})}{2t}$$
-
-                            Substituting the value of t,
-
-                            $$\gamma = -\frac{ln(\frac{1}{2})}{6}$$
-
-                            And
-
-                            $$Q =\frac{\omega}{2\gamma}$$
-
-                            Substituting the values of omega and gamma,
-
-                            $$Q =\frac{2}{2*(-\frac{ln(\frac{1}{2})}{6})} =\frac{12}{-ln(\frac{1}{2})}$$
-                            The quality factor (Q) of the oscillator is:
-                            $$Q =\frac{12}{-ln(\frac{1}{2})}$$
-
-                            The natural logarithm of 1/2 is approximately -0.693, so substituting this value into the
-                            equation for Q, we get:
-                            $$Q = \frac{12}{-(-0.693)} = 17.29$$
-
-                            So the Quality factor of the oscillator is approximately 17.29.
-                        </li>
-                    </ol>
+                                So the Quality factor of the oscillator is approximately 17.29.
+                            </li>
+                        </ol>
+                    </section>
                 </section>
 
 

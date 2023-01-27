@@ -23,6 +23,7 @@
 
 
 
+
             <div class="dropdown"><a href="index.html" class="dropdown-toggle">Home</a></div>
 
             <div class="dropdown">
@@ -65,6 +66,7 @@
                     <ul class="subtopics">
                         <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a>
                         </li>
+                        <li><a href="waves.html#waveproperties">Properties of wave</a></li>
                         <li><a href="waves.html#1dwave">One dimensional wave equation</a></li>
                         <li><a href="waves.html#3dwave">Three dimensional wave equation</a></li>
                         <li><a href="waves.html#waveequation">Solution of wave equation</a></li>
@@ -293,14 +295,16 @@
         </nav>
         <nav class="right-side-navbar">
             <ul>
-                <li><a href="diffraction.html#diffraction">Diffraction</a></li>
-                <li><a href="diffraction.html#classificationdiffraction">Classification of diffraction</a></li>
+                <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a>
+                </li>
 
-                <li><a href="diffraction.html#grating">Diffraction grating</a></li>
-                <li><a href="diffraction.html#rayleigh">Rayleigh's criterion</a></li>
-                <li><a href="diffraction.html#resolving">Resolving Power</a></li>
-                <li><a href="diffraction.html#dispersive">Dispersive Power</a></li>
-                <li><a href="diffraction.html#problems">Numerical problems</a></li>
+                <li><a href="waves.html#waveproperties">Properties of wave</a></li>
+                <li><a href="waves.html#1dwave">One dimensional wave equation</a></li>
+                <li><a href="waves.html#3dwave">Three dimensional wave equation</a></li>
+                <li><a href="waves.html#waveequation">Solution of wave equation</a></li>
+                <li><a href="waves.html#stretchedstring">Transverse waves in stretched string</a></li>
+                <li><a href="waves.html#lawsvibration">Laws of vibration</a></li>
+                <li><a href="waves.html#problems">Numerical problems</a></li>
             </ul>
         </nav>
         <div class="main-content">
@@ -330,11 +334,13 @@
                 <p>If the direction of vibration of the particles of medium is perpendicular to direction of propagation
                     of
                     wave, such waves are called transverse waves. </p>
+                <div id="images"><img src="transversewave.png"> </div>
                 <p>Example : light waves and water waves</p>
                 <h3>Longitudinal waves.</h3>
                 <p>If the direction of vibration of the particles of medium is parallel to direction of propagation of
                     wave,
                     such waves are called longitudinal waves. </p>
+                <div id="images"><img src="longitudinal.jpg"> </div>
                 <p>Example : sound waves and ultrasonic waves</p>
 
             </section>
@@ -346,10 +352,23 @@
                     wavelength can be defined as distance between two consecutive points of a wave that are in phase.
                 </p>
                 <div id="images"><img src="wavelength.png"> </div>
+                <h4>Wave vector (wave number)</h4>
+                A wave vector (also called wave number) is a vector quantity that describes the direction and magnitude
+                of a wave in
+                space. It is typically represented by the symbol k and can be related to wavelength, \( \lambda \) as,
+                $$ \boxed{k=\frac{2 \pi}{\lambda}} $$
+                The direction of the wave vector indicates the direction of wave propagation.
+
                 <h3>Frequency</h3>
                 <p>Frequency of a wave is the number of oscillations or vibrationsof particles of medium (or wave
                     itself)
                     per unit time.</p>
+                <div id="images"><img src="frequency.png"> </div>
+                <h4>Angular frequency</h4>
+                Angular frequency is a measure of the rate of change of the phase of a wave.It is typically denoted by
+                the Greek letter omega (ω) and has units of radians per second (rad/s). Angular frequency is
+                related to the frequency(f) of a wave, by the equation:
+                $$\boxed{ \omega = 2 \pi f }$$
                 <h3>Amplitude</h3>
                 <p>Amplitude is maximum displacement of a particle from equilibrium point in a wave (keep in mind that
                     wave
@@ -357,10 +376,15 @@
                     the
                     highest point (crest) or the lowest point (trough) of a wave and the equilibrium or rest position.
                 </p>
+                <div id="images"><img src="amplitude.png"> </div>
                 <h3>Wave velocity</h3>
                 <p>Wave velocity is a measure of the speed at which a wave travels through a medium and depends on the
                     properties of the
                     medium and the wavelength and frequency of the wave.</p>
+                <div id="images"><img src="wavevelocity.png"> </div>
+                Velocity of wave can be related to frequency \( f\) and wavelength \( \lambda \) as,
+                $$\boxed{ v=f\;\lambda }\;\; \;or\;\;\; \boxed{v=\frac{\omega}{k}}$$
+                where \( \omega \) is angular frequency of wave and \( k \) is the wave number.
                 <h3>Particle velocity</h3>
                 <p>particle velocity of a wave is the velocity of the individual particles of the medium oscillates. It
                     varies depending on the position in the medium, it's different from the wave velocity which is the
@@ -370,15 +394,17 @@
                     measured
                     in
                     degrees and it gives the position of a point on the waveform in relation to a reference point.</p>
+                <div id="images"><img src="phase.png"> </div>
             </section>
 
-            <section id="waveequation">
+            <section id="1dwave">
                 <h2>Wave equation</h2>
                 <p>A single pulse or wave moving in positive x direction can be represented as,</p>
                 $$u(x,t)=f(x-vt)\;-->(eqn1)$$
                 <p>where u is the vertical displacement of particle in wave and f is the function representing shape of
                     the
                     waveform.</p>
+                <div id="images"><img src="waveequation.png"> </div>
                 <p>Differentiating equation (1) w.r.t to x twice,</p>
                 $$\frac{\partial^u}{\partial x^2}=f^{''}(x-vt) \; ---eqn(2)$$
                 <p>Differentiating equation (1) w.r.t t twice</p>
@@ -386,19 +412,163 @@
                 <p>substituting value of \(f^{''}(x-vt)\) from equation(2) in equation(3),</p>
                 $$\frac{\partial^u}{\partial t^2} =v^2 \; \frac{\partial^u}{\partial x^2} $$
                 <p>rearranging,</p>
-                $$\boxed{\frac{\partial^u}{\partial x^2} =\frac{1}{v^2} \; \frac{\partial^u}{\partial t^2}} $$
+                $$\boxed{\frac{\partial^2 u}{\partial x^2} =\frac{1}{v^2} \; \frac{\partial^u}{\partial t^2}} $$
                 <p> Above equation is called one dimensional wave equation.</p>
+            </section>
+            <section id="3dwave">
+                <h3>Three Dimensional equation</h3>
+                <p> 3-D wave equation is represented as,</p>
+                $$\frac{\partial^2 u}{\partial x^2}+ \frac{\partial^2 u}{\partial y^2} + \frac{\partial^2 u}{\partial
+                z^2}=\frac{1}{v^2} \; \frac{\partial^u}{\partial t^2} $$
+                or
+                $$\boxed{ \nabla^2 u =\frac{1}{v^2} \; \frac{\partial^u}{\partial t^2}} $$
+                where \( \nabla^2 \) is called laplacian operator.
+                $$ \nabla^2 = \frac{\partial^2 }{\partial x^2}+ \frac{\partial^2 }{\partial y^2} + \frac{\partial^2
+                }{\partial
+                z^2}$$
+            </section>
+            <section id="waveequation">
+                <h2>Solution of Wave equation</h2>
+                One dimensional wave equation is given by,
+                $$ \frac{\partial^2 u}{\partial x^2} =\frac{1}{v^2} \; \frac{\partial^u}{\partial t^2} --eqn(1)$$
+                Assume that solution of above differential equation is given by,
+                $$ u(x,t)=X(x)\;T(t)--eqn(2)$$
+                where \( X(x)\) is function of x only and \( T(t)\) is the function of t only.
+                Differentiating equation (2) with x and t respectively,
+                $$ \frac{\partial^2 u}{\partial x^2}= T \;\frac{\partial^2 X}{\partial x^2}$$
+                $$ \frac{\partial^2 u}{\partial t^2}= X \;\frac{\partial^2 T}{\partial t^2}$$
+                Substituting this expression in equation (1),
+                $$T \;\frac{\partial^2 X}{\partial x^2} = \frac{1}{v^2}\;X \;\frac{\partial^2 T}{\partial t^2}$$
+                rearranging,
+                $$\frac{1}{X}\;\frac{\partial^2 X}{\partial x^2} = \frac{1}{Tv^2} \;\frac{\partial^2 T}{\partial t^2}$$
+                Left hand side of above equation is a function of x only and RHS is a function of t only.So this
+                equation gets true only when,both LHS and RHS is separately equal to a constant ( say \( -k^2\)).
+                $$\frac{1}{X}\;\frac{\partial^2 X}{\partial x^2} = -k^2 $$
+                And
+                $$\frac{1}{Tv^2} \;\frac{\partial^2 T}{\partial t^2} = -k^2 $$
+                Rearranging above two equations,
+                $$\frac{\partial^2 X}{\partial x^2} = -k^2X -->eqn(3)$$
+                And
+                $$\frac{\partial^2 T}{\partial t^2} = -k^2 v^2 T-->eqn(4) $$
+                Solution of equation (3) & (4) is given by,
+                $$ X=A_1\;e^{ikx}$$
+                And
+                $$ T=A_2\;e^{i \omega t}$$
+                Since \( u(x,t) = X(x)T(t) \) ,
+                $$ u(x,t)=A\;e^i(kx \pm \omega t + \phi)$$
+                Taking the real part of solution ,
+                $$\boxed{u(x,t)=A\;sin\;(kx \pm \omega t + \phi)}$$
+
+                where
+                <p>\( u(x,t) \) is the vertical displacement of particle in medium.</p>
+                <p>\( A\) is the amplitude of wave</p>
+                <p>\( k\) is the wave number or wave vector</p>
+                <p>\( \phi \) is the initial phase</p>
 
             </section>
-            <section id="conclusion">
-                <h2>Conclusion</h2>
-                <p>Waves are an important concept in physics and are found in a wide range of natural and man-made
-                    systems.
-                    Understanding waves allows us to predict and control the behavior of these systems, and has numerous
-                    practical
-                    applications in fields such as communication, transportation, and technology.</p>
+            <section id="stretchedstring">
+                <h2>Velocity of transverse waves through a stretched string</h2>
+                Assume a string is stretched vertically upwards as shown in figure below. Let the tension T acts
+                tangentially at each point. On releasing, the string will start to oscillate vertically or stationary
+                waves gets propagated along the string.
+                <div id="images"><img src="strectedstring.png"> </div>
+                Take a small portion AB of string with length \( \delta x \). On vertical displacement this portion AB
+                is
+                now represented as A'B' and it's length doesnt vary drastically.
+                <p>Let \( \theta_1 \) and \( \theta_1 \) be the angle which A' and B' makes with horizontal.</p>
+                <p>On resolving tension T at points A' and B', total force acting on x direction is given by, </p>
+                $$F_x = T \;cos\;\theta_2 - T \;cos\;\theta_1 $$
+                or
+                $$F_x = T (\;cos\;\theta_2 - \;cos\;\theta_1)-->eqn(1) $$
+                Total force acting vertically ( y direction),
+                $$F_y = T \;sin\;\theta_2 - T \;sin\;\theta_1 $$
+                or
+                $$F_y = T (\;sin\;\theta_2 - \;sin\;\theta_1) -->eqn(2)$$
+                Assume that \( \theta_1 \) and \( \theta_2 \) are very small ,
+                $$ cos\;\theta_1=cos\;\theta_2= 1 $$
+                and
+                $$ sin\;\theta_1 = tan\;\theta_1\;\& \; sin\;\theta_2 = tan\;\theta_2$$
+                Substituting this assumption and expression in equation(1) and (2) ;
+                $$ F_x = 0 $$
+                Which means resultant force in horizontal direction on string element A'B' is zero and
+                $$ F_y = T (\;tan\;\theta_2 - \;tan\;\theta_1) -->eqn(3)$$
+                From Newton's second law, force can be represented as,
+                $$F_y=m\;a_y = m\;\frac{\partial^2 y}{\partial t^2}$$
+                Mass of element A'B' ( of length \( \delta x \)), m can be represented in terms of linear mass density
+                \( \mu \) as,
+                $$m=\mu\;\delta x $$
+                So,
+                $$F_y=\mu\;\delta x\;\frac{\partial^2 y}{\partial t^2}$$
+                since \( tan\;\theta \) normally gives slope of a curve at a point,
+                $$tan\;\theta_1=\frac{\partial y}{\partial x} \Big|_{x}$$
+                $$tan\;\theta_2=\frac{\partial y}{\partial x} \Big|_{x+\delta x}$$
+                Substituting above expressions and eqn(4) in equation(3);
+                $$ \mu\;\delta x\;\frac{\partial^2 y}{\partial t^2}= T \Big(\;\frac{\partial y}{\partial x}
+                \Big|_{x+\delta x} -
+                \;\frac{\partial y}{\partial x} \Big|_{x}\;\Big)$$
+                Rearranging,
+                $$ \frac{\mu}{T}\;\frac{\partial^2 y}{\partial t^2}=\frac{\Big(\;\frac{\partial y}{\partial x}
+                \Big|_{x+\delta x} -
+                \;\frac{\partial y}{\partial x} \Big|_{x}\;\Big)}{\delta x}-->eqn(5) $$
+                From fundamentals of vector calculus,
+                $$ \frac{\Big(\;\frac{\partial y}{\partial x}
+                \Big|_{x+\delta x} -
+                \;\frac{\partial y}{\partial x} \Big|_{x}\;\Big)}{\delta x} = \frac{\partial^2 y}{\partial x^2}$$
+                Substituting in eqn(5)
+                $$ \frac{\mu}{T}\;\frac{\partial^2 y}{\partial t^2} = \frac{\partial^2 y}{\partial x^2} $$
+                rearranging,
+                $$ \boxed{\frac{\partial^2 y}{\partial x^2}=\frac{1}{T/\mu}\;\frac{\partial^2 y}{\partial t^2} }$$
+                Comparing above equation with general wave equation,
+                $$ \boxed{\frac{\partial^2 y}{\partial x^2}=\frac{1}{v^2}\;\frac{\partial^2 y}{\partial t^2} }$$
+                we get,
+                $$ v^2 = \frac{T}{\mu}$$
+                That gives velocity of wave through string is given by,
+                $$\boxed{ v =\sqrt{ \frac{T}{\mu}}}$$
+                where \( T \) is the tension and \( \mu \) is the linear mass density of string.
+                <h4>Expression for fundamental frequency</h4>
+                <p>Assume the length of string is \( l \) and it vibrates in n loops. Then length of one loop is given
+                    by,</p>
+                $$ l_{one_loop}=\frac{Total\;length}{no: \;of\;loops}=\frac{l}{n}$$
+                Since length of one loop is equivalent to half wavelength,
+                $$ \frac{l}{n} = \frac{\lambda}{2}$$
+                or
+                $$ \lambda = \frac{2l}{n} $$
+                We know that velocity of wave is related to frquency f and wavelength \( \lambda \) as,
+                $$ v=f \lambda $$
+                substituting for \( \lambda \) and velocity \( v \),
+                $$ \sqrt{\frac{T}{\mu}} =f \times \frac{2l}{n} $$
+                which gives frequency of waves through stetched string as,
+                $$ f = \frac{n}{2l}\;\sqrt{\frac{T}{\mu}} $$
+
+                When n = 1 , fundamental frequency is given by,
+                $$\boxed{ f_{fundamental} = \frac{1}{2l}\;\sqrt{\frac{T}{\mu}}} $$
             </section>
-            <section id="numericals">
+            <section id="lawsvibration">
+                <h3>Laws of vibration</h3>
+                <ol>
+                    <li>
+                        <h5>Law of length</h5>
+                        <p>Fundamental frequency of transverse waves through a stretched string is inversely
+                            proportional to length of string.</p>
+                        $$ f_{fundamental} \propto \frac{1}{l}$$
+                    </li>
+                    <li>
+                        <h5>Law of tension</h5>
+                        <p>Fundamental frequency of transverse waves through a stretched string is directly proportional
+                            to square root of tension in the string</p>
+                        $$ f_{fundamental} \propto \sqrt{T}$$
+                    </li>
+                    <li>
+                        <h5>Law of mass</h5>
+                        <p>Fundamental frequency of transverse waves through a stretched string is inversely
+                            proportional square root of linear mass density of string</p>
+                        $$ f_{fundamental} \propto \frac{1}{\sqrt{\mu}}$$
+                    </li>
+                </ol>
+            </section>
+
+
+            <section id="problems">
                 <h3>Numerical questions.</h3>
                 <ol>
                     <li>

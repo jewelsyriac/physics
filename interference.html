@@ -23,6 +23,7 @@
 
 
 
+
             <div class="dropdown"><a href="index.html" class="dropdown-toggle">Home</a></div>
 
             <div class="dropdown">
@@ -65,6 +66,7 @@
                     <ul class="subtopics">
                         <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a>
                         </li>
+                        <li><a href="waves.html#waveproperties">Properties of wave</a></li>
                         <li><a href="waves.html#1dwave">One dimensional wave equation</a></li>
                         <li><a href="waves.html#3dwave">Three dimensional wave equation</a></li>
                         <li><a href="waves.html#waveequation">Solution of wave equation</a></li>
@@ -296,12 +298,17 @@
                 <li><a href="interference.html#huygens">Huygen's Wave Theory</a></li>
                 <li><a href="interference.html#interference">Interference</a></li>
                 <li><a href="interference.html#superposition">Superposition Principle</a></li>
+                <li><a href="interference.html#pathdifference">Path and Phase difference</a></li>
                 <li><a href="interference.html#thinfilm">Thin film Interference</a></li>
                 <li><a href="interference.html#cosinelaw">Cosine law</a></li>
                 <li><a href="interference.html#airwedge">Air Wedge</a></li>
+                <li><a href="interference.html#airwedgeapplications">Applications of air Wedge</a></li>
                 <li><a href="interference.html#newtonsring">Newton's Rings</a></li>
+                <li><a href="interference.html#newtonsringapplications">Applications of Newton's Rings</a></li>
                 <li><a href="interference.html#arc">Anti-Reflection coating</a></li>
+                <li><a href="interference.html#interference-filters">interference filters</a></li>
                 <li><a href="interference.html#problems">Numerical problems</a></li>
+
             </ul>
         </nav>
 
@@ -314,63 +321,304 @@
                 <p>Interference of light refers to the phenomenon where two or more light waves interact with each
                     other,
                     resulting in a new wave pattern.</p>
-                <h3>Huygens' Wave Theory</h3>
-                <p>Huygens' wave theory states that every point on a wavefront can be considered as a secondary wave
-                    source,
-                    and
-                    the new wavefront is the envelope of all these secondary wavelets.</p>
+                <section id="huygens">
+                    <h3>Huygens' Wave Theory</h3>
+                    <p>Huygens' wave theory states that every point on a wavefront can be considered as a secondary wave
+                        source,
+                        and
+                        the new wavefront is the envelope of all these secondary wavelets.</p>
+                </section>
+                <section id="superposition">
+                    <h3>Superposition Principle</h3>
+                    <p>The superposition principle states that when two or more waves meet at a point, the displacement
+                        at
+                        that
+                        point is the vector sum of the displacements of the individual waves.</p>
+                    <p>The mathematical equation representing the superposition principle is given by:</p>
+                    $$Y = y_1 + y_2$$
+                    <p>where y1 & y2 are displacement of individual waves and Y is the displacement of resultant wave.
+                    </p>
+                </section>
+                <section id="coherence">
+                    <h3>Coherence</h3>
+                    Inorder to form an interference pattern, light waves which causing it should be coherent. The
+                    conditions of coherence are,
+                    <ul>
+                        <li>The waves should have same wavelength or frequency</li>
+                        <li>The waves should have nearly same amplitude</li>
+                        <li>Two waves should have zero or a constant phase difference</li>
+                    </ul>
+                </section>
 
-                <h3>Superposition Principle</h3>
-                <p>The superposition principle states that when two or more waves meet at a point, the displacement at
-                    that
-                    point is the vector sum of the displacements of the individual waves.</p>
-                <p>The mathematical equation representing the superposition principle is given by:</p>
-                $$Y = y_1 + y_2$$
-                <p>where y1 & y2 are displacement of individual waves and Y is the displacement of resultant wave.</p>
-                <h3>Thin Film Interference</h3>
-                <p>Thin film interference occurs when light reflects off the top and bottom surfaces of a thin film,
-                    resulting
-                    in constructive and destructive interference.</p>
-                <p>The mathematical equation representing the condition for destructive interference in thin film
-                    interference ( or cosine law)
-                    is given by:</p>
-                $$2 \mu t \;cos\;r=n \lambda$$
-                <p>where \( \mu \) is the refractive index of thin film, t is the thickness, r is the angle of
-                    refraction
-                    and \( \lambda \) is the wavelength of light used.</p>
-                <section id="air-wedge">
+                <section id="pathdifference">
+                    <h3>Path difference and Phase difference</h3>
+                    <h4>Path difference</h4>
+                    <p>The path difference between two waves is the difference in the distance traveled by the two waves
+                        from their point of
+                        origin to a given point in space.</p>
+                    <figure>
+                        <img src="pathdifference.png">
+                        <figcaption>Path difference between two waves ( Wave 1 and Wave 2 )</figcaption>
+                    </figure>
+                    <h4>Phase difference</h4>
+                    <p>The phase difference between two waves refers to the difference in the position of the
+                        oscillations of the two waves at
+                        a given point in time. It is measured in degrees or radians.</p>
+                    <p>If the oscillations of two waves are in phase, they will have a phase difference of 0 degrees or
+                        0 radians. If the
+                        oscillations of two waves are exactly out of phase, they will have a phase difference of 180
+                        degrees or pi radians.</p>
+                    <h4>Relation between path difference and phase difference</h4>
+                    <figure>
+                        <img src="phasedifference.png">
+                        <figcaption>Relation between path & phase difference</figcaption>
+                    </figure>
+                    <p>\( 2\pi \) phase difference between two waves refers to path difference of \( \lambda \) ( one
+                        wavelength ). In other hand, path difference (\(\Delta x \)) can be related to phase difference
+                        \( \Delta \phi \) as, </p>
+                    $$\boxed{ \Delta \phi = \frac{2 \pi}{\lambda}\;\Delta x} $$
+                    <section id="interferencetypes">
+                        <h3>Types of interference</h3>
+                        <h4>Constructive Interference</h4>
+                        If two waves interfere and gives a maximum, this type of interference is called constructive
+                        interference. The condition for maximum is that path difference between them should be an
+                        integer multiple of wavelength of light.
+                        $$ Conditon\;for\;maximum,\;path\;difference=n \lambda $$
+
+                        In term of phase difference,
+                        $$ Conditon\;for\;maximum,\;phase\;difference=2n\pi $$
+                        where n = 1,2,3... and \( \lambda \) is the wavelength of light.
+
+                        <h4>Destructive Interference</h4>
+                        If two waves interfere and gives a minimum or darkness, this type of interference is called
+                        destructive
+                        interference. The condition for minimum is that path difference between them should be half
+                        integer multiple of wavelength of light.
+                        $$ Conditon\;for\;minimum,\;path\;difference=(2n-1) \frac{\lambda}{2} $$
+
+                        In term of phase difference,
+                        $$ Conditon\;for\;minimum,\;phase\;difference=(2n-1){\pi} $$
+                        where n = 1,2,3... and \( \lambda \) is the wavelength of light.
+                    </section>
+                </section>
+                <h3>Optical path length</h3>
+                <p>Optical path length (OPL) is a term used in optics to describe the distance that a light beam travels
+                    through a medium.
+                    It is the product of the physical distance traveled by the light (\(d\)) and the refractive index of
+                    the
+                    medium ( \( \mu \))through which
+                    the light is traveling.</p>
+                <figure>
+                    <img src="opl.png">
+
+                </figure>
+                Assume light wave get passed through a medium of width \(d\). If the velocity of light through this
+                medium is \(v\) and refractive index is \(\mu\), time needed to cover distance d is given by,
+                $$t=\frac{d}{v}$$
+                Since optical path length (opl) is the distance light wave would travel in vaccum in same time, \( t\),
+                $$ opl= t \times c = \frac{d}{v} \times c = d \times \frac{c}{v}=d \times \mu $$
+                where \( c\) is velocity of light in vaccum. So optical path length is given by,
+                $$\boxed{ opl = \mu\;d }$$
+                where \( d \) is the distance travelled by light in medium of refractive index \( \mu \).
+                <h3>Path difference due to dissimilar reflection</h3>
+                When a light wave gets reflected from a denser boundary an additional path difference of λ/2 will be
+                assigned to it.In other hand, reflection on a denser medium reverses the phase of wave by π radians.
+                <figure>
+                    <img src="dissimilar.png">
+                    <figcaption>Top reflected wave gets an additional path difference λ/2 because it is reflected from
+                        boundary of denser medium.</figcaption>
+                </figure>
+                <section id="thinfilm">
+                    <h2>Thin Film Interference</h2>
+                    <p>Thin film interference occurs when light reflects off the top and bottom surfaces of a thin film,
+                        resulting
+                        in constructive and destructive interference.</p>
+
+                    <p>Light waves gets reflected from top and bottom surfaces. These reflected waves interferes and
+                        give alternative dark and bright bands above the film.</p>
+                    <figure>
+                        <img src="thinfilm.png">
+                        <figcaption>Thin film interference</figcaption>
+                    </figure>
+                    The condition for maximum or minimum of interference of these reflected waves depends on path
+                    difference between them. If the thickness of film is d, then path difference between reflected waves
+                    ( on from top surface and other from bottom surface ) is given by,
+                    $$pd = (BC+CD)\;in\;film - BE\;in\;air $$
+                    So optical path difference is given by (refractive index of film is \( \mu \)),
+                    $$\boxed{opd=(BC+CD)\;\mu-BE}\;-->eqn(1)$$
+                    In △BGC,
+                    $$cos\;r=\frac{GC}{BC}=\frac{t}{BC}$$
+                    That gives,
+                    $$BC=\frac{t}{cos\;r}$$
+                    Since △BGC and △GCD are similar triangles,
+                    $$BC = CD $$
+                    That gives,
+                    $$BC+CD = 2\;BC=2 \times \frac{t}{cos\;r} $$
+                    or
+                    $$\boxed{BC+CD = \frac{2t}{cos\;r}} -->eqn(2)$$
+                    In △BDE,
+                    $$sin\;i=\frac{BE}{BD}=\frac{BE}{BG+GD}$$
+                    Since △BGC and △GCD are similar triangles,
+                    $$BG=GD\;ie,\;\;BG+GD=2\;BG$$
+                    or
+                    $$sin\;i=\frac{BE}{2\;BG}$$
+                    That gives,
+                    $$\boxed{BE=2\;BG\;sin\;i}-->eqn(3)$$
+                    In △BGC,
+                    $$tan\;r=\frac{BG}{GC}=\frac{BG}{t}$$
+                    which gives,
+                    $$\boxed{BG=t\;tan\;r}-->eqn(4)$$
+                    Substituting expression for BG in eqn(3),
+                    $$\boxed{BE=2\;t\;tan\;r\;sin\;i}--eqn(5)$$
+                    Take the expression of (BC+CD) from equation (2) and expression for BE from equation (5), substitue
+                    it in expression for optical path difference in eqn(1),
+                    $$opd=(BC+CD)\;\mu-BE$$
+                    $$opd=\Big(\frac{2t}{cos\;r}\Big)\mu-2\;t\;tan\;r\;sin\;i-->eqn(6)$$
+                    From snell's law at top boundary,
+                    $$ \frac{sin\;i}{sin\;r}=\frac{\mu}{1}$$
+                    Rearranging,
+                    $$sin\;i=\mu\;sin\;r $$
+                    Since, \( tan\;r=\frac{sin\;r}{cos\;r}\) and substituting expression for \( sin\;i \) from snells
+                    law in eqn(6),
+                    $$opd=\Big(\frac{2t}{cos\;r}\Big)\mu-2\;t\times \frac{sin\;r}{cos\;r} \times \mu\;sin\;r$$
+                    $$opd= \Big(\frac{2\mu t}{cos\;r}\Big) - \Big(\frac{2 \mu t}{cos\;r}\Big)\;sin^2\;r $$
+                    $$opd=\Big(\frac{2\mu t}{cos\;r}\Big)\;(1-sin^2\;r)$$
+                    $$opd=\Big(\frac{2\mu t}{cos\;r}\Big)\;(cos^2\;r)$$
+                    $$opd= 2\mu t \;cos\;r$$
+                    Since reflection on top surface suffers path difference due to dissimilar reflection from a denser
+                    medium, actual path difference between top and bottom reflected waves is given by,
+                    $$\boxed{opd= 2\mu t \;cos\;r+\frac{\lambda}{2}}-->eqn(7)$$
+                    <h5>Condition for maximum</h5>
+                    To obtain maximum at a point, optical path difference between top and bottom reflected wave should
+                    be integer multiple of wavelength.
+                    $$opd=n\;\lambda$$
+                    Substituting expression for opd from equation(7),
+                    $$ 2\mu t \;cos\;r+\frac{\lambda}{2}=n\;\lambda $$
+                    Rearranging, Condition for obtaining maximum on a thin film of thickness t is given by,
+                    $$\boxed{ 2\mu t \;cos\;r = (2n-1)\;\frac{\lambda}{2}}$$
+                    <h5>Condition for minimum</h5>
+                    To obtain minimum ordarkness at a point, optical path difference between top and bottom reflected
+                    wave should be half integer multiple of wavelength.
+                    $$opd=(2n-1)\;\frac{\lambda}{2}$$
+                    Substituting expression for opd from equation(7),
+                    $$ 2\mu t \;cos\;r+\frac{\lambda}{2}=(2n-1)\;\frac{\lambda}{2} $$
+                    Rearranging, Condition for obtaining maximum on a thin film of thickness t is given by,
+                    $$\boxed{ 2\mu t \;cos\;r = n\lambda}$$
+
+
+                    <section id="cosinelaw">
+                        <h3>Cosine law</h3>
+                        The condition of minimum or darkness in a reflecting system or thin film is called cosine law.
+                        $$\boxed{2 \mu t \;cos\;r=n \lambda}$$
+                        where,
+                        <ul>
+                            <li>\( \mu \) is the refractive index of film</li>
+                            <li>\( t \) is the thickness of film</li>
+                            <li> \( r \) is the angle of refraction</li>
+                            <li> \( \lambda \) is wavelength of light</li>
+                            <li>n = 1,2,3...</li>
+                        </ul>
+                    </section>
+                    <h3>Colors in thin film</h3>
+                    <p>According to cosine law, light of wavelength \( \lambda \) will get cancelled or destructively
+                        interfere if the thin film obeys the condition,</p>
+                    $$\boxed{2 \mu t \;cos\;r=n \lambda}$$
+                    We know that whitelight contain all the wavelengths of visible spectrum. When white light is
+                    incident on a thin film, based on thickness and angle of incidence/refraction some color ( say red)
+                    will get minimum or interfere destructively. So that part of film appears to have remaining part of
+                    white light (violet or
+                    blue).
+                    <p>So based on thickness variation and angle of observation, a thin film incident with white light
+                        appears colored. This effect is commonly observed in soap bubbles, peacock feathers, oil slicks,
+                        and many other natural and man-made
+                        surfaces.</p>
+                </section>
+                <section id="airwedge">
                     <h2>Air Wedge</h2>
                     <p>An air wedge is a thin layer of air between two transparent surfaces, which can cause
                         interference
                         patterns due
-                        to the difference in refractive index. When light passes through an air wedge, it will reflect
-                        off
-                        the top and
-                        bottom surfaces, creating constructive and destructive interference patterns. The bandwidth of
-                        interference patterm formed by an air wedge can be determined by the equation:</p>
-                    $$\beta = \frac{\lambda}{2 \theta}$$
+                        to the difference in refractive index.</p>
+                    <figure>
+                        <img src="airwedge.png">
+                        <figcaption>Air wedge schematic diagram</figcaption>
+                    </figure>
+                    When light passes through an air wedge, it will reflect
+                    off
+                    the top and
+                    bottom surfaces, creating constructive and destructive interference patterns.
+                    The condition of maximum and minimum are dependent on path difference between top and bottom
+                    reflected waves. For obtaining bandwidth of interference pattern, refer the figure below.
+                    <figure>
+                        <img src="airwedgeband.png">
+
+                    </figure>
+                    Assume that nth band forms at A where thickness of film is \( t_1 \) and (n+1)th band forms at B,
+                    where
+                    thickness is \( t_2 \).From the figure( refer △ABC ),
+                    $$tan\;\theta=\frac{t_2-t_1}{l_2-l_1}$$
+                    Since bandwidth is defined as width of one band or distance between two adjacent bright or dark
+                    bands, we can write \(l_2-l_1 = \beta \). That gives,
+                    $$tan\;\theta=\frac{t_2-t_1}{\beta}$$
+                    Since \( \theta \) is very small, \( tan\;\theta = \theta \). That means,
+                    $$\theta=\frac{t_2-t_1}{\beta}-->eqn(1)$$
+                    where \( \theta \) is the wedge angle and \( \beta \) is bandwidth of interference pattern.
+                    The condition for obtaining nth dark band at A with thickness \(t_1\) is given by cosine law,
+                    $$2\mu t_1 cos \;r=n\lambda $$
+                    Due to normal incidence, \(r=0\) and since film is air film, \( \mu=1\):
+                    $$2\;t_1=n\lambda -->eqn(2)$$
+                    or
+                    $$t_1=n\;\frac{\lambda}{2}$$
+                    Similarly, condition for obtaining (n+1)th dark band at A with thickness \(t_1\) is given by,
+                    $$2\mu t_2 cos \;r=(n+1)\lambda $$
+                    or
+                    $$2t_2=(n+1)\lambda $$
+                    which gives,
+                    $$ t_2=(n+1)\;\frac{\lambda}{2}-->eqn(3)$$
+                    Substracting equation(2) from equation(3),
+                    $$t_2-t_1 = \frac{\lambda}{2}-->eqn(4)$$
+                    Take equation(1) and substitute expression for \(t_2-t_1 \) from equation (4);
+                    $$\theta=\frac{\lambda}{2\beta}$$
+                    Rearranging, Bandwidth of air wedge interference pattern is given by,
+                    $$\boxed{\;\;\beta = \frac{\lambda}{2\theta}\;\;}-->eqn(5)$$
+
+
+
                     <p>Where θ is the wedge angle and λ is the wavelength of
                         the
                         light used.</p>
-                    <p>One of the most common uses of air wedge is to measure the diameter or thickness of a thin wire.
-                        By
-                        measuring the
-                        angular position of the maxima and minima, the thickness of the air gap between the wire and the
-                        transparent
-                        surface can be determined. This thickness can then be used to calculate the diameter or
-                        thickness of
-                        the wire.
-                        equation you can use to obtain the thickness of a thin wire using an air wedge:
 
-                    <p>$$d = \frac{l \lambda}{2 \beta}$$</p>
+                    If a medium of refractive index \( \mu \) is filled rather than air, then bandwidth is given by,
+                    $$\boxed{\;\;\beta = \frac{\lambda}{2\;\mu\;\theta}\;\;}$$
+                </section>
+                <section id="airwedgeapplications">
+                    <h3>Applications of Air wedge</h3>
+                    Air wedge is an experimental apparatus in following applications.
+                    <h4>Diameter of thin wire</h4>
+                    <figure>
+                        <img src="thinwire.png">
+                    </figure>
+                    From the air wedge apparatus shown above,
+                    $$tan\;\theta=\frac{d}{l}$$
+                    Since \( \theta \) is very small,
+                    $$ \theta = \frac{d}{l}-->eqn(6)$$
+                    From expression for bandwidth ( refer eqn(5)),
+                    $$\beta = \frac{\lambda}{2\theta} $$
+                    or
+                    $$\theta = \frac{\lambda}{2\beta}-->eqn(7) $$
+                    Comparing equation(6) and (7),
+                    $$\frac{d}{l} =\frac{\lambda}{2\beta} $$
+                    That gives diameter of thin wire placed between glass plates in air wedge as,
+                    <p>$$\boxed{\;\;\;d = \frac{l \lambda}{2 \beta}\;\;\;}$$</p>
 
                     <p>Where:</p>
 
-                    <p>d is the thickness of the wire</p>
+                    <p>d is the thickness or diameter of the wire</p>
 
                     <p>λ is the wavelength of the light used</p>
                     <p>\( \beta \) is the bandwidth of interference pattern</p>
                     </p>
+                    <h4>Optical planeness of glass plates</h4>
                     <p>Air wedges can also be used to check the optical planeness of a surface. By measuring the angular
                         position of the
                         maxima and minima, it is possible to determine the uniformity of the air gap between the surface
@@ -382,7 +630,7 @@
                         position of the maxima and minima, indicating that the surface is not optically plane.</p>
                 </section>
 
-                <section id="newtons-rings">
+                <section id="newtonsring">
                     <h2>Newton's Rings</h2>
                     <p>Newton's rings are a pattern of concentric circles formed by the interference of light reflecting
                         off
@@ -391,41 +639,84 @@
                         Isaac
                         Newton in
                         his book "Opticks" in 1704. </p>
-                    <p>When a spherical lens is placed on a flat surface and illuminated with monochromatic light, the
+                    <figure>
+                        <img src="newtonsring.png">
+                        <figcaption>Newton's Ring apparatus and interference pattern.</figcaption>
+                    </figure>
+                    <p>When a plano-convex lens is placed on a flat surface (or glass plate) a thin air film will be
+                        formed between lens and glassplate. If this is illuminated with monochromatic light, the
                         light
                         reflecting
-                        off the lens will interfere with the light reflecting off the flat surface. This interference
+                        from top and bottom part of this film interfere with each other. This interference
                         will
                         result in a
                         pattern of bright and dark rings, with the center of the pattern being the point of contact
                         between
                         the lens and
-                        the flat surface. The radius of the nth ring is given by the equation:</p>
-                    $$r_n = \sqrt{Rn \lambda}$$
-                    <p>Where R is the radius of curvature of the lens and λ is the wavelength of the light used. The
-                        dark
-                        rings occur
-                        when the light waves reflecting off the front and back surfaces of the lens are out of phase,
-                        resulting in
-                        destructive interference. The bright rings occur when the light waves are in phase, resulting in
-                        constructive
-                        interference. The thickness of the air gap between the lens and the flat surface can be
-                        determined
-                        by measuring
-                        the radius of the first dark ring.</p>
-                    <p>Newton's rings are used in a variety of applications, measuring wavelength of light and
-                        refractive
-                        index of a liquid.</p>
-                    <h5>Calculation of wavelength</h5>
-                    <p>The wavelength of light used in a newton's rings experiment can be calculated using equation,</p>
-                    $$ \lambda =\frac{D_{n+k}^2 - D_n^2}{4 R k} $$
+                        the flat surface.
+                    <h4>Radius of nth dark ring</h4>
+                    <figure>
+                        <img src="newtonsrings.png">
+                    </figure>
+                    Assume that nth ring form at position A, where thickness of film is t. From figure △ABC,
+                    $$ AB^2+BC^2=AC^2$$
+                    $$ r_n^2 + (R-t)^2 = R^2 $$
+                    $$ r_n^2 + R^2 -2tR + t^2 = R^2$$
+                    Since thickness t is very small, neglect the term \( t^2 \).
+                    $$r_n^2 = 2tR -->eqn(1)$$
+                    Condition for forming nth dark ring at thickness t is given by (cosine law),
+                    $$ 2 \mu t \;cos\;r = n \lambda $$
+                    Assume normal incidence ( r = 0 ) and air film is between lens and plate ( \( \mu = 1 \)),
+                    $$2t=n\lambda -->eqn(2)$$
+                    Substituting this value of \( 2t \) in equation(1),
+                    $$r_n^2 = 2tR = n \lambda \times R = R n \lambda $$
+                    Hence radius of nth dark ring is given by,
+                    $$\boxed{\;\;r_n = \sqrt{Rn \lambda}\;\;}$$
+
+
+                    <p>Where R is the radius of curvature of the lens and λ is the wavelength of the light used.
+                    </p>
+                    </p>
+                </section>
+                <section id="newtonsringapplications">
+                    <h3>Applications of newton's rings</h3>
+                    Newton's rings can be used to ,
+                    <h4>Calculation of wavelength</h4>
+                    Radius of nth dark ring is given as,
+                    $$ r_n = \sqrt{Rn \lambda} $$
+                    So the diameter of nth dark ring \( D_n \) is given by [ \( diameter = 2 \times radius \)],
+                    $$ D_n = 2 \sqrt{Rn \lambda} $$
+                    squaring both sides,
+                    $$D_n^2 = 4Rn \lambda -->eqn(3)$$
+                    Diameter of (n+k)th dark ring is given by,
+                    $$D_{n+k}^2 = 4R(n+k) \lambda -->eqn(4)$$
+                    Subracting equation(3) from equation(4),
+                    $$D_{n+k}^2 - D_n^2 = 4R(n+k) \lambda - 4Rn \lambda $$
+                    $$D_{n+k}^2 - D_n^2 = 4Rk \lambda-->eqn(5)$$
+                    Or wavelength can be calculated as,
+                    $$\boxed{\;\lambda = \frac{D_{n+k}^2 - D_n^2}{4Rk}\;}$$
+
                     <p> where \( D_{n+k} \) is the diameter of (n+k) th ring and \( D_{n} \) is diameter of nth dark
                         ring. R
                         is the radius of curvature of lens used in this experiment.</p>
                 </section>
+                <h4>Calculation of refractive index</h4>
+                If the gap between plano convex lens and glass plate is filled with any liquid of refractive index \(
+                \mu \), radius of nth dark ring can be modified as,
+                $$r_n^2 = \frac{R n \lambda}{\mu} $$
+                So diameter of nth ring and (n+k)th ring will be ,
+                $$d_n^2 = \frac{4Rn \lambda}{\mu}$$
+                $$d_{n+k}^2 = \frac{4R(n+k) \lambda}{\mu}$$
+                Subracting each other,
+                $$d_{n+k}^2 - d_n^2 = \frac{4Rk \lambda}{\mu} -->eqn(6)$$
+                Dividing equation(5) with equation(6), We get the refractive index of liquid as,
+                $$\boxed{\;\mu = \frac{D_{n+k}^2 - D_n^2}{d_{n+k}^2 - d_n^2}\;}$$
+                where \(D_n \) and \( D_{n+k} \) are diameters of nth and (n+k)th dark ring when air is between glass
+                plate and lens. \( d_n \) and \( d_{n+k} \) are diameters of nth and (n+k)th dark rings when liquid of
+                refractive index \( \mu \) is introduced between lens and plate.
 
             </section>
-            <section id="anti-reflection">
+            <section id="arc">
                 <h2>Anti-Reflection Coating</h2>
                 <p>Anti-reflection coatings are thin films applied to surfaces to reduce the amount of reflection that
                     occurs. They
@@ -456,6 +747,9 @@
                 <p>Interference filters are used in a variety of applications, including spectroscopy, imaging, and
                     color
                     separation.</p>
+            </section>
+            <section id="problems">
+                <h3>Numerical problems</h3>
             </section>
 
         </div>
