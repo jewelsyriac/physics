@@ -288,8 +288,9 @@
         <ul>
             <li><a href="diffraction.html#diffraction">Diffraction</a></li>
             <li><a href="diffraction.html#classificationdiffraction">Classification of diffraction</a></li>
-
+            <li><a href="diffraction.html#comparison">Comparison between interference and diffraction</a></li>
             <li><a href="diffraction.html#grating">Diffraction grating</a></li>
+            <li><a href="diffraction.html#whitelightgrating">White light on grating</a></li>
             <li><a href="diffraction.html#rayleigh">Rayleigh's criterion</a></li>
             <li><a href="diffraction.html#resolving">Resolving Power</a></li>
             <li><a href="diffraction.html#dispersive">Dispersive Power</a></li>
@@ -307,8 +308,12 @@
                 small openings or around obstacles. This results in a diffraction pattern that can be observed on a
                 screen or
                 detector placed behind the diffracting object.</p>
+            <figure>
+                <img src="diffraction.png">
+                <figcaption>Diffraction through a single slit.</figcaption>
+            </figure>
         </section>
-        <section id="classification">
+        <section id="classificationdiffraction">
             <h2>Classification of Diffraction</h2>
             <p>Diffraction can be classified into two types: Fraunhofer diffraction and Fresnel diffraction.</p>
             <h3>Fraunhofer Diffraction</h3>
@@ -319,6 +324,7 @@
                 slit is a set of bright and dark fringes, with the bright fringes corresponding to constructive
                 interference and
                 the dark fringes corresponding to destructive interference.</p>
+
             <h3>Fresnel Diffraction</h3>
             <p>Fresnel diffraction occurs when the diffracting object is close to the observer or detector. An example
                 of this
@@ -329,19 +335,221 @@
                 the bright rings corresponding to constructive interference and the dark rings corresponding to
                 destructive
                 interference.</p>
+            The table below classifies Fresnel and Fraunhofer diffraction in detail.
+            <p> </p>
+            <table>
+                <tr>
+                    <th>Property</th>
+                    <th>Fresnel Diffraction</th>
+                    <th>Fraunhofer Diffraction</th>
+                </tr>
+                <tr>
+                    <td>Distance from source to diffractor</td>
+                    <td>Short (near field)</td>
+                    <td>Long (far field)</td>
+                </tr>
+                <tr>
+                    <td>Distance from diffractor to observer</td>
+                    <td>Long (far field)</td>
+                    <td>Short (near field)</td>
+                </tr>
+                <tr>
+                    <td>Shape of wavefront</td>
+                    <td>Spherical</td>
+                    <td>Plane</td>
+                </tr>
+                <tr>
+                    <td>Diffraction pattern</td>
+                    <td>Circular</td>
+                    <td>Linear</td>
+                </tr>
+                <tr>
+                    <td>Applications</td>
+                    <td>
+                        <ul>
+                            <li>Antennas, near-field imaging</li>
+                            <li>Near-field scanning optical microscopy (NSOM)</li>
+                            <li>Fresnel zone plate lens</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Optics, far-field imaging</li>
+                            <li>Single-slit and double-slit experiments in physics</li>
+                            <li>Fourier optics and image processing</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <section id="comparison">
+                <h3>Comparison between Interference and Diffraction</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Characteristic</th>
+                            <th>Interference</th>
+                            <th>Diffraction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Definition</td>
+                            <td>Occurs when two or more light waves overlap and interact with each other</td>
+                            <td>Occurs when light waves encounter an obstacle or opening that is roughly the same size
+                                as its wavelength
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Amplitude of resulting wave</td>
+                            <td>Sum of amplitudes of individual waves</td>
+                            <td>Convolution of amplitude of individual waves</td>
+                        </tr>
+
+                        <tr>
+                            <td>Formation of patterns</td>
+                            <td>Bright and dark bands with uniform intensity</td>
+                            <td>Bright and dark bands with varying intensity</td>
+                        </tr>
+                        <tr>
+                            <td>Width of bands</td>
+                            <td>Uniform</td>
+                            <td>Varying from centre to either sides</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dependency on size of obstacle or opening</td>
+                            <td>Dependent on coherence of interferring waves</td>
+                            <td>Directly proportional</td>
+                        </tr>
+                        <tr>
+                            <td>Observable with</td>
+                            <td>Interference pattern</td>
+                            <td>Diffraction pattern</td>
+                        </tr>
+                        <tr>
+                            <td>Examples</td>
+                            <td>Young's double-slit experiment, Newton's rings</td>
+                            <td>Single-slit diffraction, diffraction gratings</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
         </section>
-        <section id="diffraction-grating">
+        <section id="grating">
             <h2>Diffraction Grating</h2>
             <p>A diffraction grating is a surface with a large number of parallel, closely spaced, and equally spaced
                 lines or
-                grooves. Light passing through a diffraction grating will diffract at different angles, depending on the
-                wavelength of the light and the spacing of the lines or grooves. The angle of diffraction is determined
-                by the
-                grating equation:</p>
-            $$\sin\theta_m = \frac{m\lambda}{d}$$
-            <p>Where:</p>
+                grooves. In other words grating is an arrangement of tiny slits in glass plate.
+            <figure>
+                <img src="grating.png">
+                <figcaption>Schematic figure of diffraction grating.</figcaption>
+            </figure>
+            These lines are drawn with help of fine diamond edges and density of these lines are very hight, normally
+            15,000 lines per inch.
+            When light falls normally on a grating diffraction happens at all slits light diffracts it all direction.
+            <p>Those light waves diffracts in normal direction converges in the central part of screen can be called as
+                central maximum. This point has peak intensity in the diffraction pattern.</p>
+            <figure>
+                <img src="grating1.png">
+                <figcaption>formation of central maximum.</figcaption>
+            </figure>
+            <h3>Derivation of grating equation</h3>
+            When incidenting with a monochromatic light, diffraction happens at all points in a grating. That means
+            light gets diffracted ( or say spread ) in all direction at each transparent slit. Take the width of opaque
+            line as b and that of transparent portion as a.
 
-            <script src="pht110.js"></script>
+            <figure>
+                <img src="grating2.png">
+                <figcaption>Theory of diffraction grating.</figcaption>
+            </figure>
+            <p>Refer the figure above & take light waves that diffracts in direction \( \theta \) ( making an angle
+                \(\theta\) with horizontal ) from adjacent slits. If these two waves ( wave 1 and wave 2 ) adds each
+                other and converges to form a maximum, the path difference between them should me multiple of wavelength
+                \( \lambda \).</p>
+            So Condition for forming nth order primary maximum at this point is,
+            $$path\;difference = n\lambda $$
+            From the figure, path difference between wave1 and wave2 is ,
+            $$path\;difference=AC $$
+            From △ABC,
+            $$sin\;\theta=\frac{AC}{AB} $$
+            or
+            $$AC=AB\;sin\;\theta $$
+            Since AB is the total width of opaque line (b) and transparent slit (a),
+            $$ AC = (a+b)\;sin\;\theta $$
+            That gives condition for forming nth order primary maximum as,
+            $$ (a+b)\;sin\;\theta = n\lambda $$
+            or
+            $$\boxed{ sin\;\theta = \frac{1}{a+b}\;n\lambda} $$
+            where \( (a+b)\) is called grating element.
+            <p>Since \(\frac{1}{a+b}= N \) where N is number of lines per unit length in grating, Grating equation can
+                be
+                written as,</p>
+            $$ \boxed{sin\;\theta=Nn \lambda} $$
+
+            <p>Where </p>
+            <p>\( \theta \) is the angle of diffraction</p>
+            <p>n is the order of spectrum</p>
+            <p>N is the number of lines per unit length</p>
+            <p>\( \lambda \) is the wavelength of light used.</p>
+            </p>
+        </section>
+        <section id="whitelightgrating">
+            <h3>White light on grating</h3>
+            <p>White light contains all the wavelengths in visible spectrum. So when incidenting white light on grating,
+                all these wavelengths will obey the grating equation,</p>
+            $$ sin\;\theta=Nn \lambda $$
+            That means each wavelength (\( \lambda \) ) will have unique angle of diffraction \( \theta \) based on
+            their wavelength. Or each color or wavelength in white light will have a unique position in maxima of
+            diffraction pattern.<p> So each primary maximum will be a collection of colors based on their wavelength or
+                we
+                can say a spectrum is formed rather than a single bright spot of maximum at each point.</p>
+            <figure>
+                <img src="grating3.png">
+                <figcaption>Grating on white light.</figcaption>
+            </figure>
+        </section>
+        <section id="rayleigh">
+            <h2>Rayleigh criterion</h2>
+            The two spectral lines (wavelengths or colors) will be resolved ( seen as separate ) only if atleast primary
+            maximum of any order of one line falls on first order secondary minimum of other one.
+            <figure>
+                <img src="rayleigh.png">
+                <figcaption>
+                    Rayleigh criterion and resolving spectrum.
+                </figcaption>
+            </figure>
+
+        </section>
+        <section id="resolving">
+            <h3>Resolving power of grating</h3>
+            <p>The resolving power of a grating refers to its ability to separate or resolve closely spaced lines or
+                wavelengths in a
+                spectrum. The resolving power of a grating is determined by the number of lines per millimeter (or per
+                inch) on the
+                grating and the angle of incidence of light on the grating.</p>
+            <p>It is defined as the ratio of the wavelength of one of the spectral line to the difference in the
+                wavelengths between
+                them such that the two lines appear to be just resolved.</p>
+            Resolving power of grating is given by relation,
+            $$\boxed{ \frac{\lambda}{d \lambda} = N n }$$
+            where n is the order of spectrum and N is the number of lines per unit length of grating.
+        </section>
+        <section id="dispersive">
+            <h3>Dispersive power</h3>
+            <p>The dispersive power of a grating refers to its ability to spread out different wavelengths of light into
+                a spectrum. A
+                grating's dispersive power is determined by the spacing between the lines on the grating and the angle
+                of incidence of
+                light on the grating.</p>
+            Mathematically dispersive power can be defined change in angle of diffraction ( \( \theta \)) with respect
+            to wavelength \( \lambda \). Dispersive power of grating is given by equation,
+            $$\boxed{\frac{d\theta}{d \lambda}=\frac{N n}{cos\;\theta} }$$
+            where n is the order of spectrum, N is the number of lines per unit length of grating and \( \theta \) is
+            the angle of diffraction.
+        </section>
+
+        <script src="pht110.js"></script>
 </body>
 
 </html>
