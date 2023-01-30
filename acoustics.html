@@ -287,10 +287,12 @@
         <ul>
             <li><a href="acoustics.html#acoustics">Acoustics - Introduction</a></li>
             <li><a href="acoustics.html#soundchar">Characteristics of sound</a></li>
-            <li><a href="acoustics.html#absorption">Absorption & absorption coefficient</a></li>
+            <li><a href="acoustics.html#thresold">Threshold of minimum and pain</a></li>
+            <li><a href="acoustics.html#echoe">Echo</a></li>
             <li><a href="acoustics.html#reverberation">Reverberation</a></li>
-            <li><a href="acoustics.html#echoe">Echoe</a></li>
             <li><a href="acoustics.html#reverberationtime">Reverberation time and significance</a></li>
+            <li><a href="acoustics.html#absorption">Absorption & absorption coefficient</a></li>
+
             <li><a href="acoustics.html#sabines">Sabine's formula</a></li>
             <li><a href="acoustics.html#buildingacoustics">Acoustics of buiding</a></li>
             <li><a href="acoustics.html#problems">Numerical problems</a></li>
@@ -304,7 +306,7 @@
                 manipulated. In
                 this section, we will cover some important topics in acoustics, including the features of sound, echo,
                 reverberation, sound absorption, and factors affecting a hall.</p>
-            <section id="features-of-sound">
+            <section id="soundchar">
                 <h3>Features of Sound</h3>
                 <p>Sound is a mechanical wave that travels through a medium, such as air or water. It is characterized
                     by
@@ -312,11 +314,17 @@
                 <ul>
                     <li>
                         <h4>Pitch</h4>
-                        <p>Pitch refers to the perceived highness or lowness of a sound. It is determined by the
-                            frequency of
-                            the sound wave, with higher frequency waves having a higher pitch and lower frequency waves
-                            having a
-                            lower pitch.</p>
+                        <p>Pitch refers to the perceived highness or lowness of a sound.The human ear perceives
+                            different frequencies as having different pitches. A higher frequency sound wave has a
+                            higher
+                            pitch, while a lower frequency sound wave has a lower pitch. The frequency of a sound wave
+                            is measured in Hertz (Hz),
+                            with higher frequencies typically being in the range of 1,000 Hz and above, while lower
+                            frequencies are in the range of
+                            20 Hz or lower. The perception of pitch is subjective, and can be influenced by factors such
+                            as the intensity of the
+                            sound, the individual's age and hearing ability, and the context in which the sound is
+                            heard.</p>
                     </li>
                     <li>
                         <h4>Loudness</h4>
@@ -325,138 +333,398 @@
                             of the sound wave, with larger amplitude waves being perceived as louder and smaller
                             amplitude waves
                             being perceived as softer.</p>
-                    </li>
-                    <li>
-                        <h4>Sound Intensity Level (SIL)</h4>
-                        <p>Sound Intensity Level (SIL) is a measure of the intensity of a sound. It is measured in
-                            decibels (dB)
-                            and is calculated as 10 log10 (I/Io) where I is the intensity of the sound and Io is a
-                            reference
-                            intensity level. </p>
+                        Loudness L can be related to intensity of sound I as,
+                        $$ L = log_{10}\;(I) $$
+
                     </li>
                     <li>
                         <h4>Intensity</h4>
-                        <p>Intensity refers to the power of a sound wave per unit area. It is measured in watts per
+                        <p>Intensity refers to the energy of a sound wave passing per unit area per unit time. It is
+                            measured in watts per
                             square meter
                             (W/m^2) and is directly proportional to the amplitude of the sound wave.</p>
+                        $$ Intensity \propto Amplitude^2 $$
                     </li>
+                    <li>
+                        <h4>Sound Intensity Level (SIL)</h4>
+                        <p>Sound Intensity Level (SIL) is a measure of the intensity of a sound. Sound intensity levels
+                            compares the intensity of sound with a reference intensity which is normally threshold
+                            minimum intensity.
+                            $$ SIL = L - L_o $$
+                            where L is the loudness of a sound and L_o is loudness of faintest sound that we can hear (
+                            threshold of minimum ).It is measured in Bels
+                            or
+                            decibels (dB).
+                        <p>The relation between sound intensity level and intensity is,</p>
+                        $$ SIL = log_{10}\;\Big(\frac{I}{I_o}\Big) \;Bels$$
+                        where I is the intensity of the sound and Io is a
+                        reference
+                        intensity level usually threshold of minimum. </p>
+                        In decibels,
+                        $$ SIL = 10\;log_{10}\;\Big(\frac{I}{I_o}\Big) \;dB$$
+                    </li>
+
                 </ul>
             </section>
-            <section id="echo-reverberation">
-                <h3>Echo and Reverberation</h3>
-                <p>Echo and reverberation are both related to the reflection of sound waves. </p>
-                <ul>
-                    <li>
-                        <h4>Echo</h4>
-                        <p>Echo is a distinct repetition of a sound that is heard after the original sound has been
-                            emitted. It
-                            occurs when a sound wave is reflected off a hard surface, such as a wall or a cliff, and
-                            returns to
-                            the listener with a distinct delay. </p>
-                    </li>
-                    <li>
-                        <h4>Reverberation</h4>
-                        <p>Reverberation is the persistence of sound in a particular space after the original sound has
-                            stopped.
-                            It occurs when sound waves are reflected multiple times off surfaces in a room or other
-                            enclosed
-                            space. Reverberation is characterized by its decay time, which is the amount of time it
-                            takes for
-                            the sound level to decrease by 60 dB after the sound source has stopped.</p>
-                    </li>
-                    </li>
-                    <li>
-                        <h4>Difference between Echo and Reverberation</h4>
-                        <p>The main difference between echo and reverberation is the number of reflections and the time
-                            delay between the
-                            original sound and the reflected sound. An echo is a single reflection of sound with a
-                            distinct delay, while
-                            reverberation is a series of reflections with a longer decay time. </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="absorption-of-sound">
-                <h3>Absorption of Sound</h3>
-                <p>Sound absorption is the process by which a material or surface reduces the amplitude of a sound wave
-                    by
-                    converting its energy into heat. This is an important factor in controlling the acoustics of a room
-                    or other
-                    enclosed space.</p>
-                <ul>
-                    <li>
-                        <h4>Absorption Coefficient</h4>
-                        <p>The absorption coefficient is a measure of a material's ability to absorb sound. It is a
-                            dimensionless
-                            value between 0 and 1, with a value of 1 indicating complete absorption and a value of 0
-                            indicating no
-                            absorption. </p>
-                    </li>
-                    <li>
-                        <h4>Sabine's Formula</h4>
-                        <p>Sabine's formula is used to calculate the reverberation time of a room. It takes into account
-                            the volume
-                            of the room, the total absorbing area of the room, and the absorption coefficient of the
-                            materials used
-                            in the room. </p>
-                    </li>
-                </ul>
-            </section>
-            <section id="acoustics-factors-affecting-a-hall">
-                <h3>Acoustics Factors Affecting a Hall</h3>
-                <p>The acoustics of a hall or other enclosed space can greatly affect the quality of the sound heard by
-                    the
-                    listener. Some important factors to consider include:</p>
-                <ul>
-                    <li>
-                        <h4>Echo</h4>
-                        <p>Echo can be a problem in large halls and can be reduced by using sound-absorbing materials on
-                            walls and
-                            ceilings. </p>
-                    </li>
-                    <li>
-                        <h4>Reverberation</h4>
-                        <p>Reverberation can also be a problem in large halls, making it difficult for the listener to
-                            understand
-                            speech or music. This can be reduced by using sound-absorbing materials on walls and
-                            ceilings and by
-                            controlling the room's volume and shape. </p>
-                    </li>
-                    <li>
-                        <h4>Focusing of Sound</h4>
-                        <p> Sound waves can be focused or deflected by the shape and materials used in the hall, which
-                            can affect
-                            the distribution of sound throughout the space.</p>
-                    </li>
-                    <li>
-                        <h4>Echelon Effect</h4>
-                        <p>The echelon effect is an acoustic phenomenon that occurs in long and narrow spaces, where
-                            sound waves are
-                            reflected off the walls and travel in parallel paths along the length of the space,
-                            resulting in a reinforcement of sound at certain locations. This can be reduced by using
-                            sound
-                            diffusing materials on the walls, or by breaking up the long, parallel walls with angles and
-                            curves. </p>
-                    </li>
-                    <li>
-                        <h4>Resonance Effect</h4>
-                        <p>Resonance is the amplification of sound caused by the natural frequency of a space or object.
-                            This can lead to
-                            certain frequencies being overly loud or boomy, and can be reduced by using sound-absorbing
-                            materials or by
-                            adjusting the shape and layout of the space. </p>
-                    </li>
-                    <li>
-                        <h4>Adequate Loudness and Noise</h4>
-                        <p>To ensure optimal sound quality, it is important to maintain an adequate loudness level in
-                            the space and to
-                            minimize external noise. This can be achieved by using sound-insulating materials on windows
-                            and doors, and by
-                            using sound-absorbing materials on walls and ceilings. </p>
-                    </li>
-                </ul>
+            <section id="thresold">
+                <h3>Threshold minimum intensity</h3>
+                The threshold minimum intensity of sound refers to the minimum sound intensity, or sound pressure level,
+                required for a
+                person to just barely detect the sound. This level is determined by the sensitivity of the human ear and
+                has
+                a value of,
+                $$ I_o = 10^{-12}\;W/m^2 $$
+                <h3>Threshold of Pain</h3>
+                The threshold of pain refers to the level of sound intensity that becomes uncomfortable or painful for
+                the
+                human ear.
+                This level is generally considered above intensity 1 W/m^2 and can vary based on individual tolerance
+                and
+                the
+                frequency of the sound. At levels above the threshold of pain, long-term exposure to the sound can lead
+                to
+                permanent
+                hearing damage.
             </section>
 
+            <section id="echoe">
+                <h3>Echo and Reverberation</h3>
+                <p>Echo and reverberation are both related to the reflection of sound waves. </p>
+
+                <h4>Echo</h4>
+                <p>Echo is a distinct repetition of a sound that is heard after the original sound has been
+                    emitted. It
+                    occurs when a sound wave is reflected off a hard surface, such as a wall or a cliff, and
+                    returns to
+                    the listener with a distinct delay. </p>
+                <p>he sound wave travels from the source, hits a surface and bounces back to the listener. If
+                    the time between the original
+                    sound and the reflected sound is significant or greater than 1/7 th of a second, the
+                    listener perceives the sound as an echo. The strength of an echo
+                    depends on several factors, including the distance between the source and the reflecting
+                    surface, the type of surface,
+                    and the absorption properties of the surface.</p>
+                <p>Echo has many important applications, especially in the design of buildings and structures.
+                    In architectural design, the
+                    presence of echoes can affect the acoustics of a room and the overall sound quality. For
+                    example, large, hard surfaces
+                    like walls and floors can reflect sound waves, creating echoes that can make it difficult to
+                    hear speech or music. To
+                    reduce the effects of echoes, designers may use sound-absorbing materials, such as carpet,
+                    curtains, and soundproofing
+                    panels, to reduce the reflection of sound waves and improve the acoustics of a room.
+
+
+                </p>
+            </section>
+            <section id="reverberation">
+
+                <h4>Reverberation</h4>
+                <p>Reverberation is the persistence of sound in a space after the original sound source has
+                    stopped. Unlike echo, which is
+                    a distinct reflection of sound from a surface, reverberation is the result of multiple
+                    reflections of sound waves from
+                    all surfaces in a space, creating a complex and continuous sound field. The time it takes
+                    for sound to decay and
+                    disappear is known as the reverberation time and it is a measure of the acoustics of a
+                    space.</p>
+                <p>Reverberation plays a crucial role in the acoustics of a room, affecting speech
+                    intelligibility, music quality, and
+                    overall sound experience. For example, in a concert hall or a theater, a longer
+                    reverberation time can enhance the sound
+                    and create a more immersive experience for the audience. However, in a speech or classroom
+                    setting, a longer
+                    reverberation time can make speech harder to understand and can affect the quality of
+                    teaching.</p>
+                <p>To control the level of reverberation in a space, designers may use sound-absorbing
+                    materials, such as acoustic panels,
+                    curtains, and carpet, to reduce the reflection of sound waves and shorten the reverberation
+                    time. They may also
+                    incorporate other architectural elements, such as angled walls or ceilings, to break up the
+                    reflection of sound waves
+                    and reduce the amount of reverberation.</p>
+            </section>
+            <section id="reverberationtime">
+                <h4>Reverberation Time and significance</h4>
+                <p>Reverberation time is the amount of time it takes for the sound energy in a space to decay by 60
+                    decibels (dB)
+                    after the sound source has stopped. It is a measure of the persistence of sound in a space and is an
+                    important factor in
+                    determining the acoustics of a room.</p>
+                <p>The significance of reverberation time lies in its impact on the sound quality of a space. A short
+                    reverberation time is
+                    desirable in spaces where speech intelligibility is important, such as lecture halls or conference
+                    rooms, as it allows
+                    for clear and easy to understand speech. In contrast, a long reverberation time is desirable in
+                    spaces where music or
+                    other performances are held, as it enhances the sound and creates a rich, immersive experience.</p>
+                <p>In general, reverberation time is a critical aspect of room acoustics that can greatly impact the
+                    sound quality, speech
+                    intelligibility, and overall acoustical character of a space.</p>
+            </section>
+
+            <h4>Difference between Echo and Reverberation</h4>
+            <p>The main difference between echo and reverberation is the number of reflections and the time
+                delay between the
+                original sound and the reflected sound. An echo is a single reflection of sound with a
+                distinct delay, while
+                reverberation is a series of reflections with a longer decay time. </p>
+            The table given below gives a clear distinction between echo and reverberation.
+            <p> </p>
+            <table>
+                <tr>
+                    <th>Characteristic</th>
+                    <th>Echo</th>
+                    <th>Reverberation</th>
+                </tr>
+                <tr>
+                    <td>Source</td>
+                    <td>Single reflection of sound from a surface</td>
+                    <td>Multiple reflections of sound from all surfaces in a space</td>
+                </tr>
+                <tr>
+                    <td>Timing</td>
+                    <td>Noticeable delay between the original sound and the reflected sound</td>
+                    <td>Continuous sound field that persists after the original sound source has stopped
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perception</td>
+                    <td>Distinct and separate sound</td>
+                    <td>Continuous and complex sound field</td>
+                </tr>
+                <tr>
+                    <td>Examples</td>
+                    <td>
+                        <ul>
+                            <li>Yelling in a large, empty room and hearing the echoed of your voice</li>
+                            <li>A person clapping in a canyon and hearing the echoes of the clap</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>A concert hall with a long reverberation time, creating a rich and immersive
+                                sound experience</li>
+                            <li>A bathroom with high levels of reverberation, making speech difficult to
+                                understand</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <h4>Reverberation Time and significance</h4>
+
         </section>
+        <section id="absorption">
+            <h3>Absorption of Sound</h3>
+            <p>Sound absorption is the process by which a material or surface reduces the amplitude of a sound wave
+                by
+                converting its energy into heat.</p>
+
+            <h4>Absorption Coefficient</h4>
+            <p>The absorption coefficient is a measure of a material's ability to absorb sound. It is a
+                dimensionless
+                value between 0 and 1, with a value of 1 indicating complete absorption and a value of 0
+                indicating no
+                absorption. </p>
+            <p>An <b>open window</b> passes all the sound waves falling on it, hence an open window is considered as
+                <b>perfect absorber</b>.
+            </p>
+            Mathematically absorption coefficient can be represented as,
+            $$ \alpha = \frac{Energy\;absorbed\;by\;surface}{Energy\;absorbed\;by\;same\;area\;of\;open\;window} $$
+            In terms of absorption A,
+            $$\boxed{\;\; \alpha = \frac{A}{S}\;\;}$$
+            where A is the total absorption in surface S which is given as,
+            $$ A = \alpha_1\;s_1+\alpha_2\;s_2+...... $$
+            where,
+            $$ S = s_1+s_2+s_3+.... $$
+            The unit of absorption is \( m^2 \;sabine\).
+        </section>
+        <section id="sabines">
+
+            <h4>Sabine's Formula</h4>
+            <p>Sabine's formula is used to calculate the reverberation time of a room. It takes into account
+                the volume
+                of the room, the total absorbing area of the room, and the absorption coefficient of the
+                materials used
+                in the room. </p>
+            Sabine's formula is given as,
+            $$\boxed{\;\;T=\frac{0.163\;V}{A}\;\;}$$
+            where <b>T</b> is the reverberation time in a hall with volume <b>V</b> and total absorption <b>A</b>.
+            <p>If the hall or room contains only floor, ceiling and walls, total absoption is sum of absorption due
+                to each component.</p>
+            $$ A = A_{ceiling}+A_{floor}+A_{walls} $$
+            or
+            $$ A = \alpha_{ceiling}\;S_{ceiling} + \alpha_{floor}\;S_{floor}+\alpha_{walls}\;S_{walls} $$
+            where \(\alpha \) is absorption coefficient and S is the area of each part.
+
+        </section>
+        <section id="buildingacoustics">
+            <h3>Acoustics Factors Affecting a Hall</h3>
+            <p>The acoustics of a hall or other enclosed space can greatly affect the quality of the sound heard by
+                the
+                listener. Some important factors to consider include:</p>
+            <ul>
+                <li>
+                    <h4>Echo</h4>
+                    <p>One of the most important acoustical factors affecting a hall is echo. Echo is a reflection
+                        of sound that occurs when
+                        sound waves are reflected off of hard surfaces and reach the listener with a noticeable
+                        delay. This can result in a
+                        confusing and muffled sound, making speech and music difficult to understand. </p>
+                    <p>Remedies involve changes to the physical layout of the hall that reduce the amount of hard
+                        surfaces that can reflect sound. For
+                        example, incorporating sound-absorbing materials into the walls, ceiling, and floor can help
+                        to reduce echo. Increasing
+                        the size of the hall can also help to reduce echo, as sound will have more space to diffuse
+                        and not reflect as easily.</p>
+                    <p>Addition remedies include adding sound-absorbing materials to a space after it has been
+                        built. For example, adding sound-absorbing panels or
+                        curtains can help to reduce echo, especially in the areas where it is most problematic.
+                        Another option is to install
+                        sound-absorbing ceiling tiles or panels.</p>
+                </li>
+                <li>
+                    <h4>Reverberation</h4>
+                    <p>Reverberation refers to the persistence of sound in a space after the original sound source
+                        has stopped.</p>
+                    <p>Reverberation time is the amount of time it takes for the sound energy in a space to decay by
+                        60 decibels (dB) after the
+                        sound source has stopped.</p>
+                    <p>A short reverberation time is desirable in spaces where speech intelligibility is important,
+                        such as lecture halls or
+                        conference rooms, as it allows for clear and easy to understand speech. In contrast, a long
+                        reverberation time is
+                        desirable in spaces where music or other performances are held, as it enhances the sound and
+                        creates a rich, immersive
+                        experience.</p>
+                    <p>Remedies for controlling reverberation time in a hall is similar that of echo because both
+                        echo and reverberation is result of reflection of waves.
+                        For example, incorporating sound-absorbing materials into the walls, ceiling, and floor can
+                        help to reduce reverberation
+                        time. Increasing the size of the hall can also help to reduce reverberation time, as sound
+                        will have more space to
+                        diffuse and not reflect as easily.
+                    </p>
+                </li>
+                <li>
+                    <h4>Focusing of Sound</h4>
+                    <p>Focusing of sound is another important acoustical factor affecting a hall. This refers to the
+                        phenomenon where sound
+                        waves are reflected in such a way that they converge at a specific point in the space,
+                        creating a focused or directional
+                        beam of sound.</p>
+                    <p>Focusing of sound can have both positive and negative effects on the sound quality in a hall.
+                        On the one hand, it can be
+                        used to direct sound to specific areas, such as the stage or podium, making speech or
+                        performances more intelligible to
+                        certain parts of the audience. On the other hand, it can also result in areas of the hall
+                        with poor sound quality, where
+                        the sound is either too quiet or too loud, and can make speech or music difficult to
+                        understand.</p>
+                    <p>Remedies for controlling the focusing of sound in a hall can include changes to the physical
+                        layout of the space, such
+                        as altering the angles of the walls and ceiling, or adding sound-diffusing elements, such as
+                        panels or sculptures, to
+                        scatter sound waves. Additionally, adjusting the placement and orientation of speakers and
+                        sound-reinforcing systems can
+                        also help to control focusing of sound and distribute sound more evenly throughout the
+                        space.</p>
+                </li>
+                <li>
+                    <h4>Echelon Effect</h4>
+                    <p>The echelon effect is a phenomenon in acoustics that occurs in a hall when sound waves from
+                        multiple sources arrive at a
+                        listener's ear with different time delays, leading to a perception of directional bias. The
+                        effect is caused by the
+                        unequal path lengths between the listener and the multiple sources, which can result in
+                        either an amplification or
+                        reduction of the sound at the listener's position.</p>
+                    <p>The echelon effect can have a significant impact on the perceived sound quality in a hall,
+                        particularly in cases where
+                        there are multiple sources of sound, such as multiple speakers or instruments. It can result
+                        in a directional bias,
+                        where certain parts of the sound are amplified or reduced, leading to an uneven distribution
+                        of sound throughout the
+                        space. This can make speech or music difficult to understand, particularly for listeners in
+                        certain parts of the hall.</p>
+                    <p>To fix the echelon effect, there are several things that can be done. For example, changing
+                        the way the walls and
+                        ceiling are shaped can help scatter the sound more evenly. Moving the speakers or
+                        instruments around can also help
+                        reduce the echelon effect and make the sound more balanced.</p>
+                </li>
+                <li>
+                    <h4>Resonance Effect</h4>
+                    <p>The resonance effect is a phenomenon in acoustics that occurs when sound waves in a space
+                        reinforce each other and cause
+                        certain frequencies to be amplified, leading to an increase in volume at those frequencies.
+                        This is because sound waves
+                        with similar frequencies tend to reinforce each other and cause an increase in the overall
+                        volume of sound.</p>
+                    <p>The resonance effect can have a significant impact on the sound quality in a hall,
+                        particularly if certain frequencies
+                        are amplified to the point of causing a build-up of sound energy. This can result in an
+                        unpleasant and boomy sound, and
+                        can make speech or music difficult to understand.</p>
+                    <p>Remedies for controlling the resonance effect in a hall include adding sound-absorbing
+                        elements to reduce the amount of sound energy that is reflected and reinforced.</p>
+                </li>
+                <li>
+                    <h4>Adequate Loudness</h4>
+                    <p>Adequate loudness is an important factor to consider in acoustics for halls. It refers to the
+                        appropriate balance of
+                        sound levels in a space, so that speech and music are clear and easy to understand, without
+                        being too loud or too soft.</p>
+                    <p>In a hall, adequate loudness is essential for providing an enjoyable and comfortable
+                        experience for the audience. If the
+                        sound is too loud, it can be uncomfortable and cause hearing damage over time, while if it's
+                        too soft, it can be
+                        difficult to hear what's being said or played.</p>
+                    <p>To ensure adequate loudness in a hall, several factors need to be considered and controlled,
+                        including the size and
+                        shape of the space, the material used for construction, and the type of sound-reinforcing
+                        systems used. Additionally,
+                        adjusting the volume and placement of speakers and instruments, and incorporating
+                        sound-absorbing elements, such as
+                        panels or sculptures, can also help to achieve the appropriate balance of sound levels.</p>
+                </li>
+                <li>
+                    <h4>Noise</h4>
+                    <p>Noise is a common problem in acoustics for halls, and it refers to any unwanted or
+                        interfering sound that can affect the
+                        quality of sound in a space. Noise can come from a variety of sources, including external
+                        sources such as traffic or
+                        construction, or internal sources such as air conditioning or electrical equipment.</p>
+                    <p>Noise can have a significant impact on the sound quality in a hall, making it difficult for
+                        people to hear what's being
+                        said or played, and detracting from the overall experience. In addition, excessive noise can
+                        cause hearing damage over
+                        time, and can also be a distraction or an annoyance.
+                    </p>
+                    <p>Remedies to reduce noise include,
+                    <ul>
+                        <li>Incorporating sound-insulating elements, such as double-paned windows or soundproof
+                            doors, can help to reduce external
+                            noise from entering the space.</li>
+                        <li>Incorporating sound-insulating and sound-absorbing elements</li>
+                        <li>Placing sound barriers, such as walls or fences, around the perimeter of a hall</li>
+                        <li>Ensuring that mechanical systems, such as air conditioning or electrical equipment, are
+                            properly maintained and
+                            insulated</li>
+                        <li>Installing acoustic doors and windows</li>
+                        <li>Adding sound-absorbing panels to walls and ceilings</li>
+                        <li>Installing sound-absorbing flooring, such as carpet or acoustic underlay</li>
+                        <li>Applying soundproofing materials, such as acoustic seals or acoustic foam, to doors,
+                            windows, and other openings
+                        </li>
+                    </ul>
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+
     </div>
 
     <script src="pht110.js"></script>
