@@ -371,23 +371,26 @@ body {
     text-decoration: none;
 }
 
-.main-content img {
+.main-content figure img {
+    width: 122%;
+    translate: -6.5%;
+    border: 1px solid rgb(196, 187, 187);
+}
+
+table {
+    border-collapse: collapse;
     width: 100%;
-    height: fit-content;
-    max-height: 600px;
-}
-
-.table-border {
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-th,
-td {
-    border: 1px solid black;
-    padding: 4px;
 }
 
 th {
-    padding: 10px;
+    border: 2px solid rgb(158, 150, 150);
+    padding: 8px;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+td {
+    border: 2px solid rgb(158, 150, 150);
+    padding: 8px;
+    text-align: left;
 }
