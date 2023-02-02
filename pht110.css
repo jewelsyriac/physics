@@ -301,7 +301,7 @@ body {
     }
 
     .featured-course p {
-        font-size: 7px;
+        font-size: 8px;
         margin-top: 0;
         padding-top: 0;
 
@@ -312,7 +312,7 @@ body {
 
         align-self: center;
         border: none;
-        padding: 2px 5px;
+        padding: 4px 5px;
         font-size: 8px;
         cursor: pointer;
         text-align: center;
@@ -324,8 +324,8 @@ body {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         transition: 0.3s;
         position: absolute;
-        bottom: 10px;
-        width: 80%;
+        bottom: 8px;
+        width: 70%;
 
     }
 
