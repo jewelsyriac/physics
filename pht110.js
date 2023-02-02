@@ -55,6 +55,13 @@ for (let course of courses) {
         window.open(`${buttonName}.html`, '_self');
     });
 }
+let elements = document.querySelectorAll(".featured-course");
+for (let element of elements) {
+
+    let width = element.offsetWidth;
+    element.style.height = width * 1.3 + "px";
+}
+
 
 
 
