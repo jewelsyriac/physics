@@ -45,8 +45,16 @@ sidebutton.addEventListener('click', function () {
 
     }
 });
+const courses = document.querySelectorAll(".featured-course")
 
-
+for (let course of courses) {
+    let selectButton = course.querySelector("a")
+    let buttonName = selectButton.getAttribute('id');
+    course.addEventListener('click', () => {
+        // Open a new window with the specified URL
+        window.open(`${buttonName}.html`, '_self');
+    });
+}
 
 
 
