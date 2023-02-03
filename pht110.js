@@ -59,8 +59,10 @@ let elements = document.querySelectorAll(".featured-course");
 for (let element of elements) {
 
     let width = element.offsetWidth;
-    element.style.height = width * 1.3 + "px";
+    element.style.height = String(width * 1.3) + "px";
+
 }
+
 
 
 
