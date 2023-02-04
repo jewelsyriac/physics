@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PHT110</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
         <div class="dropdown"><a href="index.html" class="dropdown-toggle">Home</a></div>
 
         <div class="dropdown">
-            <a href="#" class="dropdown-toggle">Notes</a>
+            <a href="#" class="dropdown-toggle" id="hide">Syllabus</a>
             <div class="dropdown-menu">
                 <a href="notes.html#module1">Module 1</a>
                 <a href="notes.html#module2">Module 2</a>
@@ -39,7 +40,7 @@
             <a href="previous.html" class="dropdown-toggle">Previous Questions</a>
 
         </div>
-        <div class="dropdown" id="hide"><a href="formulas.html" class="dropdown-toggle">Formulas</a></div>
+        <div class="dropdown"><a href="formulas.html" class="dropdown-toggle">Formulas</a></div>
         <div class="dropdown" id="hide"><a href="about.html" class="dropdown-toggle">About</a></div>
 
     </nav>
@@ -284,21 +285,324 @@
     </nav>
     <nav class="right-side-navbar">
         <ul>
-            <li><a href="formulas.html#module1">Module 1</a></li>
-            <li><a href="formulas.html#module2">Module 2</a></li>
-            <li><a href="formulas.html#module3">Module 3</a></li>
-            <li><a href="formulas.html#module4">Module 4</a></li>
-            <li><a href="formulas.html#module5">Module 5</a></li>
-
-
-
-
-
-
+            <li><a href="formulas.html#oscillationsformulas">Oscillations</a></li>
+            <li><a href="formulas.html#wavesformulas">Waves</a></li>
+            <li><a href="formulas.html#interferenceformulas">Interference</a></li>
+            <li><a href="formulas.html#diffractionformulas">Diffraction</a></li>
+            <li><a href="formulas.html#quantummechanicsformulas">Quantum mechanics</a></li>
+            <li><a href="formulas.html#Nanotechnologyformulas">Nanotechnology</a></li>
+            <li><a href="formulas.html#acousticsformulas">Acoustics</a></li>
+            <li><a href="formulas.html#ultrasonicsformulas">Ultrasonics</a></li>
+            <li><a href="formulas.html#laserformulas">LASER</a></li>
+            <li><a href="formulas.html#holographyformulas">Holography</a></li>
+            <li><a href="formulas.html#fibreopticsformulas">Fibre Optics</a></li>
+            <li><a href="formulas.html#magnetismformulas">Magnetism</a></li>
+            <li><a href="formulas.html#emtheoryformulas">Electromagnetic Theory</a></li>
+            <li><a href="formulas.html#superconductivityformulas">Superconductivity</a></li>
+            <li><a href="formulas.html#photonicsformulas">Photonics</a></li>
         </ul>
     </nav>
     <div class="main-content">
-        <h1>Important Formulas</h1>
+        <section id="oscillationsformulas">
+            <h2>Oscillations</h2>
+            <div class="formula-section">
+                <h3 class="formula-title">Differential equation of simple harmonic motion or SHM,</h3>
+                <p class="formula">$$\boxed{\frac{d^2 x}{dt^2}+\omega^2 x = 0}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>x : </b> Displacement(m)</p>
+                    <p><b>\(\omega\) : </b> Angular frequency</p>
+
+                </div>
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Equation of motion of SHM</h3>
+                <p class="formula">$$ \boxed{x(t)=A\;sin\;(\omega t + \phi) }$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>A : </b> Amplitude</p>
+                    <p><b>\(\phi\) : </b> Initial phase</p>
+
+                </div>
+            </div>
+            <div class="formula-section" id="dampedformula">
+                <h3 class="formula-title">Differential equation of Damped harmonic oscillator</h3>
+                <p class="formula">$$\boxed{\frac{d^2 x}{dt^2}+2 \gamma \frac{dx}{dt}+\omega_o^2 x = 0}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(\gamma\) : </b> Damping coefficient</p>
+                    <p><b>\(\omega_o\) : </b> Natural frequency</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>x : </b> Displacement</p>
+                    <p><b>t : </b> time</p>
+
+                </div>
+            </div>
+            <div class="formula-section" id="dampingcoefficientformula">
+                <h3 class="formula-title">Damping coefficient</h3>
+                <p class="formula">$$\boxed{\gamma = \frac{b}{2m}}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>b : </b> Damping constant</p>
+                    <p><b>m : </b> mass</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Angular frequency of damped oscillator</h3>
+                <p class="formula">$$\boxed{\omega=\sqrt{\omega_o^2 - \gamma^2}}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\( \gamma \) : </b> Damping coefficient</p>
+                    <p><b>\( \omega_o \) : </b> natural angular frequency of oscillator</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section" id="qfformula">
+                <h3 class="formula-title">Quality factor</h3>
+                <p class="formula">$$\boxed{Q=\frac{\omega}{2 \gamma }}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\( \gamma \) : </b> Damping coefficient</p>
+                    <p><b>\( \omega \) : </b> Angular frequency of damped oscillator</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Relaxation time</h3>
+                <p class="formula">$$\boxed{\tau=\frac{1}{2 \gamma }}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\( \gamma \) : </b> Damping coefficient</p>
+
+
+                </div>
+
+            </div>
+
+            <div class="formula-section">
+                <h3 class="formula-title">Energy dissipation in damped oscillator</h3>
+                <p class="formula">$$\boxed{E(t)=E_o\;e^{-2 \gamma t}}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\( \gamma \) : </b> Damping coefficient</p>
+                    <p><b>\( E(t) \) : </b> Energy at time t</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\( E_o \) : </b> Initial energy or undamped value</p>
+
+
+                </div>
+
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Amplitude variation in damped oscillator</h3>
+                <p class="formula">$$\boxed{A(t)=A_o\;e^{- \gamma t}}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\( \gamma \) : </b> Damping coefficient</p>
+                    <p><b>\( A(t) \) : </b> Amplitude at time t</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\( A_o \) : </b> Initial Amplitude of oscillator</p>
+
+
+                </div>
+
+            </div>
+            <div class="formula-section" id="forcedformula">
+                <h3 class="formula-title">Differential equation of forced harmonic oscillator</h3>
+                <p class="formula">$$\boxed{\frac{d^2 x}{dt^2}+2 \gamma \frac{dx}{dt}+\omega_o^2 x = f_o\;sin\;(\omega_f
+                    \;t)}$$</p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(\gamma\) : </b> Damping coefficient</p>
+                    <p><b>\(f_o\) : </b> Amplitude of external periodic force</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(\omega_f \) : </b> Angular frequency of external periodic force or external driving
+                        frequency</p>
+
+
+                </div>
+            </div>
+            <div class="formula-section" id="amplitudeformula">
+                <h3 class="formula-title">Amplitude of forced harmonic oscillator</h3>
+                <p class="formula">$$\boxed{A= \frac{f_o}{\sqrt{(\omega_o^2 - \omega_f^2)^2 + 4 \gamma^2 \omega_f^2}}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(\gamma\) : </b> Damping coefficient</p>
+                    <p><b>\(f_o\) : </b> Amplitude of external periodic force</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(\omega_f \) : </b> Angular frequency of external periodic force or external driving
+                        frequency</p>
+
+
+                </div>
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Differential equation of LCR circuit or electrical oscillator</h3>
+                <p class="formula">$$\boxed{\frac{d^2
+                    q}{dt^2}+\frac{R}{L}\frac{dq}{dt}+\frac{q}{LC}=\frac{V_o}{L}\;sin\;(\omega
+                    t)\;}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>q : </b> Charge</p>
+                    <p><b>R : </b> Resistance</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>L : </b> Inductance</p>
+                    <p><b>C : </b> Capacitance</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(V_o\) : </b> Voltage Amplitude</p>
+                    <p><b>\( \omega \) : </b> Angular frequency of power source</p>
+
+                </div>
+
+            </div>
+        </section>
+        <section id="wavesformulas">
+            <h2>Waves</h2>
+            <div class="formula-section">
+                <h3 class="formula-title">1-D Wave equation</h3>
+                <p class="formula">$$\boxed{\frac{\partial^2 u}{\partial x^2} =\frac{1}{v^2} \;
+                    \frac{\partial^u}{\partial t^2}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(u\) : </b> Displacement of particles in medium</p>
+                    <p><b>\(v\) : </b> velocity of wave</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section" id="3dwaveequation">
+                <h3 class="formula-title">3-D Wave equation</h3>
+                <p class="formula">$$\boxed{\nabla^2 u =\frac{1}{v^2} \;
+                    \frac{\partial^u}{\partial t^2}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(\nabla^2\) : </b> Laplacian operator</p>
+                    <p><b>\(v\) : </b> velocity of wave</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section" id="1dwavesolution">
+                <h3 class="formula-title">Solution of 1-D Wave equation</h3>
+                <p class="formula">$$\boxed{u(x,t)=A\;sin\;(kx \pm \omega t + \phi)}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(u\) : </b> Displacement of particles in medium</p>
+                    <p><b>\(A\) : </b> Amplitude of wave</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(\omega\) : </b> Angular frequency of wave</p>
+                    <p><b>\( k \) : Wave number or wave vector</b> </p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(x \) : </b> Displacement of wave</p>
+                    <p><b>\(\phi \) : Initial phase</b> </p>
+
+                </div>
+
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Frequency & Angular frequency</h3>
+                <p class="formula">$$\boxed{f=\frac{\omega}{2 \pi}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(f\) : </b> frequency</p>
+                    <p><b>\(\omega\) : </b> Angular frequency</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Wavelength and Wavenumber</h3>
+                <p class="formula">$$\boxed{\lambda=\frac{2 \pi}{k}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(k\) : </b> Wave number</p>
+                    <p><b>\(\lambda\) : </b> Wavelength</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section" id="stringwavevelocity">
+                <h3 class="formula-title">Velocity of Wave</h3>
+                <p class="formula">$$\boxed{v=f\;\lambda\;\;or\;\;v=\frac{\omega}{k}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(k\) : </b> Wave number</p>
+                    <p><b>\(\lambda\) : </b> Wavelength</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(f\) : </b> frequency</p>
+                    <p><b>\(\omega\) : </b> Angular frequency</p>
+
+                </div>
+
+            </div>
+            <div class="formula-section">
+                <h3 class="formula-title">Velocity of waves in stretched string</h3>
+                <p class="formula">$$\boxed{v =\sqrt{ \frac{T}{\mu}}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(T\) : </b> Tension on string</p>
+                    <p><b>\(\mu\) : </b> Linear mass density of string</p>
+
+                </div>
+
+
+            </div>
+            <div class="formula-section" id="stretchedstringeqn">
+                <h3 class="formula-title">Frequency of waves in stretched string</h3>
+                <p class="formula">$$\boxed{f =\frac{n}{2l}\sqrt{ \frac{T}{\mu}}}$$
+                    when n = 1 , fundamental frequency:
+                <p class="formula">$$\boxed{f_{fund} =\frac{1}{2l}\sqrt{ \frac{T}{\mu}}}$$
+                </p>
+                <hr class="divider">
+                <div class="terms">
+                    <p><b>\(T\) : </b> Tension on string</p>
+                    <p><b>\(\mu\) : </b> Linear mass density of string</p>
+
+                </div>
+                <div class="terms">
+                    <p><b>\(l\) : </b> length of string</p>
+                    <p><b>\(n\) : </b>number of loops formed in string </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
     </div>
 
     <script src="pht110.js"></script>
