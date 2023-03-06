@@ -30,21 +30,45 @@ for (let button of buttons) {
 }
 const mainContent = document.querySelector(".main-content")
 const sidebutton = document.querySelector(".sidebar-toggle-button")
-const sidebar = document.querySelector(".side-navbar")
-const computedStyles = getComputedStyle(sidebar);
 
+if (window.innerWidth < 920) {
 
-sidebutton.addEventListener('click', function () {
-    if (computedStyles.display === "none") {
-        sidebar.style.display = "block";
-
-
-
-    } else {
+if (window.location.pathname.endsWith('/index.html')) {
+    const sidebar = document.querySelector(".side-navbar")
+    const computedStyles = getComputedStyle(sidebar);
+    sidebutton.addEventListener('click', function () {
+        if (computedStyles.display === "none") {
+            sidebar.style.display = "block";
+        } else {
+            sidebar.style.display = "none";
+    
+        }
+    });
+    mainContent.addEventListener('click',function(){
         sidebar.style.display = "none";
+    });
+    
+  } else {
 
-    }
-});
+    const rightSidebar = document.querySelector(".right-side-navbar");
+    const rightcomputedStyles = getComputedStyle(rightSidebar);
+    sidebutton.addEventListener('click', function () {
+        if (rightcomputedStyles.display === "none") {
+            rightSidebar.style.display = "block";
+            rightSidebar.style.left = "0";
+            rightSidebar.style.top = "50";
+            rightSidebar.style.zIndex = "99";
+        } else {
+            rightSidebar.style.display = "none";
+    
+        }
+    });
+    mainContent.addEventListener('click',function(){
+        rightSidebar.style.display = "none";
+    });
+  }
+}
+
 const courses = document.querySelectorAll(".featured-course")
 
 for (let course of courses) {
@@ -63,8 +87,31 @@ for (let element of elements) {
 
 }
 
+const openDialogButtons = document.querySelectorAll('.open-dialog');
+const closeDialogButtons = document.querySelectorAll('.close-dialog');
+
+openDialogButtons.forEach(openDialogButton => { 
+  openDialogButton.addEventListener('click', event => {
+    event.preventDefault();
+    const dialogBoxId = `dialog${openDialogButton.getAttribute("id")}`;
+    const dialogBox = document.getElementById(dialogBoxId);
+    const rect = openDialogButton.getBoundingClientRect();
+    dialogBox.classList.add('active');
+    dialogBox.style.zIndex = "999";
+  });
+});
+
+closeDialogButtons.forEach(closeDialogButton => {
+  closeDialogButton.addEventListener('click', event => {
+    event.preventDefault();
+    const dialogBoxId = `${closeDialogButton.getAttribute("id")}`;
+    document.getElementById(dialogBoxId).classList.remove('active');
+  });
+});
 
 
+
+  
 
 
 
