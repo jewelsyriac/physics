@@ -31,9 +31,9 @@ for (let button of buttons) {
 const mainContent = document.querySelector(".main-content")
 const sidebutton = document.querySelector(".sidebar-toggle-button")
 
-if (window.innerWidth < 920) {
+if (window.matchMedia("(max-width: 920px)").matches) {
 
-if (window.location.pathname.endsWith('/index.html')) {
+ if (window.location.pathname.endsWith('/index.html')) {
     const sidebar = document.querySelector(".side-navbar")
     const computedStyles = getComputedStyle(sidebar);
     sidebutton.addEventListener('click', function () {
