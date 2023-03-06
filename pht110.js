@@ -33,7 +33,7 @@ const sidebutton = document.querySelector(".sidebar-toggle-button")
 
 if (window.matchMedia("(max-width: 920px)").matches) {
 
- if (window.location.pathname.endsWith('/index.html')) {
+ if (window.location.pathname.endsWith('/index.html') || window.location.pathname.endsWith('/physics/#')) {
     const sidebar = document.querySelector(".side-navbar")
     const computedStyles = getComputedStyle(sidebar);
     sidebutton.addEventListener('click', function () {
