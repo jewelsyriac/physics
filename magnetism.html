@@ -283,9 +283,14 @@
             <li><a href="magnetism.html#gausslaw">Gauss's law</a></li>
             <li><a href="magnetism.html#ampereslaw">Ampere's circuital law</a></li>
             <li><a href="magnetism.html#faradayslaw">Faraday's law</a></li>
-            <li><a href="magnetism.html#permeability">Permeability</a></li>
             <li><a href="magnetism.html#succesptibility">Succesptibility</a></li>
+            <li><a href="magnetism.html#permeability">Permeability</a></li>
+            <li><a href="magnetism.html#permeabilityrelation">Relative permeability</a></li>
+            <li><a href="magnetism.html#diamagnetism">Diamagnetism</a></li>
+            <li><a href="magnetism.html#paramagnetism">Paramagnetism</a></li>
+            <li><a href="magnetism.html#ferromagnetism">Ferromagnetism</a></li>
             <li><a href="magnetism.html#classification">Classification of magnetic materials</a></li>
+            <li><a href="magnetism.html#videogallery">Video gallery</a></li>
 
         </ul>
     </nav>
@@ -294,27 +299,29 @@
         <h1>Magnetism</h1>
         <section id="magneticfield">
             <h2>Magnetic Field</h2>
-            <p>The magnetic field is a vector field that describes the magnetic force on a moving electric charge. It is
+            <p>The magnetic field is a vector field or area in which a charged particle experience a magnetic force. It is
                 created by the motion of electric charges, and it is measured in units of teslas (T) or gauss (G).</p>
-            <h3>Magnetic flux</h3>
-            Magnetic flux is a measure of the amount of magnetic field passing through a given surface. It is defined as
+                <figure><img src="magneticfield.jpg">
+                    <figcaption>Magnetic field due to different sources.</figcaption>
+                </figure>
+                <h3>Magnetic flux</h3>
+            Magnetic flux is a measure of the amount of magnetic field passing through a given surface or it is the total number of magnetic field lines passing through an area. It is defined as
             the product
             of the magnetic field strength (measured in teslas) and the area of the surface it is passing through
             (measured in
             square meters). The unit of magnetic flux is the weber (Wb).
 
-            Mathematically, the magnetic flux through a surface can be represented as an integral of the dot product of
+            <p>Mathematically, the magnetic flux through a surface can be represented as an integral of the dot product of
             the magnetic
-            field vector and the area vector over the surface:
+            field vector and the area vector over the surface:</p>
 
-            $$\Phi = \iint\limits_S {\mathbf{B} \cdot d\mathbf{A}}$$
+            $$\Phi = {\mathbf{B} \cdot \mathbf{A}}$$
 
-            Where \(\Phi\) represents the magnetic flux, \(\mathbf{B}\) is the magnetic field vector, \(S\) is the
-            surface, and
-            \(d\mathbf{A}\) is the area vector of an infinitesimal element of the surface.
+            Where \(\Phi\) represents the magnetic flux, \(\mathbf{B}\) is the magnetic field vector and
+            \(d\mathbf{A}\) is the area of the surface.
             <h3>Magnetic flux density</h3>
             Magnetic flux density, also known as the magnetic field strength, is a measure of the amount of magnetic
-            field per unit
+            field ( number of magnetic field lines ) per unit
             area. It is represented by the vector field B and is measured in teslas (T).
 
             <p>The magnetic flux density is related to the magnetic flux, which is a measure of the total magnetic field
@@ -331,7 +338,8 @@
         </section>
         <section id="gausslaw">
             <h2>Gauss's Law</h2>
-            <p>Gauss's law states that the flux of the magnetic field through a closed surface is equal to zero. This
+            <p>Gauss's law states that the net flux of the magnetic field through a closed surface is equal to zero.</p>
+                <p> This
                 means that the total number of magnetic field lines entering a closed surface is equal to the number of
                 field lines leaving the surface.</p>
             $$\nabla \cdot \mathbf{B} = 0$$
@@ -344,7 +352,11 @@
             <p>Ampere's circuital law states that the line integral of the magnetic field around a closed loop is equal
                 to the current passing through the loop. This relationship between the magnetic field and current is
                 important in understanding the behavior of electric circuits.</p>
-            $$\oint_{C} \mathbf{B} \cdot d\mathbf{l} = \mu_0 I$$
+                $$\oint_{C} \mathbf{B} \cdot d\mathbf{l} = \mu_0 I$$
+                <figure><img src="amperes.jpg">
+                    <figcaption>I is total current passing through surface enclosed by boundary C .</figcaption>
+                </figure>
+           
             where \( \mathbf{B} \) is the magnetic field, \( d\mathbf{l} \) is a differential vector element of a closed
             path C, \( \mu_0 \) is
             the permeability of free space, and \( I \) is the current passing through the path.
@@ -353,133 +365,173 @@
         <section id="faradayslaw">
             <h2>Faraday's Law</h2>
             <p>Faraday's law of induction states that a changing magnetic field induces an electromotive force (EMF) in
-                a conductor. This relationship is the basis for the operation of many electrical devices, including
-                generators and transformers.</p>
-            $$\oint_{C} \mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi_B}{dt}$$
-            where \( \mathbf{E} \) is the electric field, \( d\mathbf{l}\) is a differential vector element of a closed
-            path C, and
-            \(\Phi_B \) is the magnetic flux through the closed path.
+                a conductor.</p>
+            $$emf,\;e = -\frac{d\Phi_B}{dt}$$
+            where e is the emf arose in the circuit and \(\Phi_B \) is the magnetic flux through the closed path.
+            <figure><img src="faradayslaw.jpg">
+                <figcaption>The voltage across galvanometer changes due to emf induced in circuit as a result of change in flux caused by relative movement of magnet.</figcaption>
+            </figure>
         </section>
-        <section id="permeability">
-            <h2>Permeability</h2>
-            <p>Permeability is a measure of the ease with which a material can support the formation of a magnetic field
-                within it.</p>
-            $$\mu = \frac{\mathbf{B}}{\mathbf{H}}$$
-            where \( \mu \) is the relative permeability, \( \mathbf{B}\) is the magnetic flux density and \( \mathbf{H}
-            \) is the magnetic
-            field strength.
-            <h3>Relative permeability</h3>
-            It is defined as the ratio of the magnetic permeability of a material to the magnetic permeability of a
-            vacuum \( \mu_o \). Mathematically, it is
-            represented as:
-
-            $$\mu_r =\frac{\mu}{\mu_0}$$
-
-            Where \( \mu_r \) is the relative permeability, \( \mu \) is the magnetic permeability of the material and
-            \( \mu_0 \) is the
-            magnetic permeability of vacuum.
+        <section id="magnetization">
+            <h3>Magnetic moment</h3>
+            Magnetic moment refers to the strength and direction of a materials magnetic field. It is a measure of the amount of magnetic force that a magnet can exert on other magnets or magnetic materials in its vicinity.<p> Magnetic moment is typically measured in units of ampere meters squared (A⋅m²) or joules per tesla (J/T).
+            </p>
+            <h3>Magnetization</h3>
+            Magnetization refers to the process by which a material becomes magnetized, that is, it acquires a magnetic moment and the ability to attract or repel other magnetic materials. <p>When a magnetic field is applied to a material, it can cause the magnetic moments of individual atoms or molecules to align in the direction of the field, increasing the material's overall magnetic moment and creating a net magnetic field. This process is known as induced magnetization.</p>
+            <p></p>
+            <figure><img src="magnetization.png">
+                <figcaption>Left : Alignment of magnetic moments inside specimen before magnetization. <p>Right : Alignment of magnetic moments inside specimen after magnetization.</p></figcaption>
+            </figure>
+            <h3>Intensity of magnetisation</h3>
+            <p>It is the measure of strength of a magnetic field within a magnetic material after magnetization. It is also defined as magnetic moment per unit volume of material.</p>
+            $$M=\frac{Magnetic\;moment}{volume}$$ 
+            Since moment is related to pole strength m and total length \(2l\) as, 
+            $$Moment = m \times 2l $$
+            Intensity of magnetization is defined as,
+            $$M=\frac{m \times 2l}{V}$$ 
+            Unit is Ampere per metre.
         </section>
         <section id="succesptibility">
-            <h2>Succesptibility</h2>
-            <p>Succesptibility is a measure of how easily a material can become magnetized in response to an external
-                magnetic field. It is a key property in understanding the
-                behavior of different types of magnetic materials.</p>
+            <h2>Magnetic Susceptibilty</h2>
+            <p>Magnetic susceptibility is a measure of how easily a material can be magnetized when an external magnetic field is applied.</p>
+            <p>It is also defined as the ratio of the magnetization of the material to the applied magnetic field</p>
             $$\chi = \frac{\mathbf{M}}{\mathbf{H}}$$
-            where \( \chi \) is the magnetic susceptibility, \( \mathbf{M}\) is the magnetization and \( \mathbf{H} \)
-            is the magnetic field
-            strength.
-            <h4>Relation between relative permeability and suscesptibility</h4>
-            We know that the magnetic flux density in a material is given by $$\mathbf{B} = \mu_0(\mathbf{H} +
+        </section>
+        <section id="permeability">
+            <h2>Magnetic Permeability</h2>
+            <p>Magnetic permeability is a measure of a material's ability to conduct magnetic fields or property of a material to allow magnetic field lines pass through it.</p>
+            <p> It is also defined as the ratio of the magnetic flux density (B) inside material to the magnetic field strength (H) in a material.</p>
+            $$\mu = \frac{\mathbf{B}}{\mathbf{H}}$$
+            <h3>Relative permeability</h3>
+            <p>Relative permeability is a measure of how easily a material can be magnetized, compared to air or vacuum.</p>
+            <p> It is defined as the ratio of the magnetic permeability of the material to the permeability of free space.</p>
+            $$\mu_r=\frac{\mu}{\mu_o}$$ 
+            Where \(\mu\) is the permeabilty of material and \(\mu_o\) is the permeabilty of air or vaccum/free space.
+            </section>
+            <section id="permeabilityrelation">
+            <h3>Relation between relative permeability and suscesptibility</h3>
+            The total magnetic flux density inside a material is the sum of the flux density due to the external magnetic field and the flux density due to the intrinsic magnetization of the material, which is a measure of the material's magnetic response to the external field. 
+
+            That means,
+            $$\mathbf{B} = \mu_0 \mathbf{H} + \mu_o
+            \mathbf{M}$$
+            $$\mathbf{B} = \mu_0(\mathbf{H} +
             \mathbf{M})$$ where
             \( \mu_0 \) is the permeability of free space, \( \mathbf{H} \) is the magnetic field strength, and \(
             \mathbf{M} \) is
             the
             magnetization.
 
-            We also know that the magnetization of a material is given by $$\mathbf{M} = \chi \mathbf{H}$$ where
+            <p>From the definition of susceptibilty, magnetization of a material is given by $$\mathbf{M} = \chi \mathbf{H}$$ where
             \( \chi \) is the
-            susceptibility of the material.
+            susceptibility of the material.</p>
 
-            By substituting the second equation into the first equation we get $$\mathbf{B} = \mu_0(\mathbf{H} + \chi
+            By substituting this expression of M into the first equation, we get $$\mathbf{B} = \mu_0(\mathbf{H} + \chi
 
             \mathbf{H})$$ which simplifies to $$\mathbf{B} = \mu_0 \mathbf{H}(1 + \chi) $$
             or
 
             $$\frac{\mathbf{B}}{\mathbf{H}} = \mu_0 (1 + \chi) $$
-            We know that $$\mu = \frac{\mathbf{B}}{\mathbf{H}}$$ is the relative permeability of a material. So, by
-            substituting the
-            third equation into this we get $$\mu = \mu_0(1 + \chi) \mathbf{H}$$
+            We know that $$\mu = \frac{\mathbf{B}}{\mathbf{H}}$$ is the relative permeability of a material. That gives, $$\mu = \mu_0(1 + \chi)$$
 
             Then we can simplify the above equation to get $$\mu_r = 1+\chi$$.
 
             Therefore the relationship between relative permeability \( \mu_r \) and susceptibility \( \chi \) is:
             $$\boxed{\mu_r = 1+\chi}$$
+    
+        </section>
+        <h2>Classification of magnetic materials</h2>
+        <p>Electrons have an intrinsic angular momentum, or spin, which creates a magnetic moment.In most atoms, electrons are paired, meaning that two electrons with opposite spins occupy the same orbital. The magnetic moments of these paired electrons cancel each other out, resulting in no net magnetic moment for the atom.</p><p>  However, in atoms, ions, or molecules with unpaired electrons, the magnetic moments of the unpaired electrons do not cancel out, resulting in a net magnetic moment for the atom or molecule. </p>
+        <section id="diamagnetism">
+            <h3>Diamagnetism</h3>
+            <p>Diamagnetism is a property exhibited by some materials that causes them to be weakly repelled by a magnetic field. Unlike paramagnetic materials, which are attracted to a magnetic field, diamagnetic materials are repelled by a magnetic field.</p>
+            <p>This is due to the presence of paired electrons in the material, which generate a magnetic field that opposes the applied magnetic field.  In other words, paired electrons generate a small magnetic moment that opposes an external magnetic field.</p>
+            <p>Diamagnetic materials have a negative magnetic susceptibility, indicating that they are repelled by a magnetic field. The magnetic permeability of diamagnetic materials is slightly less than that of free space, indicating that the magnetic field is slightly weaker inside the material than in free space. </p>
+            <p>Examples of diamagnetic materials include copper, silver, gold, lead, zinc, mercury, bismuth, and graphite. These materials have no unpaired electrons in their electronic structure and are therefore diamagnetic. Water is also diamagnetic due to the presence of paired electrons in its molecular orbitals.</p>
+            Diamagnetic materials have a number of practical applications, some of which include:
+<ol>
+            <li><b>Magnetic levitation:</b> Diamagnetic materials can be used to create levitating trains, which can travel at high speeds with minimal friction. This technology is currently being developed and tested in several countries.</li>
+            
+            <li><b>Magnetic resonance imaging (MRI):</b> In medical imaging, MRI uses strong magnetic fields to produce detailed images of the body. Diamagnetic materials are important for the construction of the MRI machine and for the contrast agents used to improve image quality.</li>
+            
+            <li><b>Superconductivity:</b> Many superconducting materials are diamagnetic. Superconductors are used in a wide range of applications, including electrical power transmission and medical equipment.</li>
+            <li><b>Electromagnetic shielding:</b> Diamagnetic materials can be used to shield electronic devices from electromagnetic interference. This is important in a variety of applications, from sensitive laboratory equipment to consumer electronics.</li></ol>
+        </section>
+        <section id="paramagnetism">
+            <h3>Paramagnetism</h3>
+            
+            <p>Paramagnetism is a type of magnetism that arises from the presence of unpaired electrons in atoms, ions, or molecules. These unpaired electrons create tiny magnetic fields that are randomly oriented and cancel each other out, resulting in no net magnetic moment for the material in the absence of an external magnetic field.</p>
+            <p>However, when a magnetic field is applied, the magnetic fields of the unpaired electrons align with the external field, causing the material to become weakly magnetized. This effect is reversible, meaning that the material loses its magnetism when the external field is removed.</p>
+            <p>In paramagnetic materials, the magnetic susceptibility is positive, indicating that the material is weakly attracted to a magnetic field. The magnetic permeability of paramagnetic materials is slightly greater than that of free space, indicating that the magnetic field is slightly stronger inside the material than in free space. </p>
+            <p>The relative permeability of a paramagnetic material is slightly greater than 1, indicating that the material is only weakly magnetic. </p>
+            <p>Examples of paramagnetic materials include oxygen, aluminum, platinum, and titanium. These materials are weakly attracted to a magnetic field and exhibit no permanent magnetism. Other examples of paramagnetic materials include gadolinium and dysprosium, which are used in magnetic refrigeration and MRI machines due to their strong magnetic properties.</p>
+            <p>Paramagnetism is an important concept in many areas of science and technology, including the study of magnetic materials, the design of magnetic devices such as MRI machines, and materials testing and quality control. It is also used in chemical analysis, as certain compounds exhibit paramagnetic properties that can be measured to identify and quantify the presence of certain elements or compounds.</p>
+        </section>
+        <section id="ferromagnetism">
+            <h3>Ferromagnetism</h3>
+            <p>Ferromagnetism is a type of magnetism in which certain materials become strongly magnetized in the presence of an external magnetic field.</p>
+            <p>Unlike diamagnetic and paramagnetic materials that are weakly or only temporarily magnetic, ferromagnetic materials are strongly magnetic even in the absence of an external magnetic field. This unique property of ferromagnetic materials arises from the presence of magnetic domains within the material.</p>
+    
+            <p>Magnetic domains are regions in which the magnetic moments of the atoms are aligned in the same direction, resulting in a net magnetic moment for the domain. These domains can be thought of as tiny magnets within the material, each with its own north and south pole. In an unmagnetized ferromagnetic material, these magnetic domains are randomly oriented, resulting in a net magnetic moment of zero. However, when a strong magnetic field is applied to the material, the domains align themselves with the direction of the field, resulting in a net magnetization of the material.</p>
+            <p>As the external magnetic field is increased, more and more domains align with the field, causing the material to become magnetized. Once the material is magnetized, the domains remain aligned even after the external field is removed, resulting in a permanent magnet.</p>
+            <p>Iron, nickel, cobalt, alnico, ferrite, gadolinium, and permalloy are all examples of ferromagnetic materials used in a variety of applications including electric motors, generators, transformers, permanent magnets, magnetic recording media, and medical imaging.</p>
+            
+
         </section>
         <section id="classification">
-            <h2>Classification of magnetic materials</h2>
-            <p>Magnetic materials can be broadly classified into three categories: diamagnetic, paramagnetic, and
-                ferromagnetic.
-                Each of these categories has unique magnetic properties and responds differently to external magnetic
-                fields.
-            </p>
+            <h4>Comparison between magnetic materials</h4>
+            
+            
             <p>Table below gives major differences between diamagnetic, paramagnetic, and
                 ferromagnetic materials.</p>
-            <table>
+            <table id="comparisontable">
                 <tr>
-                    <th>Properties</th>
+                
                     <th>Diamagnetism</th>
                     <th>Paramagnetism</th>
                     <th>Ferromagnetism</th>
                 </tr>
                 <tr>
-                    <td>Relative Permeability</td>
-                    <td>\(\mu_r < 1\) (less than vacuum permeability) </td>
-                    <td>\(\mu_r > 1\) (greater than vacuum permeability) </td>
-                    <td>\(\mu_r >> 1\) (much greater than vacuum permeability)</td>
+                    
+                    <td>Diamagnetism refers to the property of certain materials to be repelled by a magnetic field.</td>
+                    <td>Paramagnetism refers to the property of certain materials to be weakly attracted by a magnetic field. </td>
+                    <td>Ferromagnetism refers to the property of certain materials to become strongly magnetized in the presence of an applied magnetic field.</td>
                 </tr>
                 <tr>
-                    <td>Magnetic Moment</td>
-                    <td>Zero or very small, does not have permanent magnetization</td>
-                    <td>Positive, aligns with external magnetic field</td>
-                    <td>Large, spontaneous magnetization</td>
+                    
+                    <td>Diamagnetic materials have paired electrons with no net magnetic moment and are slightly repelled by magnetic fields.</td>
+                    <td>Paramagnetic materials have unpaired electrons with a net magnetic moment that aligns with an applied magnetic field.</td>
+                    <td>Ferromagnetic materials have unpaired electrons with a net magnetic moment that can become aligned with each other to create magnetic domains.</td>
                 </tr>
                 <tr>
-                    <td>Magnetization</td>
-                    <td>No spontaneous magnetization, not affected by external magnetic field</td>
-                    <td>Aligns with external magnetic field</td>
-                    <td>Spontaneous magnetization, affected by external magnetic field</td>
+                    
+                    <td>Arises due to paired electrons, which have no net magnetic moment and are slightly repelled by a magnetic field.</td>
+                    <td>Arises due to unpaired electrons, which have a net magnetic moment that can align with an applied magnetic field to create weak attraction.</td>
+                    <td>Arises due to unpaired electrons, which can align with neighboring electrons to create magnetic domains that result in strong magnetization when an external magnetic field is applied.</td>
                 </tr>
                 <tr>
-                    <td>Examples</td>
+                    <td>Diamagnetic materials have a negative susceptibility, meaning that they are slightly repelled by a magnetic field and become less magnetized in its presence</td>
+                    <td>Paramagnetic materials have a positive susceptibility, meaning that they are weakly attracted to a magnetic field and become slightly more magnetized in its presence.</td>
+                    <td>Ferromagnetic materials have a very high positive susceptibility, meaning that they are strongly attracted to a magnetic field and can become highly magnetized, often retaining their magnetization even after the magnetic field is removed.</td>
+                </tr>
+                <tr>
+                    
+                    <td>Relative Permeability, \(\mu_r < 1\) (less than vacuum permeability) </td>
+                    <td>Relative Permeability, \(\mu_r > 1\) (greater than vacuum permeability) </td>
+                    <td>Relative Permeability, \(\mu_r >> 1\) (much greater than vacuum permeability)</td>
+                </tr>
+                
+               
+                <tr>
+                    
                     <td>Copper, gold, silver</td>
                     <td>Aluminum, Platinum, Oxygen</td>
                     <td>Iron, Nickel, Cobalt, Gadolinium, Dysprosium</td>
 
                 </tr>
-                <tr>
-                    <td>Magnetization reversal</td>
-                    <td>Not possible</td>
-                    <td>Not possible</td>
-                    <td>Possible</td>
-                </tr>
-                <tr>
-                    <td>Retention of magnetization</td>
-                    <td>Not possible</td>
-                    <td>Not possible</td>
-                    <td>Possible</td>
-                </tr>
-                <tr>
-                    <td>Magnetic anisotropy</td>
-                    <td>Not present</td>
-                    <td>Not present</td>
-                    <td>Present</td>
-                </tr>
-                <tr>
-                    <td>Temperature dependence</td>
-                    <td>Insensitive to temperature</td>
-                    <td>Increasing with temperature</td>
-                    <td>Decreasing with temperature</td>
-                </tr>
+                
+                
+                
             </table>
 
         </section>
