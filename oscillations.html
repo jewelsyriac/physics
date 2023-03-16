@@ -353,6 +353,8 @@
         </nav>
         <nav class="right-side-navbar">
             <ul>
+                <li><a href="oscillations.html#periodicmotion">Periodic Motion</a></li>
+                <li><a href="oscillations.html#oscillation">Oscillation</a></li>
                 <li><a href="oscillations.html#shm">Simple Harmonic Motion</a></li>
                 <li><a href="oscillations.html#dhm">Damped Harmonic Motion</a></li>
                 <li><a href="oscillations.html#fhm">Forced Harmonic Motion</a></li>
@@ -408,7 +410,7 @@
                 <h3>Frequency</h3>
                 <p>Number of oscillations completed in unit time ( or 1 second ) is called frequency of an oscillator.
                 </p>
-                <p>Unit of frequency is Hertz ( Hz ) or \(s^{-1}\)</p>
+                <p>Unit of frequency is <a href="#" class="open-dialog" id="-box4">Hertz</a> ( Hz ) or \(s^{-1}\)</p>
                 <p> Example :
                 <ul>
                     <li>If the bob of a simple pendulum completes 3 oscillations in a second, then the frequency of that
@@ -423,28 +425,85 @@
                     <div class="dialog-overlay" id="dialog-box1">
                         <div class="dialog-box">
                             <h3>Restoring force</h3>
-                          <p>In physics, the restoring force is a force that acts to bring a body to its equilibrium position. The restoring force is a function only of position of the mass or particle, and it is always directed back toward the equilibrium position of the system.</p>
+                          <p>Restoring force is a force that acts to bring an oscillating body back to its equilibrium or mean position. Restoring force will always be directed towards mean position of the oscillator.</p>
                           <a href="#" class="close-dialog" id="dialog-box1">Close</a>
                         </div>
                       </div>
                       <div class="dialog-overlay" id="dialog-box2">
                         <div class="dialog-box">
                             <h3>Displacement</h3>
-                          <p>In geometry and mechanics, a displacement is a vector whose length is the shortest distance from the initial to the final position of a point P undergoing motion.[1] It quantifies both the distance and direction of the net or total motion along a straight line from the initial position to the final position of the point trajectory. A displacement may be identified with the translation that maps the initial position to the final position.</p>
+                          <p>Generally displacement is the shortest distance between two points in space. In case of an oscillator, displacement is shortest distance between current position and mean position ( initial position ) of oscillating body. </p>
                           <a href="#" class="close-dialog" id="dialog-box2">Close</a>
                         </div>
                       </div>
                       <div class="dialog-overlay" id="dialog-box3">
                         <div class="dialog-box">
                             <h3>Mean position</h3>
-                          <p>In an oscillation, the mean position is the equilibrium or rest position of the oscillating system. It is the position where the oscillating object comes to rest when there is no external force acting on it. When the oscillating object is disturbed from its mean position, it experiences a restoring force that brings it back to the mean position.</p>
+                          <p>In an oscillation, the mean position is the equilibrium or rest position of the oscillating system. It is the position where the oscillating object comes to rest when there is no external force acting on it.</p>
                           <a href="#" class="close-dialog" id="dialog-box3">Close</a>
+                        </div>
+                      </div>
+                      <div class="dialog-overlay" id="dialog-box4">
+                        <div class="dialog-box">
+                            <h3>Heinrich Hertz</h3>
+                            <img src="hertz.jpg" style="width: 100%; border: 1px solid black;">
+                          <p>Heinrich Rudolf Hertz was a German physicist born in 1857 and is widely recognized for his contributions to the field of electromagnetism. Hertz conducted experiments that confirmed the existence of electromagnetic waves, which had been predicted by James Clerk Maxwell's theory of electromagnetism. In recognition of his groundbreaking work, the unit of frequency, one cycle per second, was named the "hertz" in his honor. </p>
+                          <a href="#" class="close-dialog" id="dialog-box4">Close</a>
+                        </div>
+                      </div>
+                      <div class="dialog-overlay" id="dialog-box5">
+                        <div class="dialog-box">
+                            <h3>Simple Pendulum</h3>
+                            <img src="simplependulum.png" style="width: 100%; border: 1px solid black;">
+                          <p>When a pendulum is displaced from its equilibrium position, it experiences a restoring force due to gravity that acts to return the pendulum to its equilibrium position. This restoring force is proportional to the displacement of the pendulum from its equilibrium position, and acts in the opposite direction to the displacement. </p>
+                          <a href="#" class="close-dialog" id="dialog-box5">Close</a>
+                        </div>
+                      </div>
+                      <div class="dialog-overlay" id="dialog-box6">
+                        <div class="dialog-box">
+                            <h3>Spring-Mass system</h3>
+                            <img src="springmass.png" style="width: 100%; border: 1px solid black;">
+                          <p>An oscillation of a spring-mass system refers to the back-and-forth motion of a mass attached to a spring that is fixed at one end. When a mass is attached to a spring and is displaced from its equilibrium position, the spring exerts a restoring force that is proportional to the displacement. The mass then oscillates back and forth around its equilibrium position with a frequency determined by the mass and the stiffness of the spring.</p>
+                          <a href="#" class="close-dialog" id="dialog-box6">Close</a>
+                        </div>
+                      </div>
+                      <div class="dialog-overlay" id="dialog-box7">
+                        <div class="dialog-box">
+                            We have,
+                            $$ \frac{d^2 x}{dt^2}+\omega^2 x = 0 $$
+                            Multiplying with \( 2\frac{dx}{dt}\),
+                            $$2\frac{dx}{dt}\frac{d^2 x}{dt^2}+2\frac{dx}{dt} \omega_o^2 x = 0$$
+                            Which can be written as,
+                            $$\frac{d}{dt}\Big[\Big(\frac{dx}{dt}\Big)^2\Big]+\omega_o^2 x^2=0$$
+                            Integrating,
+                            $$\Big(\frac{dx}{dt}\Big)^2 +\omega_o^2 x^2=C$$
+                            where C is the constant of integration. 
+                            <p>At extreme position, x=a ; velocity \(\frac{dx}{dt}\) will be zero.</p>
+                            $$0^2 + \omega_o^2 a^2=C$$
+                            or
+                            $$C=\omega_o^2 a^2$$ 
+                            That gives,
+                            $$\Big(\frac{dx}{dt}\Big)^2 +\omega_o^2 x^2=\omega_o^2 a^2$$
+                            or,
+                            $$\Big(\frac{dx}{dt}\Big)^2 =\omega_o^2 a^2-\omega_o^2 x^2$$ 
+                            $$\frac{dx}{dt} = \omega_o\;\sqrt{a^2-x^2}$$ 
+                            Which can also be written as,
+                            $$\frac{dx}{\sqrt{a^2-x^2}}=\omega_o t $$ 
+                            Integrating above equation gives,
+                            $$sin^{-1}\Big(\frac{x}{a}\Big)=\omega_o t +\phi $$ 
+                            or,
+                            $$ sin\;(\omega_o t +\phi )=\frac{x}{a}$$ 
+                            which gives equation of SHM as,
+                            $$x(t)=a\;sin\;(\omega_o t +\phi )$$
+
+
+                          <a href="#" class="close-dialog" id="dialog-box7">Close</a>
                         </div>
                       </div>
                 <p>Some examples of SHM include</p>
                 <ul>
-                    <li>Swinging of a pendulum</li>
-                    <li>Oscillation of a mass on a spring</li>
+                    <li><a href="#" class="open-dialog" id="-box5">Swinging of a pendulum</a></li>
+                    <li><a href="#" class="open-dialog" id="-box6">Oscillation of a mass on a spring</a></li>
                     <li>Vibration
                         of a guitar string</li>
                 </ul>
@@ -454,6 +513,7 @@
                 <div id="equation">
                     $$\boxed{ x(t)=A \; sin\;(\omega t +\phi) }$$
                 </div>
+                <button class="button1"><a href="#" class="open-dialog" id="-box7">Show detailed solution</a></button>
                 <p>Where:</p>
                 <ul>
                     <li><em>x(t)</em> is the displacement at time t.</li>
@@ -556,10 +616,12 @@
                         w.r.t
                         \(t\),</p>
                     $$\frac{dx}{dt}=\frac{d}{dt}(A\;e^{\alpha \;t})=A\times e^{\alpha \;t} \times \alpha = \alpha
-                    A\;e^{\alpha \;t}=\alpha x $$
+                    A\;e^{\alpha \;t}$$
+                    $$\frac{dx}{dt}=\alpha x $$
                     <p>Taking the differntial of \(\frac{dx}{dt}\) again w.r.t t;
                     </p>
-                    $$\frac{d^2 x}{dt^2}=\frac{d}{dt}(\frac{dx}{dt})=\frac{d}{dt}(\alpha x) = \alpha \times
+                    $$\frac{d^2 x}{dt^2}=\frac{d}{dt}(\frac{dx}{dt})=\frac{d}{dt}(\alpha x) $$
+                    $$= \alpha \times
                     \frac{dx}{dt} =
                     \alpha \times \alpha x = \alpha^2 x $$
                     <p>Substituting the expression of \(\frac{dx}{dt}\) & \(\frac{d^x x}{dt^2}\) in equation (2) ;</p>
@@ -567,7 +629,8 @@
                     <p>Dividing by x,</p>
                     $$\alpha^2 + 2 \gamma \alpha + \omega_o^2 = 0 $$
                     <p>This is a <a href="inlinedoubt.html" id="inline">quadratic equation</a> with solution,</p>
-                    $$\alpha = \frac{-2 \gamma \pm \sqrt{4 \gamma^2 - 4 \omega_o^2}}{2}=- \gamma \pm \sqrt{ \gamma^2 -
+                    $$\alpha = \frac{-2 \gamma \pm \sqrt{4 \gamma^2 - 4 \omega_o^2}}{2}$$
+                    $$=- \gamma \pm \sqrt{ \gamma^2 -
                     \omega_o^2} $$
                     <p>Since \( x=A\;e^{\alpha \;t} \) & substituting value of \(\alpha\) ;</p>
                     $$x=A\;e^{(- \gamma \pm \sqrt{ \gamma^2 -\omega_o^2})\;t} $$
@@ -577,7 +640,7 @@
                     <p>Therefore the general solution is </p>
                     $$x=x_1 + x_2 $$
                     $$ x = A_1\;e^{(- \gamma + \sqrt{ \gamma^2 -\omega_o^2})t} + A_2\;e^{(- \gamma - \sqrt{ \gamma^2
-                    -\omega_o^2})t} ->eqn(2)
+                    -\omega_o^2})t}
                     $$
                     <p>where \(A_1\) and \(A_2\) are constants which depends on the initial values of position and
                         velocity.
@@ -630,8 +693,8 @@
                     <p>Quality factor can be mathematically represented as,</p>
                     $$Q = 2 \pi \times \frac{Energy\;stored\;in\;an \;oscillator}{Energy\;lost\;per\;cycle}$$
                     <p>or,</p>
-                    $$Q = 2 \pi \times \frac{Energy\;stored\;in\;an \;oscillator}{Energy\;lost\;per\;second \times
-                    Time\;period}$$
+                    $$Q = 2 \pi  \frac{Energy\;stored\;in\;an \;oscillator}{Energy\;lost\;per\;second \times
+                    Period}$$
                     <p>If \(E\) is the energy of oscillator,</p>
                     $$Q= 2 \pi \times \frac{E}{-\frac{dE}{dt} \times T} \;-->eqn[1]$$
 
@@ -702,15 +765,14 @@
                         $$ m\frac{d^2 x}{dt^2}+ b\;\frac{dx}{dt} + kx = F_o\;sin(\omega_f \;t) $$
                         <p>Dividing whole equation with m ;</p>
                         $$ \frac{d^2 x}{dt^2}+ \frac{b}{m}\;\frac{dx}{dt} + \frac{k}{m}\;x = \frac{F_o}{m}\;sin(\omega_f
-                        \;t) \; -->eqn(1)$$
+                        \;t) $$
                         <p> Let \(\frac{b}{m}=2 \gamma \), where \( \gamma\) is called damping coefficient, \(
                             {\frac{k}{m}}=\omega_o^2 \) where \( \omega_o\) is the angular frequency of oscillator and
                             let
                             \(\frac{F_o}{m}= f_o\) where \(f_o\) just another constant .</p>
                         <p> On substituting above values, differential equation (1) becomes,</p>
                         $$\boxed{ \frac{d^2 x}{dt^2}+ 2 \gamma \;\frac{dx}{dt} + \omega_o^2 x =f_o\;sin(\omega_f \;t)
-                        }\;
-                        -->eqn(2) $$
+                        }$$
                     </section>
                     <section id="solutionforced">
                         <h3>Solution of differential equation</h3>
@@ -746,18 +808,19 @@
                             from
                             above equation,</p>
                         $$ sin(\omega_f \;t -\theta)\;[\;-A\omega_f^2 -f_o \;cos\;\theta + \omega^2 A \;] + $$
-                        $$cos(\omega_f \;t -\theta)\;[2\gamma A\omega_f -f_o \;sin\;\theta\;] = 0 -->eqn(3)$$
+                        $$cos(\omega_f \;t -\theta)\;[2\gamma A\omega_f -f_o \;sin\;\theta\;] = 0 $$
                         <p>For equation (3) to be satisfied, coefficients of \(sin(\omega_f \;t -\theta)\) and
                             \(cos(\omega_f \;t -\theta)\) should be separately equal to zero. </p>
                         $$-A\omega_f^2 -f_o \;cos\;\theta + \omega^2 A = 0 $$
                         $$ $$
                         $$2\gamma A\omega_f -f_o \;sin\;\theta = 0 $$
                         <p>or</p>
-                        $$-A\omega_f^2 + \omega^2 A = f_o \;cos\;\theta \;-->eqn(4)$$
+                        $$-A\omega_f^2 + \omega^2 A = f_o \;cos\;\theta -->eqn(4)$$
                         $$ $$
                         $$2\gamma A\omega_f = f_o \;sin\;\theta\;-->eqn(5) $$
                         <p>squaring and adding equations(4) and (5) ;</p>
-                        $$(-A\omega_f^2 + \omega^2 A)^2 + (2\gamma A\omega_f)^2 =(f_o \;cos\;\theta)^2 + (f_o
+                        $$(-A\omega_f^2 + \omega^2 A)^2 + (2\gamma A\omega_f)^2 =$$
+                        $$=(f_o \;cos\;\theta)^2 + (f_o
                         \;sin\;\theta)^2$$
                         $$= f_o^2 cos^2 \theta + f_o^2 sin^2 \theta = f_o^2 \;(cos^2 \theta+sin^2 \theta)$$
                         <p>which gives,</p>
@@ -1231,7 +1294,7 @@
 
         </section>          
                   
-For additional resources visit wikipedia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda repellendus amet temporibus necessitatibus cupiditate, id voluptates? Consequuntur, excepturi laborum ducimus quas ut et asperiores obcaecati, error enim impedit non. Assumenda?
+
 
         </div>
         
