@@ -127,10 +127,10 @@ generatorButton.addEventListener('click', event => {
     var answerSpace = document.getElementById("answers");
     var answerList = answerSpace.querySelector("ol");
     var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(2);
-    var naturalFrequency = (number+50)/(divisionTime +10)
-    var bsquare = (divisionTime + 1.0)**2
-    var fourM = 4*(divisionTime +10)
-    var answer2 = Math.sqrt(naturalFrequency - (bsquare/fourM));
+    var mass = divisionTime +10 ;
+    var forceConstant = number+50 ;
+    var dampingConstant = divisionTime + 1 ;
+    var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(2);
     var newAnswer = document.createElement("li");
     newAnswer.textContent = answer1+" seconds.";
     var newAnswer1 = document.createElement("li");
@@ -149,7 +149,7 @@ generatorButton.addEventListener('click', event => {
       document.body.style.backgroundColor = "rgb(255, 230, 230)";
     }
   });
-    const answerField2 = document.getElementById('answer-input2');
+  const answerField2 = document.getElementById('answer-input2');
   const submitButton2 = document.getElementById('submit-button2');
   const resultElement2 = document.getElementById('result2');
   submitButton2.addEventListener('click', () => {
