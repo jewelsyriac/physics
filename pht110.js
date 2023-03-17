@@ -126,11 +126,11 @@ generatorButton.addEventListener('click', event => {
     questionSpace.classList.add('active');
     var answerSpace = document.getElementById("answers");
     var answerList = answerSpace.querySelector("ol");
-    var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(2);
+    var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
     var mass = divisionTime +10 ;
     var forceConstant = number+50 ;
     var dampingConstant = divisionTime + 1 ;
-    var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(2);
+    var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
     var newAnswer = document.createElement("li");
     newAnswer.textContent = answer1+" seconds.";
     var newAnswer1 = document.createElement("li");
