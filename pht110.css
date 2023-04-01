@@ -13,8 +13,27 @@ body {
 .hide{
     display: none;
 }
+.close-btn {
+    position:sticky ;
+    top: 0;
+    margin-left: 90%;
+    font-size: 20px;
+    width:10%;
+    height: calc(width);
+    border-radius: 3px;
+    border: 2px solid black;
+    background-color: rgb(255, 171, 171);
+    color: #180202;
+    border: none;
+    cursor: pointer;
+  }
+.close-btn:hover{
+    background-color: red;
+    color: white;
+}
 
 .dialog-overlay {
+    
     display: none;
     z-index: 15;
     position: fixed;
@@ -22,9 +41,11 @@ body {
     right: 0;
     width: 60%;
     height: 100%;
+    
   }
   
   .dialog-box {
+    overflow-y: scroll;
     position: fixed;
     font-size: smaller;
     top: 9%;
@@ -37,10 +58,62 @@ body {
     border-radius: 5px;
     text-align: center;
     z-index: 9999;
+    max-height: 500px;
   }
   
 .close-dialog {
+    
     display: block;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid rgb(2, 49, 2);
+    background-color: #8afc99;
+    border-radius: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.close-dialog:hover {
+    background-color: #126900;
+}
+.answer-overlay {
+    
+    display: none;
+    z-index: 15;
+    position: relative;
+   margin: auto;
+    width:90%;
+    height: 100%;
+    
+  }
+  
+  .answer-box {
+    overflow-y: scroll;
+    position: fixed;
+    font-size: smaller;
+    top: 9%;
+    right: 30%;
+    
+    border: 1px solid grey;
+    background-color: #c8ffdd;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 9999;
+    max-height: 500px;
+  }
+  
+.close-answer {
+    position : sticky;
+    bottom: 0;
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     text-align: center;
     border: 1px solid rgb(2, 49, 2);
@@ -53,7 +126,12 @@ body {
   }
 .active{
     display: block;
-}  
+} 
+.inputfield {
+    margin-top: 20px;
+    width:90%;
+    height: 30px;
+} 
   
 #simulation{
     width: 100%; 
@@ -319,6 +397,25 @@ iframe{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
+.greenbutton {
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #2fff4a;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
 
 .featured-course .button {
 
@@ -409,6 +506,31 @@ iframe{
 }
   
 .dialog-box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: smaller;
+    border: 1px solid grey;
+    background-color: #e2eeff;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: scroll;
+}
+.answer-overlay {
+    display: none;
+    z-index: 15;
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    margin: 0;
+}
+  
+.answer-box {
     display: flex;
     flex-direction: column;
     position: fixed;
