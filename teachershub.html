@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PHT110</title>
     <link rel="stylesheet" href="pht110.css">
+    <script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/tex-svg.js">
+</script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@300&display=swap"
@@ -360,30 +364,31 @@
         </ul>
     </nav>
     <div class="main-content">
-        <h3>Assignment questions</h3>
-        <h6> ( Each question contains 3 marks ) </h6>
-        
-<label for="input-field">Enter your roll number</label>
-<input type="number" id="input-field" name="number" min="1" max="70">
-<p></p>
-<label for="module-field">Module : </label>
-<input type="number" id="module-field" name="number" min="1" max="5">
-<p></p>
-<button type="button" class="button1" id="questionGeneratorButton">Generate question</button>
-<div class="hide" id="questions">
-<ol></ol>
-<p></p>
-<p id="result"></p>
-<p id="result2"></p>
-            <button class="button1" ><a href="formulas.html"> Show formulas </a></button>
-            <button  class="button2"> <a href="oscillations.html#problems"> Show similar problems </a></button>
-            </div>
-<div class="hidden" id="answers">
-    <ol></ol>
+        <h3>Question generator</h3>
+        <div>
+        <label for="questionInput">Enter a sample question : </label>
+        <input class="inputfield" type="text" id="questionInput" placeholder="Put a space before and after numerical values">
+</div><div>
+        <label for="numberInput">Number of questions you want to generate : </label>
+        <input type="number" id="numberInput">
+        <button class="button1" id="questionCreatorButton">Generate questions</button>
 </div>
+<div id="questionListSpace">
+    <ol>
+       
+    </ol>
+<ol id="questionsList"></ol>
 </div>
+<div id="my-div"></div>
+<input type="text" id="my-input">
+<button id="my-Latexinput">Generate expression</button>
+
+    </div>
 
     <script src="pht110.js"></script>
+  
+      
+        
 
 </body>
 

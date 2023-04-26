@@ -141,69 +141,311 @@ closeAnswerCrossButtons.forEach(closeAnswerCrossButton => {
   });
 })
 
-/* if (window.location.pathname.endsWith('/exercises.html')){
+if (window.location.pathname.endsWith('/exercises.html')){
   const generatorButton = document.getElementById("questionGeneratorButton");
   generatorButton.addEventListener('click', event => {
       var inputField = document.getElementById("input-field");
-      var number = parseInt(inputField.value);
-      var divisionTime = Math.floor(number / 10);
-      var questionSpace = document.getElementById("questions");
-      var questionList = questionSpace.querySelector("ol");
-      var newQuestion1 = document.createElement("li");
-      newQuestion1.textContent = "A damped harmonic oscillator has a Q-value of "+(number*250)+" and a frequency of "+(number*10)+" Hz. Find the time required for the energy of the oscillator to decrease to 1/"+(divisionTime +2)+" of its initial value. ";
-      questionList.appendChild(newQuestion1);
-      var newQuestion2 = document.createElement("li");
-      newQuestion2.textContent = "A damped oscillator of mass "+(divisionTime +10)+"kg has a force constant "+ (number+50)+" N/m and damping constant "+(divisionTime + 1)+" s-1. Find the angular frequency with this damping.";
-      questionList.appendChild(newQuestion2);
-      questionSpace.classList.add('active');
-      var answerSpace = document.getElementById("answers");
-      var answerList = answerSpace.querySelector("ol");
-      var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
-      var mass = divisionTime +10 ;
-      var forceConstant = number+50 ;
-      var dampingConstant = divisionTime + 1 ;
-      var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
-      var newAnswer = document.createElement("li");
-      newAnswer.textContent = answer1+" seconds.";
-      var newAnswer1 = document.createElement("li");
-      newAnswer1.textContent = answer2+" Hz.";
-      const answerButton = document.getElementById("answerbutton");
-      const answerField = document.getElementById('answer-input1');
-    const submitButton = document.getElementById('submit-button1');
-    const resultElement = document.getElementById('result');
-    submitButton.addEventListener('click', () => {
-      const inputValue = answerField.value;
-      if (inputValue === answer1) {
-        resultElement.textContent = 'Great, Correct answer!';
-        document.body.style.backgroundColor = "rgb(230, 255, 230)";
-      } else {
-        resultElement.textContent = 'Incorrect. Please try again.';
-        document.body.style.backgroundColor = "rgb(255, 230, 230)";
-      }
+      var moduleField = document.getElementById("module-field");
+      // This if conditions selects the module number  1st module //
+      if (moduleField.value == 1){
+        var number = parseInt(inputField.value);
+        var divisionTime = Math.floor(number / 10);
+        var questionSpace = document.getElementById("questions");
+        var questionList = questionSpace.querySelector("ol");
+        var Question1 = document.createElement("li");
+        Question1.textContent = "A damped harmonic oscillator has a Q-value of "+(number*500)+" and a frequency of "+(number*100)+" Hz. Find the time required for the energy of the oscillator to decrease to 1/10th of its initial value. ";
+        questionList.appendChild(Question1);
+        var Question2 = document.createElement("li");
+        Question2.textContent = "A damped oscillator of mass "+(divisionTime +2)+"g has a force constant "+ (number+10)+" N/m and damping constant "+(divisionTime + 1)+" s-1. Find the angular frequency with and without damping.";
+        questionList.appendChild(Question2);
+        var Question3 = document.createElement("li");
+        Question3.textContent = "The string of violin "+(number+10)+" cm long and has a mass of 0.2g. With what tension it must be stretched to tune "+(number*100)+"Hz? ";
+        questionList.appendChild(Question3);
+        var Question4 = document.createElement("li");
+        Question4.textContent = "The displacement of a wave is represented by y = "+(number*10)+" Sin("+(number)+"x - "+(number*60)+"t),where x is measured in metres and t in secs. Deduce amplitude, time period, velocity and wavelength?";
+        questionList.appendChild(Question4);
+        var Question5 = document.createElement("li");
+        Question5.textContent = "A uniform steel wire has length "+(number*3)+"m and mass "+(number/10)+" kg. Find the Tension in the string if the speed of transverse wave on the wire is "+(number*15)+"m/s.";
+        questionList.appendChild(Question5);
+        var Question6 = document.createElement("li");
+        Question6.textContent = "The frequency of a tuning fork is "+(number*50)+". If the quality factor Q = "+(number*100)+", find the time after which its amplitude becomes half of its initial value.";
+        questionList.appendChild(Question6);
+        var Question7 = document.createElement("li");
+        Question7.textContent = "The equation of transverse wave travelling along a stretched string is given by, ψ = "+(number*5)+" cos ("+(number+3)+"πx+"+(number*10)+"πt + π/2) where ψ and x are in cm and t is in second. Find the amplitude, frequency, velocity, wave length and initial phase.";
+        questionList.appendChild(Question7);
+        var Question8 = document.createElement("li");
+        Question8.textContent = "A string of mass 0.65kg is stretched between two supports "+(number)+"m apart. If the tension in string is "+(number*10)+"N, find velocity of wave in string? How long pulse will take to travel from one support to another.";
+        questionList.appendChild(Question8);
+        var Question9 = document.createElement("li");
+        Question9.textContent = "A simple harmonic wave is represented by y = "+(number*2)+" sin 2π("+(number+1)+"x+"+(number*3)+"t + 1/3). Find wavelength, wavevector, amplitude and velocity of wave. Also find the displacement of particle "+(number)+"cm from origin and 2 seconds after start of motion. ( x,y in cm & t is seconds)";
+        questionList.appendChild(Question9);
+        var Question10 = document.createElement("li");
+        Question10.textContent = "The amplitude of an under damped oscillator reduces to 1/10th of initial value after 100 oscillations. It's time period is "+(number)+"s. Find the damping constant and relaxation time. ";
+        questionList.appendChild(Question10);
+        questionSpace.classList.add('active');
+        var answerSpace = document.getElementById("answers");
+        var answerList = answerSpace.querySelector("ol");
+        var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+        var mass = divisionTime +10 ;
+        var forceConstant = number+50 ;
+        var dampingConstant = divisionTime + 1 ;
+        var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+        var newAnswer = document.createElement("li");
+        newAnswer.textContent = answer1+" seconds.";
+        var newAnswer1 = document.createElement("li");
+        newAnswer1.textContent = answer2+" Hz.";
+        const answerButton = document.getElementById("answerbutton");
+        
+    answerButton.addEventListener('click', event => {
+        answerList.appendChild(newAnswer);
+        answerList.appendChild(newAnswer1);
+        answerSpace.style.display="block";
+        
+        
     });
-    const answerField2 = document.getElementById('answer-input2');
-    const submitButton2 = document.getElementById('submit-button2');
-    const resultElement2 = document.getElementById('result2');
-    submitButton2.addEventListener('click', () => {
-      const inputValue2 = answerField2.value;
-      if (inputValue2 === answer2) {
-        resultElement2.textContent = 'Great, Correct answer!';
-        document.body.style.backgroundColor = "rgb(230, 255, 230)";
-      } else {
-        resultElement2.textContent = 'Incorrect. Please try again.';
-        document.body.style.backgroundColor = "rgb(255, 230, 230)";
-      }
+}
+// second module //
+
+else if (moduleField.value == 2){
+  var number = parseInt(inputField.value);
+        var divisionTime = Math.floor(number / 10);
+        var questionSpace = document.getElementById("questions");
+        var questionList = questionSpace.querySelector("ol");
+        var Question1 = document.createElement("li");
+        Question1.textContent = "The diameter of the "+(number)+"th bright ring in Newton’s ring experiment is "+(number)+"x10-3 m. Find the radius of curvature of the lens used, if the wavelength of light is "+(number*10)+"nm.";
+        questionList.appendChild(Question1);
+        var Question2 = document.createElement("li");
+        Question2.textContent = "Light of wavelength "+(number*100)+"A° falls normally on two glass plates enclosing a wedge shaped film. The plates touch at one end and are separated at 10cm from that end by a wire. If the bandwidth of the interference pattern is "+(number)+" mm, find diameter of the wire.";
+        questionList.appendChild(Question2);
+        var Question3 = document.createElement("li");
+        Question3.textContent = "Diameter of " + (number)+"th  and "+(number +10)+"th dark ring of a newtons ring set up is measured as "+(number+8)+" mm and  "+(number+35)+"mm. Find the wavelength of light used to produce this interference pattern if radius of curvature of plano-convex lens used is 100 cm.";
+        questionList.appendChild(Question3);
+        var Question4 = document.createElement("li");
+        Question4.textContent = "Diameter of " + (number+3)+"th  and "+(number +15)+"th dark ring of a newtons ring set up is measured as "+(number)+" mm and  "+(number+50)+"mm. Find the radius of curvature of plano convex lens used to produce this interference pattern if wavelength of light used is 586 nm.";
+        questionList.appendChild(Question4);
+        var Question5 = document.createElement("li");
+        Question5.textContent = "In a Newton’s Ring experiment, the diameter of  "+(number +5)+"th dark ring changes from 1 cm to 0.3 cm and diameter of 5 th ring changes from 0.5 cm to 0.25 cm when a liquid is introduced between the plate and convex lens. Calculate the refractive index of liquid.";
+        questionList.appendChild(Question5);
+        var Question6 = document.createElement("li");
+        Question6.textContent = "Newton’s rings are observed by source emitting light of wavelength λ1 = "+(number*50)+" nm and λ2 = "+(number*40)+"nm. It is found that nth dark ring due to λ1 coincides with (n+5)th dark ring due to λ2 . If the radius of curvature of lens is 100 cm. Calculate the diameter of "+(number)+"th dark ring of λ1.";
+        questionList.appendChild(Question6);
+        var Question7 = document.createElement("li");
+        Question7.textContent = "A monochromatic light of wavelength "+(number*500)+" Å is incident normally on a soap film of μ = 1."+(number)+". What is the least thickness of the film that will appear dark by reflection ?";
+        questionList.appendChild(Question7);
+        var Question8 = document.createElement("li");
+        Question8.textContent = "What is the highest order spectrum which may be obtained with a light of wavelength "+(number*60)+" nm by means of a plane transmission grating having "+(number*250)+" lines per cm?";
+        questionList.appendChild(Question8);
+        var Question9 = document.createElement("li");
+        Question9.textContent = "A grating has "+(number*200)+" lines/cm. Find angular separation between two wavelengths 577nm and 579 nm in the second order.";
+        questionList.appendChild(Question9);
+        var Question10 = document.createElement("li");
+        Question10.textContent = "Light of wavelength 5893Å is reflected at nearly normal incidence from a soap film of refractive index 1."+(number+9)+". What is the least thickness of the film that will appear (i) dark and (ii) bright?";
+        questionList.appendChild(Question10);
+        questionSpace.classList.add('active');
+        questionSpace.style.fontFamily = "Times New Roman";
+        var answerSpace = document.getElementById("answers");
+        var answerList = answerSpace.querySelector("ol");
+        var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+        var mass = divisionTime +10 ;
+        var forceConstant = number+50 ;
+        var dampingConstant = divisionTime + 1 ;
+        var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+        var newAnswer = document.createElement("li");
+        newAnswer.textContent = answer1+" seconds.";
+        var newAnswer1 = document.createElement("li");
+        newAnswer1.textContent = answer2+" Hz.";
+        const answerButton = document.getElementById("answerbutton");
+        
+    answerButton.addEventListener('click', event => {
+        answerList.appendChild(newAnswer);
+        answerList.appendChild(newAnswer1);
+        answerSpace.style.display="block";
+        
+        
     });
-  answerButton.addEventListener('click', event => {
-      answerList.appendChild(newAnswer);
-      answerList.appendChild(newAnswer1);
-      answerSpace.style.display="block";
-      
-      
+}
+else if (moduleField.value == 3){
+  var number = parseInt(inputField.value);
+  var divisionTime = Math.floor(number / 10);
+  var questionSpace = document.getElementById("questions");
+  var questionList = questionSpace.querySelector("ol");
+  var newQuestion1 = document.createElement("li");
+  newQuestion1.textContent = "Question 1";
+  questionList.appendChild(newQuestion1);
+  var newQuestion2 = document.createElement("li");
+  newQuestion2.textContent = "Question 2";
+  questionList.appendChild(newQuestion2);
+  questionSpace.classList.add('active');
+  var answerSpace = document.getElementById("answers");
+  var answerList = answerSpace.querySelector("ol");
+  // equation of question 1 //
+  var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+  var mass = divisionTime +10 ;
+  var forceConstant = number+50 ;
+  var dampingConstant = divisionTime + 1 ;
+  //equation of question 2 //
+  var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+  var newAnswer = document.createElement("li");
+  newAnswer.textContent = answer1+" seconds.";
+  var newAnswer1 = document.createElement("li");
+  newAnswer1.textContent = answer2+" Hz.";
+  const answerButton = document.getElementById("answerbutton");
+  const answerField = document.getElementById('answer-input1');
+const submitButton = document.getElementById('submit-button1');
+const resultElement = document.getElementById('result');
+submitButton.addEventListener('click', () => {
+  const inputValue = answerField.value;
+  if (inputValue === answer1) {
+    resultElement.textContent = 'Great, Correct answer!';
+    document.body.style.backgroundColor = "rgb(230, 255, 230)";
+  } else {
+    resultElement.textContent = 'Incorrect. Please try again.';
+    document.body.style.backgroundColor = "rgb(255, 230, 230)";
+  }
+});
+const answerField2 = document.getElementById('answer-input2');
+const submitButton2 = document.getElementById('submit-button2');
+const resultElement2 = document.getElementById('result2');
+submitButton2.addEventListener('click', () => {
+  const inputValue2 = answerField2.value;
+  if (inputValue2 === answer2) {
+    resultElement2.textContent = 'Great, Correct answer!';
+    document.body.style.backgroundColor = "rgb(230, 255, 230)";
+  } else {
+    resultElement2.textContent = 'Incorrect. Please try again.';
+    document.body.style.backgroundColor = "rgb(255, 230, 230)";
+  }
+});
+answerButton.addEventListener('click', event => {
+  answerList.appendChild(newAnswer);
+  answerList.appendChild(newAnswer1);
+  answerSpace.style.display="block";
+  
+  
+});
+}else if (moduleField.value == 4){
+  var number = parseInt(inputField.value);
+  var divisionTime = Math.floor(number / 10);
+  var questionSpace = document.getElementById("questions");
+  var questionList = questionSpace.querySelector("ol");
+  var newQuestion1 = document.createElement("li");
+  newQuestion1.textContent = "Question 1";
+  questionList.appendChild(newQuestion1);
+  var newQuestion2 = document.createElement("li");
+  newQuestion2.textContent = "Question 2";
+  questionList.appendChild(newQuestion2);
+  questionSpace.classList.add('active');
+  var answerSpace = document.getElementById("answers");
+  var answerList = answerSpace.querySelector("ol");
+  // equation of question 1 //
+  var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+  var mass = divisionTime +10 ;
+  var forceConstant = number+50 ;
+  var dampingConstant = divisionTime + 1 ;
+  //equation of question 2 //
+  var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+  var newAnswer = document.createElement("li");
+  newAnswer.textContent = answer1+" seconds.";
+  var newAnswer1 = document.createElement("li");
+  newAnswer1.textContent = answer2+" Hz.";
+  const answerButton = document.getElementById("answerbutton");
+  const answerField = document.getElementById('answer-input1');
+const submitButton = document.getElementById('submit-button1');
+const resultElement = document.getElementById('result');
+submitButton.addEventListener('click', () => {
+  const inputValue = answerField.value;
+  if (inputValue === answer1) {
+    resultElement.textContent = 'Great, Correct answer!';
+    document.body.style.backgroundColor = "rgb(230, 255, 230)";
+  } else {
+    resultElement.textContent = 'Incorrect. Please try again.';
+    document.body.style.backgroundColor = "rgb(255, 230, 230)";
+  }
+});
+const answerField2 = document.getElementById('answer-input2');
+const submitButton2 = document.getElementById('submit-button2');
+const resultElement2 = document.getElementById('result2');
+submitButton2.addEventListener('click', () => {
+  const inputValue2 = answerField2.value;
+  if (inputValue2 === answer2) {
+    resultElement2.textContent = 'Great, Correct answer!';
+    document.body.style.backgroundColor = "rgb(230, 255, 230)";
+  } else {
+    resultElement2.textContent = 'Incorrect. Please try again.';
+    document.body.style.backgroundColor = "rgb(255, 230, 230)";
+  }
+});
+answerButton.addEventListener('click', event => {
+  answerList.appendChild(newAnswer);
+  answerList.appendChild(newAnswer1);
+  answerSpace.style.display="block";
+  
+  
+});
+}else if (moduleField.value == 5){
+  var number = parseInt(inputField.value);
+  var divisionTime = Math.floor(number / 10);
+  var questionSpace = document.getElementById("questions");
+  var questionList = questionSpace.querySelector("ol");
+  var newQuestion1 = document.createElement("li");
+  newQuestion1.textContent = "Question 1";
+  questionList.appendChild(newQuestion1);
+  var newQuestion2 = document.createElement("li");
+  newQuestion2.textContent = "Question 2";
+  questionList.appendChild(newQuestion2);
+  questionSpace.classList.add('active');
+  var answerSpace = document.getElementById("answers");
+  var answerList = answerSpace.querySelector("ol");
+  // equation of question 1 //
+  var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+  var mass = divisionTime +10 ;
+  var forceConstant = number+50 ;
+  var dampingConstant = divisionTime + 1 ;
+  //equation of question 2 //
+  var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+  var newAnswer = document.createElement("li");
+  newAnswer.textContent = answer1+" seconds.";
+  var newAnswer1 = document.createElement("li");
+  newAnswer1.textContent = answer2+" Hz.";
+  const answerButton = document.getElementById("answerbutton");
+  const answerField = document.getElementById('answer-input1');
+const submitButton = document.getElementById('submit-button1');
+const resultElement = document.getElementById('result');
+submitButton.addEventListener('click', () => {
+  const inputValue = answerField.value;
+  if (inputValue === answer1) {
+    resultElement.textContent = 'Great, Correct answer!';
+    document.body.style.backgroundColor = "rgb(230, 255, 230)";
+  } else {
+    resultElement.textContent = 'Incorrect. Please try again.';
+    document.body.style.backgroundColor = "rgb(255, 230, 230)";
+  }
+});
+const answerField2 = document.getElementById('answer-input2');
+const submitButton2 = document.getElementById('submit-button2');
+const resultElement2 = document.getElementById('result2');
+submitButton2.addEventListener('click', () => {
+  const inputValue2 = answerField2.value;
+  if (inputValue2 === answer2) {
+    resultElement2.textContent = 'Great, Correct answer!';
+    document.body.style.backgroundColor = "rgb(230, 255, 230)";
+  } else {
+    resultElement2.textContent = 'Incorrect. Please try again.';
+    document.body.style.backgroundColor = "rgb(255, 230, 230)";
+  }
+});
+answerButton.addEventListener('click', event => {
+  answerList.appendChild(newAnswer);
+  answerList.appendChild(newAnswer1);
+  answerSpace.style.display="block";
+  
+  
+});
+}
   });
-  });
-} */
-/* function rollVariablesGenerator(rollNumber,variableNumber){
+
+} 
+function rollVariablesGenerator(rollNumber,variableNumber){
   const rollVariableList = [];
   let currentNumber = rollNumber;
   for (let i = 0; i < variableNumber; i++) {
@@ -272,7 +514,7 @@ function multipleQuestionGenerator(sampleQuestion,numberOfQuestions){
 
 const buttonQuestionGenerator = document.getElementById("questionCreatorButton");
 
-if (window.location.pathname.endsWith('/teachershub.html')){
+/* if (window.location.pathname.endsWith('/teachershub.html')){
   buttonQuestionGenerator.addEventListener('click', function() {
     const questionSpace = document.getElementById("questionListSpace");
     var questionHeader = document.createElement("h3");
@@ -299,7 +541,7 @@ if (window.location.pathname.endsWith('/teachershub.html')){
     
   });
 
-} */
+}  */
 
 
 
