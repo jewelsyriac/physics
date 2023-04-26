@@ -183,6 +183,7 @@ if (window.location.pathname.endsWith('/exercises.html')){
         Question10.textContent = "The amplitude of an under damped oscillator reduces to 1/10th of initial value after 100 oscillations. It's time period is "+(number)+"s. Find the damping constant and relaxation time. ";
         questionList.appendChild(Question10);
         questionSpace.classList.add('active');
+        questionSpace.style.fontFamily = "Times New Roman";
         var answerSpace = document.getElementById("answers");
         var answerList = answerSpace.querySelector("ol");
         var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
