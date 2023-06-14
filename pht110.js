@@ -266,123 +266,114 @@ else if (moduleField.value == 2){
     });
 }
 else if (moduleField.value == 3){
-  var number = parseInt(inputField.value);
+  /* var number = parseInt(inputField.value);
   var divisionTime = Math.floor(number / 10);
   var questionSpace = document.getElementById("questions");
   var questionList = questionSpace.querySelector("ol");
-  var newQuestion1 = document.createElement("li");
-  newQuestion1.textContent = "Question 1";
-  questionList.appendChild(newQuestion1);
-  var newQuestion2 = document.createElement("li");
-  newQuestion2.textContent = "Question 2";
-  questionList.appendChild(newQuestion2);
-  questionSpace.classList.add('active');
-  var answerSpace = document.getElementById("answers");
-  var answerList = answerSpace.querySelector("ol");
-  // equation of question 1 //
-  var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
-  var mass = divisionTime +10 ;
-  var forceConstant = number+50 ;
-  var dampingConstant = divisionTime + 1 ;
-  //equation of question 2 //
-  var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
-  var newAnswer = document.createElement("li");
-  newAnswer.textContent = answer1+" seconds.";
-  var newAnswer1 = document.createElement("li");
-  newAnswer1.textContent = answer2+" Hz.";
-  const answerButton = document.getElementById("answerbutton");
-  const answerField = document.getElementById('answer-input1');
-const submitButton = document.getElementById('submit-button1');
-const resultElement = document.getElementById('result');
-submitButton.addEventListener('click', () => {
-  const inputValue = answerField.value;
-  if (inputValue === answer1) {
-    resultElement.textContent = 'Great, Correct answer!';
-    document.body.style.backgroundColor = "rgb(230, 255, 230)";
-  } else {
-    resultElement.textContent = 'Incorrect. Please try again.';
-    document.body.style.backgroundColor = "rgb(255, 230, 230)";
-  }
-});
-const answerField2 = document.getElementById('answer-input2');
-const submitButton2 = document.getElementById('submit-button2');
-const resultElement2 = document.getElementById('result2');
-submitButton2.addEventListener('click', () => {
-  const inputValue2 = answerField2.value;
-  if (inputValue2 === answer2) {
-    resultElement2.textContent = 'Great, Correct answer!';
-    document.body.style.backgroundColor = "rgb(230, 255, 230)";
-  } else {
-    resultElement2.textContent = 'Incorrect. Please try again.';
-    document.body.style.backgroundColor = "rgb(255, 230, 230)";
-  }
-});
-answerButton.addEventListener('click', event => {
-  answerList.appendChild(newAnswer);
-  answerList.appendChild(newAnswer1);
-  answerSpace.style.display="block";
+  var newQuestion = document.createElement("li");
+  var answer = ((0.00072813186/(number+3))/(10**(-6))).toFixed(2);
+
+  var answerInput = document.createElement("input");
+  answerInput.setAttribute("type", "text");
+  answerInput.id = "myAnswerInput";
+  answerInput.placeholder = "Enter in micrometer"
+  var checkButton = document.createElement("button");
+  checkButton.textContent = "Check Answer";
+  var showButton = document.createElement("button");
+  showButton.textContent = "Show Answer";
+  var correctAnswer = document.createElement("p");
+  correctAnswer.innerText = "Answer : "+ answer+" micrometer";
+  showButton.classList.add('button2');
+  checkButton.classList.add('button2');
+  questionSpace.appendChild(correctAnswer);
+  questionSpace.appendChild(answerInput);
+  questionSpace.appendChild(checkButton);
+  questionSpace.appendChild(showButton);
+  correctAnswer.classList.add('hidden');
   
-  
+
+  newQuestion.innerHTML = "Calculate the debroglie wavelength of an electron moving with a velocity "+(number +3)+"m/s.";
+  questionList.appendChild(newQuestion);
+
+  checkButton.addEventListener("click", ()=>{
+    const myInputValue = parseFloat(answerInput.value);
+    if (parseFloat(myInputValue) === parseFloat(answer)) {
+        alert("Correct answer !");
+    } else {
+        alert("Wrong answer !");
+    }
 });
+  showButton.addEventListener("click", ()=>{
+    correctAnswer.classList.toggle('hidden');
+    if (correctAnswer.classList.contains('hidden')) {
+      showButton.innerText = 'Show Answer';
+    } else {
+      showButton.innerText = 'Hide Answer';
+    }
+});
+questionSpace.classList.add('active');
+questionSpace.style.fontFamily = "Times New Roman"; */
+var number = parseInt(inputField.value);
+        var divisionTime = Math.floor(number / 10);
+        var questionSpace = document.getElementById("questions");
+        var questionList = questionSpace.querySelector("ol");
+        var Question1 = document.createElement("li");
+        Question1.textContent = "Calculate the quantum number associated with a cricket ball of mass " +number*2+" gm trapped to move with speed 1m/s in a one dimensional box of width "+number/2 +" cm.";
+        questionList.appendChild(Question1);
+        var Question2 = document.createElement("li");
+        Question2.textContent = "Calculate the quantum number associated with a particle of mass "+number*3+" gm with an energy "+ number*150 +" KeV in a one dimensional box of width 10 cm.";
+        questionList.appendChild(Question2);
+        var Question3 = document.createElement("li");
+        Question3.textContent = "An electron is confined to move in a one dimensional potential box of width "+Math.ceil(number/10) +"Å. Calculate energies corresponds to first and second quantum states in eV.";
+        questionList.appendChild(Question3);
+        var Question4 = document.createElement("li");
+        Question4.textContent = "Compare the uncertainties in velocity and momentum of an electron moving in a one dimensional box of width "+Math.ceil((number*10)/3)+"Å.";
+        questionList.appendChild(Question4);
+        var Question5 = document.createElement("li");
+        Question5.textContent = "Calculate the debroglie wavelength of an proton with an energy of "+Math.ceil(number/7)+"KeV.";
+        questionList.appendChild(Question5);
+        var Question6 = document.createElement("li");
+        Question6.textContent = "An electron is trapped inside a potential well of width "+Math.ceil(number/2)+"Å. Calculate the minimum uncertainty in measurement of it's velocity.";
+        questionList.appendChild(Question6);
+        var Question7 = document.createElement("li");
+        Question7.textContent = "Compare the de Broglie wavelength of an electron and a proton moving in a potential of "+Math.ceil((number*10)/3)+"kV.";
+        questionList.appendChild(Question7);
+        var Question8 = document.createElement("li");
+        Question8.textContent = "The life time of first excited state of He atom is "+Math.ceil(number/4)+"× 10^(-8) seconds. Calculate the uncertainty in frequency of obtained spectral lines.";
+        questionList.appendChild(Question8);
+        var Question9 = document.createElement("li");
+        Question9.textContent = "Calculate the uncertainty in energy measurement of an excited state with a life time of "+Math.ceil(number/3)+"× 10^(-6) seconds";
+        questionList.appendChild(Question9);
+        var Question10 = document.createElement("li");
+        Question10.textContent = "Calculate the debroglie wavelength of a neutron with a velocity "+(number*120)+" m/s.";
+        questionList.appendChild(Question10);
+        questionSpace.classList.add('active');
+        questionSpace.style.fontFamily = "Times New Roman";
+        var answerSpace = document.getElementById("answers");
+        var answerList = answerSpace.querySelector("ol");
+        var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+        var mass = divisionTime +10 ;
+        var forceConstant = number+50 ;
+        var dampingConstant = divisionTime + 1 ;
+        var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+        var newAnswer = document.createElement("li");
+        newAnswer.textContent = answer1+" seconds.";
+        var newAnswer1 = document.createElement("li");
+        newAnswer1.textContent = answer2+" Hz.";
+        const answerButton = document.getElementById("answerbutton");
+        
+    answerButton.addEventListener('click', event => {
+        answerList.appendChild(newAnswer);
+        answerList.appendChild(newAnswer1);
+        answerSpace.style.display="block";
+        
+        
+    });
+ 
 }else if (moduleField.value == 4){
-  var number = parseInt(inputField.value);
-  var divisionTime = Math.floor(number / 10);
-  var questionSpace = document.getElementById("questions");
-  var questionList = questionSpace.querySelector("ol");
-  var newQuestion1 = document.createElement("li");
-  newQuestion1.textContent = "Question 1";
-  questionList.appendChild(newQuestion1);
-  var newQuestion2 = document.createElement("li");
-  newQuestion2.textContent = "Question 2";
-  questionList.appendChild(newQuestion2);
+  createDynamicQuestion(inputField.value,'what is displacement?','number + 3','m/s');
   questionSpace.classList.add('active');
-  var answerSpace = document.getElementById("answers");
-  var answerList = answerSpace.querySelector("ol");
-  // equation of question 1 //
-  var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
-  var mass = divisionTime +10 ;
-  var forceConstant = number+50 ;
-  var dampingConstant = divisionTime + 1 ;
-  //equation of question 2 //
-  var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
-  var newAnswer = document.createElement("li");
-  newAnswer.textContent = answer1+" seconds.";
-  var newAnswer1 = document.createElement("li");
-  newAnswer1.textContent = answer2+" Hz.";
-  const answerButton = document.getElementById("answerbutton");
-  const answerField = document.getElementById('answer-input1');
-const submitButton = document.getElementById('submit-button1');
-const resultElement = document.getElementById('result');
-submitButton.addEventListener('click', () => {
-  const inputValue = answerField.value;
-  if (inputValue === answer1) {
-    resultElement.textContent = 'Great, Correct answer!';
-    document.body.style.backgroundColor = "rgb(230, 255, 230)";
-  } else {
-    resultElement.textContent = 'Incorrect. Please try again.';
-    document.body.style.backgroundColor = "rgb(255, 230, 230)";
-  }
-});
-const answerField2 = document.getElementById('answer-input2');
-const submitButton2 = document.getElementById('submit-button2');
-const resultElement2 = document.getElementById('result2');
-submitButton2.addEventListener('click', () => {
-  const inputValue2 = answerField2.value;
-  if (inputValue2 === answer2) {
-    resultElement2.textContent = 'Great, Correct answer!';
-    document.body.style.backgroundColor = "rgb(230, 255, 230)";
-  } else {
-    resultElement2.textContent = 'Incorrect. Please try again.';
-    document.body.style.backgroundColor = "rgb(255, 230, 230)";
-  }
-});
-answerButton.addEventListener('click', event => {
-  answerList.appendChild(newAnswer);
-  answerList.appendChild(newAnswer1);
-  answerSpace.style.display="block";
-  
-  
-});
+  questionSpace.style.fontFamily = "Times New Roman";
 }else if (moduleField.value == 5){
   var number = parseInt(inputField.value);
   var divisionTime = Math.floor(number / 10);
@@ -546,5 +537,49 @@ const buttonQuestionGenerator = document.getElementById("questionCreatorButton")
 
 
 
+function createDynamicQuestion(number, questionString, answerFormula, answerUnit) {
+  var questionSpace = document.getElementById("questions");
+  var questionList = questionSpace.querySelector("ol");
+  var newQuestion = document.createElement("li");
+  var answer = eval(answerFormula).toFixed(2);
 
+  var answerInput = document.createElement("input");
+  answerInput.setAttribute("type", "text");
+  answerInput.id = "myAnswerInput";
+  answerInput.placeholder = "Enter in micrometer";
+  var checkButton = document.createElement("button");
+  checkButton.textContent = "Check Answer";
+  var showButton = document.createElement("button");
+  showButton.textContent = "Show Answer";
+  var correctAnswer = document.createElement("p");
+  correctAnswer.innerText = "Answer: " + answer + " "+ answerUnit;
+  showButton.classList.add('button2');
+  checkButton.classList.add('button2');
+  questionSpace.appendChild(correctAnswer);
+  questionSpace.appendChild(answerInput);
+  questionSpace.appendChild(checkButton);
+  questionSpace.appendChild(showButton);
+  correctAnswer.classList.add('hidden');
+
+  newQuestion.innerHTML = questionString;
+  questionList.appendChild(newQuestion);
+
+  checkButton.addEventListener("click", () => {
+    const myInputValue = parseFloat(answerInput.value);
+    if (parseFloat(myInputValue) === parseFloat(answer)) {
+      alert("Correct answer!");
+    } else {
+      alert("Wrong answer!");
+    }
+  });
+
+  showButton.addEventListener("click", () => {
+    correctAnswer.classList.toggle('hidden');
+    if (correctAnswer.classList.contains('hidden')) {
+      showButton.innerText = 'Show Answer';
+    } else {
+      showButton.innerText = 'Hide Answer';
+    }
+  });
+}
   
