@@ -141,7 +141,14 @@ closeAnswerCrossButtons.forEach(closeAnswerCrossButton => {
   });
 })
 
-if (window.location.pathname.endsWith('/exercises.html')){
+if (
+  window.location.pathname.endsWith('/exercises.html') ||
+  window.location.pathname.endsWith('/oscillations.html') ||
+  window.location.pathname.endsWith('/interference.html') ||
+  window.location.pathname.endsWith('/quantummechanics.html')||
+  window.location.pathname.endsWith('/emtheory.html')||
+  window.location.pathname.endsWith('/fibreoptics.html')
+) {
   const generatorButton = document.getElementById("questionGeneratorButton");
   generatorButton.addEventListener('click', event => {
       var inputField = document.getElementById("input-field");

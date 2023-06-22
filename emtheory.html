@@ -298,28 +298,67 @@
     </nav>
     <div class="main-content">
         <h1>EM theory</h1>
-        <section id="basics">
-            <h2>Basics of Vector Calculus</h2>
-            <p>Vector calculus is a branch of mathematics that deals with the differentiation and integration of vector
-                fields.
-                It is used to describe the behavior of physical quantities that have both a magnitude and a direction,
-                such as
-                velocity and acceleration.</p>
-            <p>Vector calculus has many applications in physics and engineering, including in electromagnetic theory. In
-                this
-                section, we will cover the basics of vector calculus, including vector operations, gradient, divergence,
-                and
-                curl.</p>
-        </section>
-        <section id="integrals">
-            <h2>Line, surface and volume integrals</h2>
-            <p>In mathematics, an integral assigns numbers to functions in a way that can describe displacement, area,
-                volume,
-                and other concepts that arise by combining infinitesimal data.</p>
-            <p>Here, we will cover the basics of line, surface and volume integrals and their applications in
-                electromagnetic
-                theory.</p>
-        </section>
+<section id="basics">
+    <h2>Basics of Vector Calculus</h2>
+    <p>Vector calculus is a branch of mathematics that deals with the differentiation and integration of vector fields.
+        It is used to describe the behavior of physical quantities that have both a magnitude and a direction, such as
+        velocity and acceleration.</p>
+    <p>Vector calculus has many applications in physics and engineering, including in electromagnetic theory. In this
+        section, we will cover the basics of vector calculus, including vector operations, gradient, divergence, and
+        curl.</p>
+
+    <h3>Gradient</h3>
+    <p>The gradient of a scalar function is a vector that points in the direction of the steepest increase of the function at a given point. It is denoted using the symbol <em>∇</em> (nabla) and is computed using partial derivatives. Mathematically, the gradient of a scalar function <em>f</em>(<em>x</em>, <em>y</em>, <em>z</em>) is given by:</p>
+    <p style="text-align:center;">$$\nabla f = \frac{{\partial f}}{{\partial x}}\mathbf{i} + \frac{{\partial f}}{{\partial y}}\mathbf{j} + \frac{{\partial f}}{{\partial z}}\mathbf{k}$$</p>
+    <p>where <em>x</em>, <em>y</em>, and <em>z</em> are the variables, and <em>i</em>, <em>j</em>, and <em>k</em> are the unit vectors in the <em>x</em>, <em>y</em>, and <em>z</em> directions, respectively.</p>
+    <p>Example: Let's find the gradient of the function <em>f</em>(<em>x</em>, <em>y</em>) = <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup>. Using the gradient formula, we have:</p>
+    <p style="text-align:center;">$$\nabla f = \frac{{\partial f}}{{\partial x}}\mathbf{i} + \frac{{\partial f}}{{\partial y}}\mathbf{j} = 2x\mathbf{i} + 2y\mathbf{j}$$</p>
+
+    <h3>Divergence</h3>
+    <p>The divergence of a vector field measures the extent to which the field's vector lines diverge from or converge towards a given point. It is denoted using the symbol <em>∇</em>· (nabla dot) and is computed using partial derivatives. Mathematically, the divergence of a vector field <em>F</em>(<em>x</em>, <em>y</em>, <em>z</em>) = <em>F</em><sub><em>x</em></sub><em>i</em> + <em>F</em><sub><em>y</em></sub><em>j</em> + <em>F</em><sub><em>z</em></sub><em>k</em> is given by:</p>
+    <p style="text-align:center;">$$\nabla \cdot \mathbf{F} = \frac{{\partial \mathbf{F}_x}}{{\partial x}} + \frac{{\partial \mathbf{F}_y}}{{\partial y}} + \frac{{\partial \mathbf{F}_z}}{{\partial z}}$$</p>
+    <p>where <em>F</em><sub><em>x</em></sub>, <em>F</em><sub><em>y</em></sub>, and <em>F</em><sub><em>z</em></sub> represent the <em>x</em>, <em>y</em>, and <em>z</em> components of the vector field, respectively.</p>
+    <p>Example: Let's compute the divergence of the vector field <em>F</em>(<em>x</em>, <em>y</em>, <em>z</em>) = <em>x</em><sup>2</sup> <em>i</em> + <em>y</em><sup>2</sup> <em>j</em> + <em>z</em><sup>2</sup> <em>k</em>. Applying the divergence formula, we get:</p>
+    <p style="text-align:center;">$$\nabla \cdot \mathbf{F} = \frac{{\partial}}{{\partial x}}(x^2) + \frac{{\partial}}{{\partial y}}(y^2) + \frac{{\partial}}{{\partial z}}(z^2) = 2x + 2y + 2z$$</p>
+
+    <h3>Curl</h3>
+    <p>The curl of a vector field measures the circulation or rotation of the field around a given point. It is denoted using the symbol <em>∇</em> × (nabla cross) and is computed using partial derivatives. Mathematically, the curl of a vector field <em>F</em>(<em>x</em>, <em>y</em>, <em>z</em>) = <em>F</em><sub><em>x</em></sub><em>i</em> + <em>F</em><sub><em>y</em></sub><em>j</em> + <em>F</em><sub><em>z</em></sub><em>k</em> is given by:</p>
+    <p style="text-align:center;">$$\nabla \times \mathbf{F} = \left(\frac{{\partial \mathbf{F}_z}}{{\partial y}} - \frac{{\partial \mathbf{F}_y}}{{\partial z}}\right)\mathbf{i} + \left(\frac{{\partial \mathbf{F}_x}}{{\partial z}} - \frac{{\partial \mathbf{F}_z}}{{\partial x}}\right)\mathbf{j} + \left(\frac{{\partial \mathbf{F}_y}}{{\partial x}} - \frac{{\partial \mathbf{F}_x}}{{\partial y}}\right)\mathbf{k}$$</p>
+    <p>where <em>F</em><sub><em>x</em></sub>, <em>F</em><sub><em>y</em></sub>, and <em>F</em><sub><em>z</em></sub> represent the <em>x</em>, <em>y</em>, and <em>z</em> components of the vector field, respectively.</p>
+    <p>Example: Let's calculate the curl of the vector field <em>F</em>(<em>x</em>, <em>y</em>, <em>z</em>) = <em>x</em><sup>2</sup> <em>i</em> + <em>y</em><sup>2</sup> <em>j</em> + <em>z</em><sup>2</sup> <em>k</em>. Using the curl formula, we obtain:</p>
+    <p style="text-align:center;">$$\nabla \times \mathbf{F} = \left(\frac{{\partial}}{{\partial y}}(z^2) - \frac{{\partial}}{{\partial z}}(y^2)\right)\mathbf{i} + \left(\frac{{\partial}}{{\partial z}}(x^2) - \frac{{\partial}}{{\partial x}}(z^2)\right)\mathbf{j} + \left(\frac{{\partial}}{{\partial x}}(y^2) - \frac{{\partial}}{{\partial y}}(x^2)\right)\mathbf{k} = 2z\mathbf{i} + 2x\mathbf{j} + 2y\mathbf{k}$$</p>
+</section>
+
+<section id="integrals">
+    <h2>Line, Surface, and Volume Integrals</h2>
+    <p>In mathematics, an integral assigns numbers to functions in a way that can describe displacement, area, volume, and other concepts that arise by combining infinitesimal data.</p>
+    <p>Here, we will cover the basics of line, surface, and volume integrals and their applications in electromagnetic theory.</p>
+
+    <h3>Line Integrals</h3>
+    <p>A line integral is used to calculate the total contribution of a vector field along a curve. It measures the cumulative effect of the field as you move along the curve. Line integrals are commonly used to calculate work done by a force, circulation of a vector field, or flux through a curve.</p>
+    <p>Mathematically, the line integral of a vector field \(\mathbf{F}\) along a curve \(C\) is given by:</p>
+    <p style="text-align:center;">\(\int_C \mathbf{F} \cdot d\mathbf{r}\)</p>
+    <p>where \(\mathbf{F}\) represents the vector field, \(d\mathbf{r}\) is the differential displacement along the curve, and \(C\) is the curve of integration.</p>
+    <p>Example: Let's calculate the line integral of the vector field \(\mathbf{F}(x, y) = x\mathbf{i} + y\mathbf{j}\) along the curve \(C\), which is the line segment from \((0, 0)\) to \((1, 2)\). The line integral can be evaluated as:</p>
+    <p style="text-align:center;">\(\int_C \mathbf{F} \cdot d\mathbf{r} = \int_C (x\mathbf{i} + y\mathbf{j}) \cdot (dx\mathbf{i} + dy\mathbf{j}) = \int_C (x\,dx + y\,dy)\)</p>
+
+    <h3>Surface Integrals</h3>
+    <p>A surface integral is used to calculate the total contribution of a vector field across a surface. It measures the flux of the field through the surface and is often used to calculate quantities like flow rate or electric flux.</p>
+    <p>Mathematically, the surface integral of a vector field \(\mathbf{F}\) across a surface \(S\) is given by:</p>
+    <p style="text-align:center;">\(\iint_S \mathbf{F} \cdot d\mathbf{S}\)</p>
+    <p>where \(\mathbf{F}\) represents the vector field, \(d\mathbf{S}\) is the differential area vector on the surface, and \(S\) is the surface of integration.</p>
+    <p>Example: Let's calculate the surface integral of the vector field \(\mathbf{F}(x, y, z) = x\mathbf{i} + y\mathbf{j} + z\mathbf{k}\) across the surface \(S\), which is the upper hemisphere of the unit sphere. The surface integral can be evaluated as:</p>
+    <p style="text-align:center;">\(\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S (x\mathbf{i} + y\mathbf{j} + z\mathbf{k}) \cdot d\mathbf{S}\)</p>
+
+    <h3>Volume Integrals</h3>
+    <p>A volume integral is used to calculate the total contribution of a scalar or vector field within a three-dimensional region. It measures the overall effect of the field within the volume and is commonly used to calculate quantities like mass, charge, or energy.</p>
+    <p>Mathematically, the volume integral of a scalar or vector field \(f\) over a volume \(V\) is given by:</p>
+    <p style="text-align:center;">\(\iiint_V f \, dV\)</p>
+    <p>where \(f\) represents the scalar or vector field, and \(dV\) is the differential volume element within the region \(V\).</p>
+    <p>Example: Let's calculate the volume integral of the scalar field \(f(x, y, z) = x^2 + y^2 + z^2\) over the volume \(V\), which is the region enclosed by the unit sphere. The volume integral can be evaluated as:</p>
+    <p style="text-align:center;">\(\iiint_V (x^2 + y^2 + z^2) \, dV\)</p>
+</section>
+
         <section id="divergencetheorem">
             <h2>Gauss's Divergence Theorem</h2>
             <p>Gauss's divergence theorem, also known as Gauss's flux theorem, states that the flux of a vector field
@@ -366,21 +405,22 @@
         </section>
         <section id="eqnofcontinuity">
             <h2>Equation of Continuity</h2>
-            <p>The equation of continuity is a fundamental equation in physics that states that the flow of electric
-                charge in a
-                closed system is conserved. This means that the rate of change of charge within a volume is equal to the
-                net
-                flow of charge across the surface of the volume.</p>
-            \begin{align}
-            \frac{\partial \rho}{\partial t} + \nabla \cdot \mathbf{J} &= 0
-            \end{align}
-            In this equation \(\rho\)is the charge density, \(\mathbf{J}\) is the current density and t is the time.
-            <p>In electromagnetic theory, the equation of continuity is used to describe the behavior of electric charge
-                in
-                various physical systems. In this section, we will discuss the mathematical formulation of the equation,
-                its
-                derivation, and its applications in electromagnetic theory.</p>
+            <p>The equation of continuity is a fundamental equation in physics that states that the flow of electric charge in a closed system is conserved. This means that the rate of change of charge within a volume is equal to the net flow of charge across the surface of the volume.</p>
+            <p>The equation of continuity can be derived from the principle of charge conservation. According to this principle, the total amount of charge within a closed system remains constant over time. Mathematically, charge conservation can be expressed as:</p>
+            <p style="text-align:center;">\(\frac{{dQ}}{{dt}} = -\iint_S \mathbf{J} \cdot d\mathbf{S}\)</p>
+            <p>where \(dQ\) represents the infinitesimal charge within a volume, \(\mathbf{J}\) is the current density, and \(d\mathbf{S}\) is the differential surface area vector pointing outward from the closed surface \(S\).</p>
+            <p>Now, let's apply the divergence theorem, which relates the surface integral of a vector field to the volume integral of its divergence. The divergence theorem states that for a vector field \(\mathbf{A}\) and a closed surface \(S\), the following relationship holds:</p>
+            <p style="text-align:center;">\(\iint_S \mathbf{A} \cdot d\mathbf{S} = \iiint_V \nabla \cdot \mathbf{A} \, dV\)</p>
+            <p>Applying the divergence theorem to the equation of charge conservation, we have:</p>
+            <p style="text-align:center;">\(\frac{{dQ}}{{dt}} = -\iiint_V \nabla \cdot \mathbf{J} \, dV\)</p>
+            <p>Since \(\frac{{dQ}}{{dt}}\) represents the rate of change of charge within the volume \(V\), it can be expressed as \(\frac{{\partial \rho}}{{\partial t}}\) where \(\rho\) is the charge density. Thus, the equation simplifies to:</p>
+            <p style="text-align:center;">\(\frac{{\partial \rho}}{{\partial t}} = -\iiint_V \nabla \cdot \mathbf{J} \, dV\)</p>
+            <p>This equation relates the rate of change of charge density to the divergence of the current density. Finally, by applying the fundamental theorem of calculus, the equation can be written as:</p>
+            <p style="text-align:center;">\(\frac{{\partial \rho}}{{\partial t}} + \nabla \cdot \mathbf{J} = 0\)</p>
+            <p>This is the equation of continuity, which states that the sum of the rate of change of charge density and the divergence of the current density is zero.</p>
+            <p>In electromagnetic theory, the equation of continuity is used to describe the behavior of electric charge in various physical systems. It has important applications in analyzing the flow of current in conductors, the propagation of electromagnetic waves, and the conservation of charge in circuit theory.</p>
         </section>
+        
         <section id="maxwelleqn1">
             <h2>Maxwell's Equations</h2>
             <p>Maxwell's equations are a set of four partial differential equations that describe the behavior of
@@ -393,56 +433,107 @@
                 magnetic fields, Faraday's law of induction, and Ampere's law with Maxwell's correction. We will also
                 discuss
                 the mathematical formulation of the equations and their applications in electromagnetic theory.</p>
-            <h3>Maxwell's first equation</h3>
-            \begin{align}
-            \nabla \cdot \mathbf{E} &= \frac{\rho}{\epsilon_0}
-            \end{align}
-            <p>Where
-            <ul>
-                <li>\(\nabla \cdot \mathbf{E} \) : divergence of the electric field.</li>
-                <li>\(\rho \) : charge density.</li>
-                <li>\(\epsilon_0 \) : permittivity of free space.</li>
-            </ul>
-            This equation states that the divergence of the electric field is equal to the charge density divided by the
-            permittivity of free space, it is a statement about the distribution of electric charge in a region.</p>
+                <section id="maxwell1">
+                    <h3>Maxwell's First Equation</h3>
+                    <p>The first equation of Maxwell's equations relates the divergence of the electric field to the charge density in a region. Mathematically, it is expressed as:</p>
+                    <p style="text-align:center;">\(\nabla \cdot \mathbf{E} = \frac{{\rho}}{{\epsilon_0}}\)</p>
+                    <p>where:</p>
+                    <ul>
+                        <li>\(\nabla \cdot \mathbf{E}\) represents the divergence of the electric field.</li>
+                        <li>\(\rho\) is the charge density.</li>
+                        <li>\(\epsilon_0\) is the permittivity of free space.</li>
+                    </ul>
+                    <p>To derive this equation from Gauss's law of electrostatics, we start with Gauss's law, which states that the electric flux through a closed surface is proportional to the total charge enclosed by that surface. Mathematically, Gauss's law can be written as:</p>
+                    <p style="text-align:center;">\(\oint_S \mathbf{E} \cdot d\mathbf{A} = \frac{{Q}}{{\epsilon_0}}\)</p>
+                    <p>where:</p>
+                    <ul>
+                        <li>\(\oint_S\) represents the surface integral over a closed surface \(S\).</li>
+                        <li>\(\mathbf{E}\) is the electric field.</li>
+                        <li>\(d\mathbf{A}\) is the differential area vector on the surface \(S\) pointing outward.</li>
+                        <li>\(Q\) is the total charge enclosed by the surface \(S\).</li>
+                        <li>\(\epsilon_0\) is the permittivity of free space.</li>
+                    </ul>
+                    <p>Now, let's apply the divergence theorem, which relates the surface integral of a vector field to the volume integral of its divergence. The divergence theorem states that for a vector field \(\mathbf{A}\) and a closed surface \(S\), the following relationship holds:</p>
+                    <p style="text-align:center;">\(\oint_S \mathbf{A} \cdot d\mathbf{A} = \iiint_V \nabla \cdot \mathbf{A} \, dV\)</p>
+                    <p>Applying the divergence theorem to Gauss's law, we have:</p>
+                    <p style="text-align:center;">\(\iiint_V \nabla \cdot \mathbf{E} \, dV = \frac{{Q}}{{\epsilon_0}}\)</p>
+                    <p>Since \(Q\) represents the total charge enclosed within the volume \(V\), it can be expressed as the volume integral of the charge density \(\rho\). Thus, the equation simplifies to:</p>
+                    <p style="text-align:center;">\(\iiint_V \nabla \cdot \mathbf{E} \, dV = \frac{{\iiint_V \rho \, dV}}{{\epsilon_0}}\)</p>
+                    <p>Since the volume \(V\) is arbitrary, the equation holds true for any volume. Therefore, we can equate the integrands, resulting in:</p>
+                    <p style="text-align:center;">\(\nabla \cdot \mathbf{E} = \frac{{\rho}}{{\epsilon_0}}\)</p>
+                    <p>This is Maxwell's first equation. It states that the divergence of the electric field is equal to the charge density divided by the permittivity of free space, providing insights into the distribution of electric charge in a given region.</p>
+                </section>
+                
         </section>
         <section id="maxwelleqn2">
-            <h3>Maxwell's 2nd equation</h3>
-            \begin{align}
-            \nabla \cdot \mathbf{B} &= 0
-            \end{align}
-            \( \nabla \cdot \mathbf{B} \) : divergence of the magnetic field
-            This equation states that the divergence of the magnetic field is zero, which means that the magnetic
-            monopoles do not
-            exist.
+            <h3>Maxwell's Second Equation</h3>
+            <p>The second equation of Maxwell's equations states that the divergence of the magnetic field is zero. Mathematically, it is expressed as:</p>
+            <p style="text-align:center;">\(\nabla \cdot \mathbf{B} = 0\)</p>
+            <p>where \(\nabla \cdot \mathbf{B}\) represents the divergence of the magnetic field.</p>
+            <p>To derive this equation from Gauss's law in magnetism, let's start with the magnetic flux through a closed surface, which is given by:</p>
+            <p style="text-align:center;">\(\Phi_B = \oint_S \mathbf{B} \cdot d\mathbf{A}\)</p>
+            <p>where:</p>
+            <ul>
+                <li>\(\Phi_B\) represents the magnetic flux through the closed surface \(S\).</li>
+                <li>\(\mathbf{B}\) is the magnetic field.</li>
+                <li>\(d\mathbf{A}\) is the differential area vector on the surface \(S\) pointing outward.</li>
+            </ul>
+            <p>According to Gauss's law in magnetism, the total magnetic flux through any closed surface is always zero. Mathematically, this can be expressed as:</p>
+            <p style="text-align:center;">\(\Phi_B = 0\)</p>
+            <p>Now, let's apply the divergence theorem, which relates the surface integral of a vector field to the volume integral of its divergence. The divergence theorem states that for a vector field \(\mathbf{A}\) and a closed surface \(S\), the following relationship holds:</p>
+            <p style="text-align:center;">\(\oint_S \mathbf{A} \cdot d\mathbf{A} = \iiint_V \nabla \cdot \mathbf{A} \, dV\)</p>
+            <p>Applying the divergence theorem to the magnetic flux equation, we have:</p>
+            <p style="text-align:center;">\(\iiint_V \nabla \cdot \mathbf{B} \, dV = \oint_S \mathbf{B} \cdot d\mathbf{A}\)</p>
+            <p>Since \(\Phi_B\) is zero for any closed surface, we can rewrite the equation as:</p>
+            <p style="text-align:center;">\(\iiint_V \nabla \cdot \mathbf{B} \, dV = 0\)</p>
+            <p>Since the volume \(V\) is arbitrary, the equation holds true for any volume. Therefore, we can conclude that the integrand must be zero, resulting in:</p>
+            <p style="text-align:center;">\(\nabla \cdot \mathbf{B} = 0\)</p>
+            <p>This is Maxwell's second equation. It states that the divergence of the magnetic field is zero, indicating the absence of magnetic monopoles.</p>
         </section>
+        
         <section id="maxwelleqn3">
-            <h3>Maxwell's 3rd equation</h3>
-            \begin{align}
-            \nabla \times \mathbf{E} &= -\frac{\partial \mathbf{B}}{\partial t}
-            \end{align}
-            <p> \( \nabla \times \mathbf{E} \) : curl of the electric field. </p>
-            <p> \( \frac{\partial \mathbf{B}}{\partial t} \) : time derivative of magnetic field.</p>
-            This equation states that the curl of the electric field is equal to the negative time rate of change of the
-            magnetic
-            field. it describes the way in which a changing magnetic field induces an electric field.
+            <h3>Maxwell's Third Equation</h3>
+            <p>The third equation of Maxwell's equations, describes the relationship between a changing magnetic field and the induced electric field. Mathematically, it is expressed as:</p>
+            <p style="text-align:center;">\(\nabla \times \mathbf{E} = -\frac{{\partial \mathbf{B}}}{{\partial t}}\)</p>
+            <p>where \(\nabla \times \mathbf{E}\) represents the curl of the electric field, and \(-\frac{{\partial \mathbf{B}}}{{\partial t}}\) is the negative time derivative of the magnetic field.</p>
+            <p>To derive maxwell's 3rd equation, let's consider a loop of wire placed in a changing magnetic field. According to Faraday's law, the induced electromotive force (EMF) around the loop is proportional to the rate of change of magnetic flux through the loop.</p>
+            <p>The magnetic flux \(\Phi_B\) through a surface bounded by the loop is given by:</p>
+            <p style="text-align:center;">\(\Phi_B = \int \mathbf{B} \cdot d\mathbf{A}\)</p>
+            <p>where \(\mathbf{B}\) is the magnetic field, and \(d\mathbf{A}\) is an infinitesimal area vector pointing in the direction normal to the surface.</p>
+            <p>Now, let's apply Stokes' theorem, which relates the circulation of a vector field around a closed loop to the surface integral of the curl of the vector field. Stokes' theorem states that for a vector field \(\mathbf{A}\) and a closed loop \(C\), the following relationship holds:</p>
+            <p style="text-align:center;">\(\oint_C \mathbf{A} \cdot d\mathbf{l} = \int \nabla \times \mathbf{A} \cdot d\mathbf{A}\)</p>
+            <p>Applying Stokes' theorem to the magnetic flux equation, we have:</p>
+            <p style="text-align:center;">\(\oint_C \mathbf{E} \cdot d\mathbf{l} = -\frac{{d}}{{dt}} \int \mathbf{B} \cdot d\mathbf{A}\)</p>
+            <p>where \(\mathbf{E}\) represents the electric field and \(d\mathbf{l}\) is an infinitesimal vector along the loop.</p>
+            <p>According to the definition of electromotive force (EMF), the line integral of the electric field around a closed loop is equal to the negative rate of change of magnetic flux through the loop. Therefore, the equation becomes:</p>
+            <p style="text-align:center;">\(\oint_C \mathbf{E} \cdot d\mathbf{l} = -\frac{{d\Phi_B}}{{dt}}\)</p>
+            <p>Comparing this equation with the previous equation derived from Stokes' theorem, we can conclude that:</p>
+            <p style="text-align:center;">\(\nabla \times \mathbf{E} = -\frac{{\partial \mathbf{B}}}{{\partial t}}\)</p>
+            <p>This is Maxwell's third equation, which relates the curl of the electric field to the negative time rate of change of the magnetic field. It describes how a changing magnetic field induces an electric field.</p>
         </section>
+        
         <section id="maxwelleqn4">
-            <h3>Maxwell's 4rth equation</h3>
-            \begin{align}
-            \nabla \times \mathbf{B} &= \mu_0 \left(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}}{\partial
-            t}\right)
-            \end{align}
-            <p> \( \nabla \times \mathbf{B} \) : curl of the magnetic field</p>
-            <p> \( \mu_0 \) : permeability of free space</p>
-            <p> \( \mathbf{J} \) : current density</p>
-            <p> \( \frac{\partial \mathbf{E}}{\partial t} \) : time derivative of electric field</p>
-            This equation states that the curl of the magnetic field is equal to the permeability of free space times
-            the current
-            density plus the permittivity of free space times the time rate of change of the electric field. It
-            describes the
-            relationship between the current density and the magnetic field.
+            <h3>Maxwell's Fourth Equation</h3>
+            <p>Maxwell's fourth equation relates the curl of the magnetic field to the electric field and its time derivative. Mathematically, it is expressed as:</p>
+            <p style="text-align:center;">\(\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{{\partial \mathbf{E}}}{{\partial t}}\)</p>
+            <p>To derive this equation, let's start with Ampere's circuital law:</p>
+            <p style="text-align:center;">\(\nabla \times \mathbf{B} = \mu_0 \mathbf{J}\)</p>
+            <p>where \(\mathbf{J}\) is the current density and \(\mu_0\) is the permeability of free space.</p>
+            <p>Now, consider a situation where there is a changing electric field \(\mathbf{E}\) within the region enclosed by the loop. According to Faraday's law of electromagnetic induction, a changing electric field induces a magnetic field. This effect is known as the displacement current.</p>
+            <p>Let's define the displacement current as:</p>
+            <p style="text-align:center;">\(I_{\text{disp}} = \epsilon_0 \frac{{\partial \Phi_E}}{{\partial t}}\)</p>
+            <p>where \(\epsilon_0\) is the permittivity of free space and \(\Phi_E\) is the electric flux through a surface bounded by the loop.</p>
+            <p>By Ampere's circuital law, the circulation of the magnetic field \(\mathbf{B}\) around the loop is equal to the sum of the conduction current and the displacement current:</p>
+            <p style="text-align:center;">\(\oint_C \mathbf{B} \cdot d\mathbf{l} = \mu_0 I_{\text{cond}} + \mu_0 I_{\text{disp}}\)</p>
+            <p>Applying Stokes' theorem to the left-hand side of the equation, we have:</p>
+            <p style="text-align:center;">\(\int_S (\nabla \times \mathbf{B}) \cdot d\mathbf{A} = \mu_0 I_{\text{cond}} + \mu_0 I_{\text{disp}}\)</p>
+            <p>Comparing the right-hand side of the equation with the expression for the conduction current and displacement current, we find:</p>
+            <p style="text-align:center;">\(\int_S (\nabla \times \mathbf{B}) \cdot d\mathbf{A} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{{\partial \mathbf{E}}}{{\partial t}}\)</p>
+            <p>Therefore, we arrive at Maxwell's fourth equation:</p>
+            <p style="text-align:center;">\(\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{{\partial \mathbf{E}}}{{\partial t}}\)</p>
+            <p>This equation highlights the relationship between the curl of the magnetic field, conduction current, and the displacement current arising from the changing electric field.</p>
         </section>
+        
         <section id="displacementcurrent">
             <h2>Displacement Current</h2>
             <p>
@@ -547,6 +638,48 @@
                 electric
                 field oscillates over time, and how it propagates through space.
             </p>
+            
+            <section id="emwaveeqn">
+                <h3>Electromagnetic Wave Equation</h3>
+                <p>The electromagnetic wave equation can also be derived by taking the curl of the third and fourth Maxwell's equations:</p>
+                <ol>
+                    <li>Maxwell's 3rd equation: \(\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}\)</li>
+                    <li>Maxwell's 4rth equation: \(\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}\)</li>
+                </ol>
+                <p>By taking the curl of both equations, we have:</p>
+                <ol>
+                    <li>\(\nabla \times (\nabla \times \mathbf{E}) = -\nabla \times \left(\frac{\partial \mathbf{B}}{\partial t}\right)\)</li>
+                    <li>\(\nabla \times (\nabla \times \mathbf{B}) = \mu_0 \nabla \times \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial}{\partial t} (\nabla \times \mathbf{E})\)</li>
+                </ol>
+                <p>Applying the vector identity for the curl of a curl, we get:</p>
+                <ol>
+                    <li>\(\nabla(\nabla \cdot \mathbf{E}) - \nabla^2 \mathbf{E} = -\frac{\partial}{\partial t} (\nabla \times \mathbf{B})\)</li>
+                    <li>\(\nabla(\nabla \cdot \mathbf{B}) - \nabla^2 \mathbf{B} = \mu_0 \nabla \times \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial}{\partial t} (\nabla \times \mathbf{E})\)</li>
+                </ol>
+                <p>Since \(\nabla \cdot \mathbf{B} = 0\) (from Gauss's Law for Magnetic Fields), the second equation simplifies to:</p>
+                <p>\(- \nabla^2 \mathbf{B} = \mu_0 \nabla \times \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial}{\partial t} (\nabla \times \mathbf{E})\)</p>
+                <p>Substituting \(-\frac{\partial \mathbf{B}}{\partial t}\) for \(\nabla \times \mathbf{E}\) from Faraday's Law, we have:</p>
+                <p>\(- \nabla^2 \mathbf{B} = \mu_0 \nabla \times \mathbf{J} - \mu_0 \epsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2}\)</p>
+                <p>Dividing both sides by \(\mu_0\), we get:</p>
+                <p>\(\frac{1}{\mu_0} \nabla^2 \mathbf{B} = - \nabla \times \mathbf{J} - \epsilon_0 \frac{\partial^2 \mathbf{B}}{\partial t^2}\)</p>
+                <p>Using \(\mu_0 \epsilon_0 = \frac{1}{c^2}\), where \(c\) is the speed of light, we obtain:</p>
+                <p>\(\frac{1}{c^2} \nabla^2 \mathbf{B} = - \nabla \times \mathbf{J} - \frac{\partial^2 \mathbf{B}}{\partial t^2}\)</p>
+                <p>Similarly, we can derive the equation for the electric field \(\mathbf{E}\) by taking the curl of \(\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}\). The final result is:</p>
+                <p style="text-align:center;">\(\frac{1}{c^2} \nabla^2 \mathbf{E} = - \nabla \times \frac{\partial \mathbf{B}}{\partial t} - \frac{\partial^2 \mathbf{E}}{\partial t^2}\)</p>
+                <p>Since \(\nabla \times \frac{\partial \mathbf{B}}{\partial t} = - \frac{\partial}{\partial t} (\nabla \times \mathbf{B})\), we have:</p>
+                <p style="text-align:center;">\(\frac{1}{c^2} \nabla^2 \mathbf{E} = \frac{\partial}{\partial t} (\nabla \times \mathbf{B}) - \frac{\partial^2 \mathbf{E}}{\partial t^2}\)</p>
+                <p>Using the vector identity \(\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \epsilon_0 \frac{\partial \mathbf{E}}{\partial t}\), we can rewrite the equation as:</p>
+                <p style="text-align:center;">\(\frac{1}{c^2} \nabla^2 \mathbf{E} = \mu_0 \frac{\partial \mathbf{J}}{\partial t} + \mu_0 \epsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2}\)</p>
+                <p>Since \(\mu_0 \epsilon_0 = \frac{1}{c^2}\), we finally arrive at the electromagnetic wave equation:</p>
+                <p style="text-align:center;">\(\frac{1}{c^2} \nabla^2 \mathbf{E} = \frac{1}{c^2} \mu_0 \frac{\partial \mathbf{J}}{\partial t} + \frac{1}{c^2} \mu_0 \epsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2}\)</p>
+                <p>By rearranging the terms and noting that \(\frac{1}{c^2} \mu_0 \epsilon_0 = \frac{1}{c^2}\), we can simplify the equation to:</p>
+                <p style="text-align:center;">\(\nabla^2 \mathbf{E} = \mu_0 \epsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2}\)</p>
+                <p>Since \(\mu_0 \epsilon_0 = \frac{1}{c^2}\), where \(c\) is the speed of light in a vacuum, the equation becomes:</p>
+                <p style="text-align:center;">\(\nabla^2 \mathbf{E} = \frac{1}{c^2} \frac{\partial^2 \mathbf{E}}{\partial t^2}\)</p>
+            </section>
+            
+            
+            
             <p>
                 Electromagnetic waves come in a wide range of frequencies, from radio waves to gamma rays. Each
                 frequency
@@ -580,6 +713,26 @@
             $$ \frac{dU}{dt} = \textbf{S} \cdot \textbf{A} $$
 
             Where dU/dt is the rate of change of energy and it is equal to the energy flow.
+        </section>
+        <section id="problems">
+            <h3>Numerical questions for Assignment</h3>
+        <h6> ( Each question contains 3 marks ) </h6>
+        
+<label for="input-field">Enter your roll number</label>
+<input type="number" id="input-field" name="number" min="1" max="70">
+<p></p>
+<input type="number" id="module-field" name="number" min="1" max="5" value="3" style="display: none;">
+<p></p>
+<button type="button" class="button1" id="questionGeneratorButton">Generate question</button>
+<div class="hide" id="questions">
+<ol></ol>
+<p></p>
+</div>
+<div class="active" id="answers">
+    <ol></ol>
+    <button class="button1" ><a href="formulas.html"> Show formulas </a></button>
+</div>
+</div>
         </section>
 
 
