@@ -142,7 +142,7 @@ closeAnswerCrossButtons.forEach(closeAnswerCrossButton => {
 })
 
 if (
-  window.location.pathname.endsWith('/exercises.html') ||
+  
   window.location.pathname.endsWith('/oscillations.html') ||
   window.location.pathname.endsWith('/interference.html') ||
   window.location.pathname.endsWith('/quantummechanics.html')||

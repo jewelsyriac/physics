@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHT110</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="pht110.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="top-navbar">
+
+        <div class="sidebar-toggle-button"><button>☰</button></div>
+
+
+
+
+        <div class="dropdown"><a href="index.html" class="dropdown-toggle">Home</a></div>
+
+        <div class="dropdown">
+            <a href="syllabus.html" class="dropdown-toggle" id="hide">Syllabus</a>
+
+        </div>
+
+
+        <div class="dropdown">
+            <a href="previous" class="dropdown-toggle">Previous Questions</a>
+
+        </div>
+        <div class="dropdown"><a href="formulas.html" class="dropdown-toggle">Formulas</a></div>
+        <div class="dropdown" id="hide"><a href="about.html" class="dropdown-toggle">About</a></div>
+
+    </nav>
+
+    <nav class="side-navbar">
+        <ul>
+            <li class="main-topic">
+                <a href="#">Oscillations</a>
+                <ul class="subtopics">
+                    <li><a href="oscillations.html#shm">Simple Harmonic Motion</a></li>
+                    <li><a href="oscillations.html#dhm">Damped Harmonic Motion</a></li>
+                    <li><a href="oscillations.html#fhm">Forced Harmonic Motion</a></li>
+                    <li><a href="oscillations.html#qf">Quality factor</a></li>
+                    <li><a href="oscillations.html#resonance">Resonance</a></li>
+                    <li><a href="oscillations.html#lcr">LCR Oscillations</a></li>
+                    <li><a href="oscillations.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Waves</a>
+                <ul class="subtopics">
+                    <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a></li>
+                    <li><a href="waves.html#waveproperties">Properties of wave</a></li>
+                    <li><a href="waves.html#1dwave">One dimensional wave equation</a></li>
+                    <li><a href="waves.html#3dwave">Three dimensional wave equation</a></li>
+                    <li><a href="waves.html#waveequation">Solution of wave equation</a></li>
+                    <li><a href="waves.html#stretchedstring">Transverse waves in stretched string</a></li>
+                    <li><a href="waves.html#lawsvibration">Laws of vibration</a></li>
+                    <li><a href="waves.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Interference</a>
+                <ul class="subtopics">
+                    <li><a href="interference.html#huygens">Huygen's Wave Theory</a></li>
+                    <li><a href="interference.html#interference">Interference</a></li>
+                    <li><a href="interference.html#superposition">Superposition Principle</a></li>
+                    <li><a href="interference.html#thinfilm">Thin film Interference</a></li>
+                    <li><a href="interference.html#cosinelaw">Cosine law</a></li>
+                    <li><a href="interference.html#airwedge">Air Wedge</a></li>
+                    <li><a href="interference.html#newtonsring">Newton's Rings</a></li>
+                    <li><a href="interference.html#arc">Anti-Reflection coating</a></li>
+                    <li><a href="interference.html#problems">Numerical problems</a></li>
+
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Diffraction</a>
+                <ul class="subtopics">
+                    <li><a href="diffraction.html#diffraction">Diffraction</a></li>
+                    <li><a href="diffraction.html#classificationdiffraction">Classification of diffraction</a></li>
+
+                    <li><a href="diffraction.html#grating">Diffraction grating</a></li>
+                    <li><a href="diffraction.html#rayleigh">Rayleigh's criterion</a></li>
+                    <li><a href="diffraction.html#resolving">Resolving Power</a></li>
+                    <li><a href="diffraction.html#dispersive">Dispersive Power</a></li>
+                    <li><a href="diffraction.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Quantum Mechanics</a>
+                <ul class="subtopics">
+                    <li><a href="quantummechanics.html#quantum">Quantum mechanics - Introduction</a></li>
+                    <li><a href="quantummechanics.html#debroglie">De-broglie wave hypothesis</a></li>
+                    <li><a href="quantummechanics.html#heisenberg">Heisenberg's Uncertainty principle</a></li>
+                    <li><a href="quantummechanics.html#applicationsheisenberg">Applications of Uncertainty principle</a>
+                    </li>
+                    <li><a href="quantummechanics.html#wavefunction">Wavefunction</a></li>
+                    <li><a href="quantummechanics.html#operators">Operators</a></li>
+                    <li><a href="quantummechanics.html#schrodingerseqn">Schrodinger's time dependent equation</a></li>
+                    <li><a href="quantummechanics.html#schrodingerseqn2">Schrodinger's time independent equation</a>
+                    </li>
+                    <li><a href="quantummechanics.html#particleinbox">Particle in a box</a></li>
+                    <li><a href="quantummechanics.html#tunnelling">Quantum mechanical tunnelling</a></li>
+                    <li><a href="quantummechanics.html#problems">Numerical problems</a></li>
+
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Nanotechnology</a>
+                <ul class="subtopics">
+
+                    <li><a href="nanotechnology.html#nanotechnology">Nanotechnolgy</a></li>
+                    <li><a href="nanotechnology.html#surface">Surface to volume ratio</a></li>
+                    <li><a href="nanotechnology.html#confinement">Quantum Confinement</a></li>
+                    <li><a href="nanotechnology.html#nanosheet">Nanosheet</a></li>
+                    <li><a href="nanotechnology.html#nanowire">Nanowire</a></li>
+                    <li><a href="nanotechnology.html#nanodot">Nanodot</a></li>
+                    <li><a href="nanotechnology.html#properties">Properties of nano materials</a></li>
+                    <li><a href="nanotechnology.html#applications">Applications of nanotechnolgy</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Acoustics</a>
+                <ul class="subtopics">
+                    <ul class="subtopics">
+                        <li><a href="acoustics.html#acoustics">Acoustics - Introduction</a></li>
+                        <li><a href="acoustics.html#soundchar">Characteristics of sound</a></li>
+                        <li><a href="acoustics.html#absorption">Absorption & absorption coefficient</a></li>
+                        <li><a href="acoustics.html#reverberation">Reverberation</a></li>
+                        <li><a href="acoustics.html#echoe">Echoe</a></li>
+                        <li><a href="acoustics.html#reverberationtime">Reverberation time and significance</a></li>
+                        <li><a href="acoustics.html#sabines">Sabine's formula</a></li>
+                        <li><a href="acoustics.html#buildingacoustics">Acoustics of buiding</a></li>
+                        <li><a href="acoustics.html#problems">Numerical problems</a></li>
+
+                    </ul>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Ultrasonics</a>
+                <ul class="subtopics">
+                    <ul class="subtopics">
+                        <li><a href="ultrasonics.html#ultrasonic-waves-characteristics-velocity">Ultrasonic Waves
+                                Characteristics and
+                                Velocity</a>
+                        </li>
+                        <li><a href="ultrasonics.html#production-of-ultrasonic-waves">Production of Ultrasonic Waves</a>
+                        </li>
+                        <li><a href="ultrasonics.html#magnetostriction-oscillator">Magnetostriction Oscillator</a></li>
+                        <li><a href="ultrasonics.html#piezoelectric-oscillator">Piezoelectric Oscillator</a></li>
+                        <li><a href="ultrasonics.html#ultrasonic-diffractometer">Ultrasonic Diffractometer</a></li>
+                        <li><a href="ultrasonics.html#detection-of-ultrasonic-waves">Detection of Ultrasonic Waves</a>
+                        </li>
+                        <li><a href="ultrasonics.html#ultrasonic-diffractometer">Ultrasonic Diffractometer</a></li>
+                        <li><a href="ultrasonics.html#applications-of-ultrasonics">Applications of ultrasonics</a></li>
+                        <li><a href="ultrasonics.html#ndt">NDT</a></li>
+                        <li><a href="ultrasonics.html#sonar">SONAR</a></li>
+                        <li><a href="ultrasonics.html#problems">Numerical problems</a></li>
+                    </ul>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">LASER</a>
+                <ul class="subtopics">
+                    <li><a href="laser.html#characteristics">Characteristics of laser beam</a></li>
+                    <li><a href="laser.html#induced-absorption">Induced Absorption</a></li>
+                    <li><a href="laser.html#spontaneous-emission">Spontaneous emission</a></li>
+                    <li><a href="laser.html#stimulated-emission">Stimulated emission</a></li>
+                    <li><a href="laser.html#population-inversion">Population inversion</a></li>
+                    <li><a href="laser.html#pumping">Pumping</a></li>
+                    <li><a href="laser.html#metastable-states">Metastable states</a></li>
+                    <li><a href="laser.html#laser-components">Components of laser</a></li>
+                    <li><a href="laser.html#ruby-laser">Ruby laser</a></li>
+                    <li><a href="laser.html#he-ne-laser">He-Ne laser</a></li>
+                    <li><a href="laser.html#semiconductor-laser">Semiconductor laser</a></li>
+                    <li><a href="laser.html#applications-of-laser">Applications of laser</a></li>
+                    <li><a href="laser.html#problems">Numerical problems</a></li>
+
+
+
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Holography</a>
+                <ul class="subtopics">
+
+                    <li><a href="holography.html#holography">Basics of holography</a></li>
+                    <li><a href="holography.html#recording">Recording of Hologram</a></li>
+                    <li><a href="holography.html#reconstruction">Reconstruction of Image</a></li>
+                    <li><a href="holography.html#comparison">Differences between Holography and Photography</a></li>
+                    <li><a href="holography.html#applications">Applications of Holography</a></li>
+
+
+
+
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Fibre Optics</a>
+                <ul class="subtopics">
+                    <li><a href="fibreoptics.html#tir">Total internal reflection</a></li>
+                    <li><a href="fibreoptics.html#opticalfibre">Optical fibre - Structure & light propagation</a></li>
+                    <li><a href="fibreoptics.html#stepindex">Step-Index fibre</a></li>
+                    <li><a href="fibreoptics.html#gradedindex">Graded-Index fibre</a></li>
+                    <li><a href="fibreoptics.html#numericalaperture">Numerical aperture</a></li>
+                    <li><a href="fibreoptics.html#communication">Fibre optic communication system</a></li>
+                    <li><a href="fibreoptics.html#applicationfibre">Applications of optical fibres</a></li>
+                    <li><a href="fibreoptics.html#problems">Numerical problems</a></li>
+
+
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Magnetism</a>
+                <ul class="subtopics">
+                    <li><a href="magnetism.html#magneticfield">Magnetic field</a></li>
+                    <li><a href="magnetism.html#gausslaw">Gauss's law</a></li>
+                    <li><a href="magnetism.html#ampereslaw">Ampere's circuital law</a></li>
+                    <li><a href="magnetism.html#faradayslaw">Faraday's law</a></li>
+                    <li><a href="magnetism.html#permeability">Permeability</a></li>
+                    <li><a href="magnetism.html#succesptibility">Succesptibility</a></li>
+                    <li><a href="magnetism.html#classification">Classification of magnetic materials</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Electromagnetic Theory</a>
+                <ul class="subtopics">
+                    <li><a href="emtheory.html#basics">Basics of vector calculus</a></li>
+                    <li><a href="emtheory.html#integrals">Line, surface and volume integrals</a></li>
+                    <li><a href="emtheory.html#divergencetheorem">Gauss's divergence theorem</a></li>
+                    <li><a href="emtheory.html#stokestheorem">Stoke's theorem</a></li>
+                    <li><a href="emtheory.html#eqnofcontinuity">Equation of continuity</a></li>
+                    <li><a href="emtheory.html#maxwelleqn1">Maxwell's 1st equation</a></li>
+                    <li><a href="emtheory.html#maxwelleqn2">Maxwell's 2nd equation</a></li>
+                    <li><a href="emtheory.html#maxwelleqn3">Maxwell's 3rd equation</a></li>
+                    <li><a href="emtheory.html#maxwelleqn4">Maxwell's 4rth equation</a></li>
+                    <li><a href="emtheory.html#displacementcurrent">Displacement current</a></li>
+                    <li><a href="emtheory.html#emwaves">Electromagnetic waves</a></li>
+                    <li><a href="emtheory.html#poyntingvector">Poynting's vector</a></li>
+                    <li><a href="emtheory.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Superconductivity</a>
+                <ul class="subtopics">
+                    <li><a href="superconductivity.html#superconductivity">Superconductivity</a></li>
+                    <li><a href="superconductivity.html#meissnereffect">Meissner's effect</a></li>
+                    <li><a href="superconductivity.html#type1superconductors">Type 1 Superconductors</a></li>
+                    <li><a href="superconductivity.html#type2superconductors">Type 2 Superconductors</a></li>
+                    <li><a href="superconductivity.html#bcstheory">BCS Theory</a></li>
+                    <li><a href="superconductivity.html#htscs">High Temperature Superconductors</a></li>
+                    <li><a href="superconductivity.html#applications">Applications of superconductivity</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Photonics</a>
+                <ul class="subtopics">
+                    <li><a href="photonics.html#photonics">Basics of photonics</a></li>
+                    <li><a href="photonics.html#photonicdevices">Photonic devices</a></li>
+                    <li><a href="photonics.html#led">LED</a></li>
+                    <li><a href="photonics.html#photodetector">Photodetectors</a></li>
+                    <li><a href="photonics.html#photodiode">Photodiode ( Juction type )</a></li>
+                    <li><a href="photonics.html#pinphotodiode">PIN Photodiode</a></li>
+                    <li><a href="photonics.html#solarcell">Solar cell</a></li>
+                    <li><a href="photonics.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        </span>
+    </nav>
+    <nav class="right-side-navbar">
+        <ul>
+            <li><a href="previous.html#oscillationsprevious">Oscillations</a></li>
+            <li><a href="previous.html#wavesprevious">Waves</a></li>
+            <li><a href="previous.html#interferenceprevious">Interference</a></li>
+            <li><a href="previous.html#diffractionprevious">Diffraction</a></li>
+            <li><a href="previous.html#quantummechanicsprevious">Quantum mechanics</a></li>
+            <li><a href="previous.html#Nanotechnologyprevious">Nanotechnology</a></li>
+            <li><a href="previous.html#acousticsprevious">Acoustics</a></li>
+            <li><a href="previous.html#ultrasonicsprevious">Ultrasonics</a></li>
+            <li><a href="previous.html#laserprevious">LASER</a></li>
+            <li><a href="previous.html#holographyprevious">Holography</a></li>
+            <li><a href="previous.html#fibreopticsprevious">Fibre Optics</a></li>
+            <li><a href="previous.html#magnetismprevious">Magnetism</a></li>
+            <li><a href="previous.html#emtheoryprevious">Electromagnetic Theory</a></li>
+            <li><a href="previous.html#superconductivityprevious">Superconductivity</a></li>
+            <li><a href="previous.html#photonicsprevious">Photonics</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content" id="previous">
+        <section id="oscillationsprevious">
+
+
+            <h3>Oscillations</h3>
+            <h4>Short questions (3 or 4 marks )</h4>
+            <ol>
+                <li>What is meant by sharpness of resonance?</li>
+
+                <span><a href="formulas.html#amplitudeformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#sharpness" class="button1">Show Answer</a> </span>
+
+                <li>Mention three cases of damping. Draw displacement-time curve for each case.</li>
+                <a href="oscillations.html#dampingcases" class="button1">Show Answer</a>
+                <li>Compare electrical and mechanical oscillators.</li>
+                <a href="oscillations.html#lcr" class="button1">Show Answer</a>
+                <li>Derive the differential equation of a damped harmonic oscillator</li>
+                <span><a href="formulas.html#dampedformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#diffeqndamped" class="button1">Show Answer</a> </span>
+
+                <li>Derive the differential equation of a forced harmonic oscillator</li>
+                <span><a href="formulas.html#forcedformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#diffeqnforced" class="button1">Show Answer</a> </span>
+
+                <li>Distinguish between free oscillation & damped oscillations.</li>
+                <a href="oscillations.html#freeoscillations" class="button1">Show Answer</a>
+                <li>Comment the statement “smaller the damping, larger will be the relaxation time and greater
+                    the
+                    quality factor”.</li>
+                <span><a href="formulas.html#qfformula" class="button2">Show formula</a> <a href="oscillations.html#qf"
+                        class="button1">Show Answer</a></span>
+
+                <li>Define Q factor of a damped harmonic oscillator. Mention the factors on which it depends.
+                </li>
+                <span><a href="formulas.html#qfformula" class="button2">Show formula</a> <a href="oscillations.html#qf"
+                        class="button1">Show Answer</a></span>
+                <li>Define the terms 'sharpness of resonance' & bandwidth of an oscillator.</li>
+                <a href="oscillations.html#sharpness" class="button1">Show Answer</a>
+                <li>Show that LCR circuit acts as an electrical analogue of mechanical oscillator.</li>
+                <a href="oscillations.html#comparisonmeec" class="button1">Show Answer</a>
+                <li>Write the differential equation for mechanical and electrical oscillators. List
+                    any 3 points to compare them.</li>
+                <a href="oscillations.html#comparisonmeec" class="button1">Show Answer</a>
+            </ol>
+            <h4>Essay Questions ( 10 marks ) </h4>
+            <ol>
+                <li>Obtain the differential equation of a damped harmonic oscillator and deduce
+                    the solution for over damped condition. Show the graphical variations of
+                    displacement with respect to time.</li>
+                <a href="oscillations.html#diffeqndamped" class="button1">Show Answer</a>
+                <li>Derive the differential equation of a forced harmonic oscillator and obtain expression of the
+                    amplitude.</li>
+                <a href="oscillations.html#diffeqnforced" class="button1">Show Answer</a>
+                <li>Formulate the differential equation of forced harmonic motion. Find the expressions for it's
+                    amplitude and phase.</li>
+                <a href="oscillations.html#diffeqnforced" class="button1">Show Answer</a>
+                <li>Derive the differential equation of damped harmonic oscillator and deduce its
+                    solution. Discuss the cases of over damped, critically damped and under damped
+                    cases.</li>
+                <a href="oscillations.html#diffeqndamped" class="button1">Show Answer</a>
+                <li>What is amplitude resonance? Give any two examples. Derive an expression
+                    for resonant frequency. What is sharpness of resonance?</li>
+                <a href="oscillations.html#resonance" class="button1">Show Answer</a>
+                <li>Frame the differential equation of a damped harmonic motion and obtain its
+                    solution. Mention the different cases.</li>
+                <a href="oscillations.html#diffeqndamped" class="button1">Show Answer</a>
+                <li>Discuss the conditions of over damped, critically damped and under damped cases
+                    of a damped harmonic oscillator by writing down the differential equation and its
+                    solution. With the help of displacement - time graph show that how damping
+                    affects the amplitude of the oscillator.</li>
+                <a href="oscillations.html#diffeqndamped" class="button1">Show Answer</a>
+                <li>A body executing damped motion is subjected to an oscillating external force.
+                    Obtain its differential equation.Find expressions for its amplitude and phase</li>
+                <a href="oscillations.html#diffeqnforced" class="button1">Show Answer</a>
+            </ol>
+            <h4>Problem part ( 4 marks ) </h4>
+            <ol>
+
+                <li>The frequency of a tuning fork is 200Hz. If the quality factor \( Q = 5 \times 10^4 \)
+                    ,
+
+                    find the time after which its amplitude becomes 1/2 of its initial value.</li>
+                <span><a href="formulas.html#qfformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#problems" class="button1">Similar problems</a></span>
+
+                <li>Amplitude of an underdamped oscillator reduces to 1/10th of it's initial value after 100
+                    oscillations. It's time period is 1.5 seconds. Calculate damping coefficient and relaxation time.
+                </li>
+                <span><a href="formulas.html#qfformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#problems" class="button1">Similar problems</a></span>
+
+                <li>A damped oscillator of mass 2g has a force constant 10 N/m and damping constant 2 \(s^{-1} \). Find
+                    angular frequency with and without damping.</li>
+                <a href="formulas.html#dampingcoefficientformula" class="button1">Show Formula</a>
+
+                <li>The frequency of a tuning fork is 500 Hz and its Q factor is \( 7 \times 10^4 \). Find the
+                    relaxation
+                    time. Also calculate the time after which its energy becomes 1/10 of its initial
+                    undamped value.</li>
+                <span><a href="formulas.html#qfformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#problems" class="button1">Similar problems</a></span>
+                <li>In the case of a forced harmonic oscillator, the amplitude of vibrations
+                    increases from 0.05 mm at very low frequencies to a value 7.5mm at the
+                    frequency 210Hz. Find Q- factor, damping constant and relaxation time.</li>
+                <a href="oscillations.html#qf" class="button1">Show Formula</a>
+                <li>The frequency of a tuning fork is 300Hz. If its Q- factor is \( 5X 10^4 \)
+                    , find the
+
+                    time after which its energy becomes (1/10)th of its initial value.</li>
+                <span><a href="formulas.html#qfformula" class="button2">Show formula</a> <a
+                        href="oscillations.html#problems" class="button1">Similar problems</a></span>
+
+            </ol>
+        </section>
+        <section id="wavesprevious">
+            <h3>Waves</h3>
+            <h4>Short questions (3 or 4 marks )</h4>
+            <ol>
+                <li>State the 3 laws of transverse vibrations.
+
+                </li>
+                <a href="waves.html#lawsvibration" class="button1">Show Answer</a>
+                <li>Write three dimensional wave equation and it's solution.</li>
+                <span><a href="waves.html#3dwave" class="button1">Show Answer</a> <a href="formulas.html#3dwaveequation"
+                        class="button2">Show formula</a></span>
+                <li>List two differences between longitudinal and transverse waves. Give an example for each.</li>
+                <a href="waves.html#waveclassification" class="button1">Show Answer</a>
+                <li>Find the equation of a progressive wave of amplitude 2cm, frequency 1 Hz and velocity 20 cm/s moving
+                    along positive x-axis.</li>
+                <a href="formulas.html#1dwavesolution" class="button2">Show formula</a>
+                <li>What will happen to fundamental frequency when length of string is reduced to one third of original
+                    length kept under same tension?</li>
+                <a href="formulas.html#stretchedstringeqn" class="button2">Show formula</a>
+                <li>Derive one dimensional wave equation</li>
+                <a href="waves.html#1dwave" class="button1">Show Answer</a>
+
+            </ol>
+            <h4>Essay Questions ( 10 marks ) </h4>
+            <ol>
+                <li>Derive the differential equation for transverse wave in a stretched string and
+                    hence obtain the expression for velocity of the wave.</li>
+                <a href="waves.html#stretchedstring" class="button1">Show Answer</a>
+                <li>What is a one dimensional wave and derive the one dimensional wave equation. Define wavelength, time
+                    period, frequency and wave velocity. Also obtain expressions for them.</li>
+                <span><a href="waves.html#waveproperties" class="button1">Show Answer</a> <a href="waves.html#1dwave"
+                        class="button1">Show Answer</a> </span>
+                <li>Derive an expression for the velocity of propagation of a transverse wave in a stretched
+                    string. Deduce laws of transverse vibrations.</li>
+                <a href="waves.html#stretchedstring" class="button1">Show Answer</a>
+                <li>Obtain an expression for fundamental frequency of transverse vibrations in a
+                    stretched string.</li>
+                <a href="waves.html#stretchedstring" class="button1">Show Answer</a>
+            </ol>
+            <h4>Problem part ( 4 marks ) </h4>
+            <ol>
+                <li>The equation of transverse wave travelling along a stretched string is given by,
+                    \( ψ =A \; sin\;(2 \pi t - 0.01 \pi x )\) where ψ and x are in cm and t is in
+                    second. Find the amplitude, frequency, velocity and wave length.</li>
+                <span><a href="formulas.html#1dwavesolution" class="button2">Show formula</a> <a
+                        href="oscillations.html#problems" class="button1">Similar Problem</a></span>
+                <li>A string of mass 0.65 kg is stretched between two supports 30m apart. If the tension in string is
+                    160 N, find velocity of wave in string. How long will pulse take to travel from one support to
+                    other?</li>
+                <a href="formulas.html#stringwavevelocity" class="button2">Show formula</a>
+            </ol>
+        </section>
+        <section id="interferenceprevious">
+            <h3>Interference</h3>
+            <h4>Short questions (3 or 4 marks )</h4>
+            <ol>
+                <li>Explain with help of relevant equation, why center of a newton's rings pattern appears dark in
+                    reflected light.</li>
+                <a href="formulas.html#cosinelaw" class="button2">Show formula</a>
+                <li>Explain colours of thin fims</li>
+                <a href="interference.html#thinfimlcolour" class="button1">Show Answer</a>
+                <li>Write a short note on antireflection coating</li>
+                <a href="interference.html#arc" class="button1">Show Answer</a>
+                <li>How will you test the planeness of a surface using air wedge?</li>
+                <a href="interference.html#airwedgeapplication2" class="button1">Show Answer</a>
+                <li>Why thin transparent films appear to be beautifully coloured under sunlight?</li>
+                <a href="interference.html#thinfimlcolour" class="button1">Show Answer</a>
+                <li>Explain why straight line fringes are observed in air wedge.</li>
+
+            </ol>
+            <h4>Essay Questions ( 10 marks ) </h4>
+            <ol>
+                <li>Explain interference in thin films and derive cosine law. Obtain the conditions
+                    for minima and maxima.</li>
+                <a href="interference.html#thinfilm" class="button1">Show Answer</a>
+                <li>Explain the formation of interference pattern in air wedge and obtain expression for bandwidth.</li>
+                <a href="interference.html#airwedge" class="button1">Show Answer</a>
+                <li>With necessary theory, describe an experiment to determine diameter of thin wire using air wedge.
+                </li>
+                <a href="interference.html#airwedgeapplications" class="button1">Show Answer</a>
+                <li>Explain the formation of Newton’s rings and show that the radius of dark ring is
+                    proportional to the square root of natural numbers. How can we use Newton’s rings
+                    experiment to determine the refractive index of a liquid?</li>
+                <a href="interference.html#newtonsring" class="button1">Show Answer</a>
+                <li>Explain the formation of Newton’s rings. Obtain the expression for finding
+                    the wavelength of light.</li>
+                <a href="interference.html#newtonsring" class="button1">Show Answer</a>
+
+            </ol>
+            <h4>Problem part ( 4 marks )</h4>
+            <ol>
+                <li>Light of wavelength 6000A° falls normally on two glass plates enclosing a
+                    wedge shaped film. The plates touch at one end and are separated at 10cm from
+                    that end by a wire. If the bandwidth of the interference pattern is
+                    0.05 mm, find diameter of the wire.</li>
+                <a href="formulas.html#thinwirediameter" class="button2">Show formula</a>
+                <li>Newton’s rings are formed by the light reflected normally from a planoconvex lens and a plane glass
+                    plate with a liquid
+                    in between them. The
+                    diameter of the n
+                    th dark ring is 2.24 mm and that of (n+15)th dark ring
+                    is4.81mm. Calculate the refractive index of the liquid? (Given λ =5893 Åand
+                    radius of curvature of the lens = 90 cm )</li>
+                <a href="formulas.html#wavelengthnewtonsrings" class="button2">Show formula</a>
+                <li>What is an antireflection coating? Find the minimum thickness of antireflection
+                    coating (magnesium fluoride of refractive index 1.42) to be deposited on a glass
+                    plate of refractive index1.5, for light of wave length 5800Å.</li>
+                <a href="formulas.html#antireflectioncoating" class="button2">Show formula</a>
+                <li>An air wedge is formed using two optically plane glass strips of length 15cm.
+                    A spacer of thickness 0.015 mm is introduced at one end. If the light used is
+                    of wavelength 5893Å, find the separation between consecutive bright fringes.</li>
+                <a href="formulas.html#bandwidthairwedge" class="button2">Show formula</a>
+                <li>Light of wavelength 5893Å is reflected at nearly normal incidence from a
+                    soap film of refractive index 1.42. What is the least thickness of the film that
+                    will appear (i) dark and (ii) bright?</li>
+                <a href="formulas.html#cosinelaw" class="button2">Show formula</a>
+            </ol>
+
+        </section>
+    </div>
+
+    <script src="pht110.js"></script>
+
+</body>
+
+</html>

@@ -31,7 +31,7 @@
 
 
         <div class="dropdown">
-            <a href="previous.html" class="dropdown-toggle">Previous Questions</a>
+            <a href="previous" class="dropdown-toggle">Previous Questions</a>
 
         </div>
         <div class="dropdown"><a href="formulas.html" class="dropdown-toggle">Formulas</a></div>
@@ -351,7 +351,22 @@
             $$NA = \sqrt{n_1^2-n_2^2}$$
             where \( n_1 \) is refractive index of core and \( n_2 \) is of cladding.
             <h2>Derivation of expression for NA</h2>
-            $$NA = \sqrt{n_1^2-n_2^2}$$
+            
+ Define NA as the sine of the acceptance angle \(\alpha\), i.e. 
+ $$NA = \sin(\alpha)$$
+ Consider an optical fiber with a core of refractive index $n_1$ and cladding of refractive index $n_2$.
+ <figure><img src="naderivation.jpg">
+    <figcaption>Ray propagation inside fiber</figcaption>
+</figure> Let a ray of light enter the fiber at an angle $\alpha$ with respect to the normal to the fiber axis.
+<p>
+ By Snell's law, we have: 
+ $$\frac{sin\;\alpha}{sin\;\theta}=\frac{n_1}{\mu}$$ where $\theta$ is the angle of refraction or angle that the ray makes with the normal to the fiber axis inside the cladding.</p>
+ <p>Rearranging above expression,</p>
+ 
+ Substituting $\theta_{max}$ into the expression for NA, we get: $$NA = n_1 \sin(\theta_{max}) = n_1 \frac{n_2}{n_1} = \sqrt{n_1^2 - n_2^2}$$
+
+
+Therefore, the final expression for numerical aperture in an optical fiber is $$NA = \sqrt{n_1^2 - n_2^2}$$ where $n_1$ is the refractive index of the core and $n_2$ is the refractive index of the cladding.
         </section>
 
 

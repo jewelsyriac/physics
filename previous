@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PHT110</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="pht110.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab:wght@300&display=swap"
         rel="stylesheet">
-
+       
 </head>
 
 <body>
@@ -27,13 +26,20 @@
 
         <div class="dropdown">
             <a href="syllabus.html" class="dropdown-toggle" id="hide">Syllabus</a>
-
+            <div class="dropdown-menu">
+                <a href="notes.html#module1">Module 1</a>
+                <a href="notes.html#module2">Module 2</a>
+                <a href="notes.html#module3">Module 3</a>
+                <a href="notes.html#module4">Module 4</a>
+                <a href="notes.html#module5">Module 5</a>
+            </div>
         </div>
 
 
         <div class="dropdown">
             <a href="previous" class="dropdown-toggle">Previous Questions</a>
 
+        </div>
         </div>
         <div class="dropdown"><a href="formulas.html" class="dropdown-toggle">Formulas</a></div>
         <div class="dropdown" id="hide"><a href="about.html" class="dropdown-toggle">About</a></div>
@@ -57,7 +63,8 @@
             <li class="main-topic">
                 <a href="#">Waves</a>
                 <ul class="subtopics">
-                    <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a></li>
+                    <li><a href="waves.html#waveclassification">Waves: Classification and mode of propagation</a>
+                    </li>
                     <li><a href="waves.html#waveproperties">Properties of wave</a></li>
                     <li><a href="waves.html#1dwave">One dimensional wave equation</a></li>
                     <li><a href="waves.html#3dwave">Three dimensional wave equation</a></li>
@@ -101,11 +108,13 @@
                     <li><a href="quantummechanics.html#quantum">Quantum mechanics - Introduction</a></li>
                     <li><a href="quantummechanics.html#debroglie">De-broglie wave hypothesis</a></li>
                     <li><a href="quantummechanics.html#heisenberg">Heisenberg's Uncertainty principle</a></li>
-                    <li><a href="quantummechanics.html#applicationsheisenberg">Applications of Uncertainty principle</a>
+                    <li><a href="quantummechanics.html#applicationsheisenberg">Applications of Uncertainty
+                            principle</a>
                     </li>
                     <li><a href="quantummechanics.html#wavefunction">Wavefunction</a></li>
                     <li><a href="quantummechanics.html#operators">Operators</a></li>
-                    <li><a href="quantummechanics.html#schrodingerseqn">Schrodinger's time dependent equation</a></li>
+                    <li><a href="quantummechanics.html#schrodingerseqn">Schrodinger's time dependent equation</a>
+                    </li>
                     <li><a href="quantummechanics.html#schrodingerseqn2">Schrodinger's time independent equation</a>
                     </li>
                     <li><a href="quantummechanics.html#particleinbox">Particle in a box</a></li>
@@ -153,15 +162,19 @@
                                 Characteristics and
                                 Velocity</a>
                         </li>
-                        <li><a href="ultrasonics.html#production-of-ultrasonic-waves">Production of Ultrasonic Waves</a>
+                        <li><a href="ultrasonics.html#production-of-ultrasonic-waves">Production of Ultrasonic
+                                Waves</a>
                         </li>
-                        <li><a href="ultrasonics.html#magnetostriction-oscillator">Magnetostriction Oscillator</a></li>
+                        <li><a href="ultrasonics.html#magnetostriction-oscillator">Magnetostriction Oscillator</a>
+                        </li>
                         <li><a href="ultrasonics.html#piezoelectric-oscillator">Piezoelectric Oscillator</a></li>
                         <li><a href="ultrasonics.html#ultrasonic-diffractometer">Ultrasonic Diffractometer</a></li>
-                        <li><a href="ultrasonics.html#detection-of-ultrasonic-waves">Detection of Ultrasonic Waves</a>
+                        <li><a href="ultrasonics.html#detection-of-ultrasonic-waves">Detection of Ultrasonic
+                                Waves</a>
                         </li>
                         <li><a href="ultrasonics.html#ultrasonic-diffractometer">Ultrasonic Diffractometer</a></li>
-                        <li><a href="ultrasonics.html#applications-of-ultrasonics">Applications of ultrasonics</a></li>
+                        <li><a href="ultrasonics.html#applications-of-ultrasonics">Applications of ultrasonics</a>
+                        </li>
                         <li><a href="ultrasonics.html#ndt">NDT</a></li>
                         <li><a href="ultrasonics.html#sonar">SONAR</a></li>
                         <li><a href="ultrasonics.html#problems">Numerical problems</a></li>
@@ -208,7 +221,8 @@
                 <a href="#">Fibre Optics</a>
                 <ul class="subtopics">
                     <li><a href="fibreoptics.html#tir">Total internal reflection</a></li>
-                    <li><a href="fibreoptics.html#opticalfibre">Optical fibre - Structure & light propagation</a></li>
+                    <li><a href="fibreoptics.html#opticalfibre">Optical fibre - Structure & light propagation</a>
+                    </li>
                     <li><a href="fibreoptics.html#stepindex">Step-Index fibre</a></li>
                     <li><a href="fibreoptics.html#gradedindex">Graded-Index fibre</a></li>
                     <li><a href="fibreoptics.html#numericalaperture">Numerical aperture</a></li>
@@ -275,282 +289,122 @@
                 </ul>
             </li>
 
+
+
+            <li class="main-topic">
+                <a href="#">Magnetism</a>
+                <ul class="subtopics">
+                    <li><a href="magnetism.html#magneticfield">Magnetic field</a></li>
+                    <li><a href="magnetism.html#gausslaw">Gauss's law</a></li>
+                    <li><a href="magnetism.html#ampereslaw">Ampere's circuital law</a></li>
+                    <li><a href="magnetism.html#faradayslaw">Faraday's law</a></li>
+                    <li><a href="magnetism.html#permeability">Permeability</a></li>
+                    <li><a href="magnetism.html#succesptibility">Succesptibility</a></li>
+                    <li><a href="magnetism.html#classification">Classification of magnetic materials</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Electromagnetic Theory</a>
+                <ul class="subtopics">
+                    <li><a href="emtheory.html#basics">Basics of vector calculus</a></li>
+                    <li><a href="emtheory.html#integrals">Line, surface and volume integrals</a></li>
+                    <li><a href="emtheory.html#divergencetheorem">Gauss's divergence theorem</a></li>
+                    <li><a href="emtheory.html#stokestheorem">Stoke's theorem</a></li>
+                    <li><a href="emtheory.html#eqnofcontinuity">Equation of continuity</a></li>
+                    <li><a href="emtheory.html#maxwelleqn1">Maxwell's 1st equation</a></li>
+                    <li><a href="emtheory.html#maxwelleqn2">Maxwell's 2nd equation</a></li>
+                    <li><a href="emtheory.html#maxwelleqn3">Maxwell's 3rd equation</a></li>
+                    <li><a href="emtheory.html#maxwelleqn4">Maxwell's 4rth equation</a></li>
+                    <li><a href="emtheory.html#displacementcurrent">Displacement current</a></li>
+                    <li><a href="emtheory.html#emwaves">Electromagnetic waves</a></li>
+                    <li><a href="emtheory.html#poyntingvector">Poynting's vector</a></li>
+                    <li><a href="emtheory.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Superconductivity</a>
+                <ul class="subtopics">
+                    <li><a href="superconductivity.html#superconductivity">Superconductivity</a></li>
+                    <li><a href="superconductivity.html#meissnereffect">Meissner's effect</a></li>
+                    <li><a href="superconductivity.html#type1superconductors">Type 1 Superconductors</a></li>
+                    <li><a href="superconductivity.html#type2superconductors">Type 2 Superconductors</a></li>
+                    <li><a href="superconductivity.html#bcstheory">BCS Theory</a></li>
+                    <li><a href="superconductivity.html#htscs">High Temperature Superconductors</a></li>
+                    <li><a href="superconductivity.html#applications">Applications of superconductivity</a></li>
+                </ul>
+            </li>
+            <li class="main-topic">
+                <a href="#">Photonics</a>
+                <ul class="subtopics">
+                    <li><a href="photonics.html#photonics">Basics of photonics</a></li>
+                    <li><a href="photonics.html#photonicdevices">Photonic devices</a></li>
+                    <li><a href="photonics.html#led">LED</a></li>
+                    <li><a href="photonics.html#photodetector">Photodetectors</a></li>
+                    <li><a href="photonics.html#photodiode">Photodiode ( Juction type )</a></li>
+                    <li><a href="photonics.html#pinphotodiode">PIN Photodiode</a></li>
+                    <li><a href="photonics.html#solarcell">Solar cell</a></li>
+                    <li><a href="photonics.html#problems">Numerical problems</a></li>
+                </ul>
+            </li>
         </ul>
         </span>
     </nav>
+    
     <nav class="right-side-navbar">
         <ul>
-            <li><a href="diffraction.html#diffraction">Diffraction</a></li>
-            <li><a href="diffraction.html#classificationdiffraction">Classification of diffraction</a></li>
-            <li><a href="diffraction.html#comparison">Comparison between interference and diffraction</a></li>
-            <li><a href="diffraction.html#grating">Diffraction grating</a></li>
-            <li><a href="diffraction.html#whitelightgrating">White light on grating</a></li>
-            <li><a href="diffraction.html#rayleigh">Rayleigh's criterion</a></li>
-            <li><a href="diffraction.html#resolving">Resolving Power</a></li>
-            <li><a href="diffraction.html#dispersive">Dispersive Power</a></li>
-            <li><a href="diffraction.html#problems">Numerical problems</a></li>
+            <li><a href="notes.html#module1">Module 1</a></li>
+            <li><a href="notes.html#module2">Module 2</a></li>
+            <li><a href="notes.html#module3">Module 3</a></li>
+            <li><a href="notes.html#module4">Module 4</a></li>
+            <li><a href="notes.html#module5">Module 5</a></li>
+
         </ul>
     </nav>
-
     <div class="main-content">
-        <section id="diffraction">
-            <h2>Diffraction</h2>
-            <p>Diffraction is the phenomenon of light bending around obstacles or spreading out when passing through
-                small
-                openings. It is caused by the wave nature of light, which allows it to bend and spread out as it passes
-                through
-                small openings or around obstacles. This results in a diffraction pattern that can be observed on a
-                screen or
-                detector placed behind the diffracting object.</p>
-            <figure>
-                <img src="diffraction.png">
-                <figcaption>Diffraction through a single slit.</figcaption>
-            </figure>
-        </section>
-        <section id="classificationdiffraction">
-            <h2>Classification of Diffraction</h2>
-            <p>Diffraction can be classified into two types: Fraunhofer diffraction and Fresnel diffraction.</p>
-            <h3>Fraunhofer Diffraction</h3>
-            <p>Fraunhofer diffraction occurs when the diffracting object is far away from the observer or detector. An
-                example
-                of this is the diffraction of light by a single slit. The diffraction pattern observed on a screen
-                behind the
-                slit is a set of bright and dark fringes, with the bright fringes corresponding to constructive
-                interference and
-                the dark fringes corresponding to destructive interference.</p>
+        <!DOCTYPE html>
+<html>
+<head>
+  <title>Generate PDF Example</title>
+  <!-- Include pdfmake library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
-            <h3>Fresnel Diffraction</h3>
-            <p>Fresnel diffraction occurs when the diffracting object is close to the observer or detector. An example
-                of this
-                is the diffraction of light by a circular aperture, such as the diffraction of light by a circular lens.
-                The
-                diffraction pattern observed on a screen behind the aperture is a set of concentric bright and dark
-                rings, with
-                the bright rings corresponding to constructive interference and the dark rings corresponding to
-                destructive
-                interference.</p>
-            The table below classifies Fresnel and Fraunhofer diffraction in detail.
-            <p> </p>
-            <table>
-                <tr>
-                    <th>Property</th>
-                    <th>Fresnel Diffraction</th>
-                    <th>Fraunhofer Diffraction</th>
-                </tr>
-                <tr>
-                    <td>Distance from source to diffractor</td>
-                    <td>Short (near field)</td>
-                    <td>Long (far field)</td>
-                </tr>
-                <tr>
-                    <td>Distance from diffractor to observer</td>
-                    <td>Long (far field)</td>
-                    <td>Short (near field)</td>
-                </tr>
-                <tr>
-                    <td>Shape of wavefront</td>
-                    <td>Spherical</td>
-                    <td>Plane</td>
-                </tr>
-                <tr>
-                    <td>Diffraction pattern</td>
-                    <td>Circular</td>
-                    <td>Linear</td>
-                </tr>
-                <tr>
-                    <td>Applications</td>
-                    <td>
-                        <ul>
-                            <li>Antennas, near-field imaging</li>
-                            <li>Near-field scanning optical microscopy (NSOM)</li>
-                            <li>Fresnel zone plate lens</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Optics, far-field imaging</li>
-                            <li>Single-slit and double-slit experiments in physics</li>
-                            <li>Fourier optics and image processing</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            <section id="comparison">
-                <h3>Comparison between Interference and Diffraction</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Characteristic</th>
-                            <th>Interference</th>
-                            <th>Diffraction</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Definition</td>
-                            <td>Occurs when two or more light waves overlap and interact with each other</td>
-                            <td>Occurs when light waves encounter an obstacle or opening that is roughly the same size
-                                as its wavelength
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Amplitude of resulting wave</td>
-                            <td>Sum of amplitudes of individual waves</td>
-                            <td>Convolution of amplitude of individual waves</td>
-                        </tr>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+ 
 
-                        <tr>
-                            <td>Formation of patterns</td>
-                            <td>Bright and dark bands with uniform intensity</td>
-                            <td>Bright and dark bands with varying intensity</td>
-                        </tr>
-                        <tr>
-                            <td>Width of bands</td>
-                            <td>Uniform</td>
-                            <td>Varying from centre to either sides</td>
-                        </tr>
 
-                        <tr>
-                            <td>Dependency on size of obstacle or opening</td>
-                            <td>Dependent on coherence of interferring waves</td>
-                            <td>Directly proportional</td>
-                        </tr>
-                        <tr>
-                            <td>Observable with</td>
-                            <td>Interference pattern</td>
-                            <td>Diffraction pattern</td>
-                        </tr>
-                        <tr>
-                            <td>Examples</td>
-                            <td>Young's double-slit experiment, Newton's rings</td>
-                            <td>Single-slit diffraction, diffraction gratings</td>
-                        </tr>
-                    </tbody>
-                </table>
+</head>
+<body>
+  
+  
+    <div class="container mt-5" id="disclaimer">
+        <div class="alert alert-info">
+          <h4 class="alert-heading">Disclaimer</h4>
+          <p class="mb-0">This webpage provides a sophisticated platform for generating customized model question papers for the subject of Engineering Physics. Each generation process produces a unique set of meticulously crafted questions, ensuring a high level of authenticity and relevance. The generated question paper can be conveniently downloaded in PDF format, enabling easy access and preservation for future utilization.</p>
+        </div>
+      </div>
 
-            </section>
-        </section>
-        <section id="grating">
-            <h2>Diffraction Grating</h2>
-            <p>A diffraction grating is a surface with a large number of parallel, closely spaced, and equally spaced
-                lines or
-                grooves. In other words grating is an arrangement of tiny slits in glass plate.
-            <figure>
-                <img src="grating.png">
-                <figcaption>Schematic figure of diffraction grating.</figcaption>
-            </figure>
-            These lines are drawn with help of fine diamond edges and density of these lines are very hight, normally
-            15,000 lines per inch.
-            When light falls normally on a grating diffraction happens at all slits light diffracts it all direction.
-            <p>Those light waves diffracts in normal direction converges in the central part of screen can be called as
-                central maximum. This point has peak intensity in the diffraction pattern.</p>
-            <figure>
-                <img src="grating1.png">
-                <figcaption>formation of central maximum.</figcaption>
-            </figure>
-            <h3>Derivation of grating equation</h3>
-            When incidenting with a monochromatic light, diffraction happens at all points in a grating. That means
-            light gets diffracted ( or say spread ) in all direction at each transparent slit. Take the width of opaque
-            line as b and that of transparent portion as a.
+  <button id="generateBtn" class="btn btn-info mb-2 mt-3 mr-4">Generate question paper</button> <button id="pdfGenerate" class="btn btn-success mb-2 mt-3">Download in PDF format</button>
+  <p></p><div id="questionPaperContainer">
+  <div style="font-family: 'Times New Roman', Times, serif ;font-weight: lighter;" id="questionsContainer1"></div>
+    <div style="font-family: 'Times New Roman', Times, serif ;font-weight: lighter;" id="questionsContainer2"></div>
+    <div style="font-family: 'Times New Roman', Times, serif ;font-weight: lighter;" id="questionsContainer3"></div>
+    <div style="font-family: 'Times New Roman', Times, serif ;font-weight: lighter;" id="questionsContainer4"></div>
+    <div style="font-family: 'Times New Roman', Times, serif ;font-weight: lighter;" id="questionsContainer5"></div>
+    <div style="font-family: 'Times New Roman', Times, serif ;font-weight: lighter;" id="questionsContainer6"></div>
+    
+    
+   </div>
+   <!-- <button id="pdfGenerate2" class="btn btn-success mb-2 mt-3 pdfButton" style="display: none;">Download in PDF format</button> -->
+</body>
+</html>
 
-            <figure>
-                <img src="grating2.png">
-                <figcaption>Theory of diffraction grating.</figcaption>
-            </figure>
-            <p>Refer the figure above & take light waves that diffracts in direction \( \theta \) ( making an angle
-                \(\theta\) with horizontal ) from adjacent slits. If these two waves ( wave 1 and wave 2 ) adds each
-                other and converges to form a maximum, the path difference between them should me multiple of wavelength
-                \( \lambda \).</p>
-            So Condition for forming nth order primary maximum at this point is,
-            $$path\;difference = n\lambda $$
-            From the figure, path difference between wave1 and wave2 is ,
-            $$path\;difference=AC $$
-            From △ABC,
-            $$sin\;\theta=\frac{AC}{AB} $$
-            or
-            $$AC=AB\;sin\;\theta $$
-            Since AB is the total width of opaque line (b) and transparent slit (a),
-            $$ AC = (a+b)\;sin\;\theta $$
-            That gives condition for forming nth order primary maximum as,
-            $$ (a+b)\;sin\;\theta = n\lambda $$
-            or
-            $$\boxed{ sin\;\theta = \frac{1}{a+b}\;n\lambda} $$
-            where \( (a+b)\) is called grating element.
-            <p id="gratingeqn">Since \(\frac{1}{a+b}= N \) where N is number of lines per unit length in grating,
-                Grating equation can
-                be
-                written as,</p>
-            $$ \boxed{sin\;\theta=Nn \lambda} $$
+</div>
+<script src="questions.js"></script>
+    <script src="pht110.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-            <p>Where </p>
-            <p>\( \theta \) is the angle of diffraction</p>
-            <p>n is the order of spectrum</p>
-            <p>N is the number of lines per unit length</p>
-            <p>\( \lambda \) is the wavelength of light used.</p>
-            </p>
-        </section>
-        <section id="whitelightgrating">
-            <h3>White light on grating</h3>
-            <p>White light contains all the wavelengths in visible spectrum. So when incidenting white light on grating,
-                all these wavelengths will obey the grating equation,</p>
-            $$ sin\;\theta=Nn \lambda $$
-            That means each wavelength (\( \lambda \) ) will have unique angle of diffraction \( \theta \) based on
-            their wavelength. Or each color or wavelength in white light will have a unique position in maxima of
-            diffraction pattern.<p> So each primary maximum will be a collection of colors based on their wavelength or
-                we
-                can say a spectrum is formed rather than a single bright spot of maximum at each point.</p>
-            <figure>
-                <img src="grating3.png">
-                <figcaption>Grating on white light.</figcaption>
-            </figure>
-        </section>
-        <section id="rayleigh">
-            <h2>Rayleigh criterion</h2>
-            The two spectral lines (wavelengths or colors) will be resolved ( seen as separate ) only if atleast primary
-            maximum of any order of one line falls on first order secondary minimum of other one.
-            <figure>
-                <img src="rayleigh.png">
-                <figcaption>
-                    Rayleigh criterion and resolving spectrum.
-                </figcaption>
-            </figure>
-
-        </section>
-        <section id="resolving">
-            <h3>Resolving power of grating</h3>
-            <p>The resolving power of a grating refers to its ability to separate or resolve closely spaced lines or
-                wavelengths in a
-                spectrum. The resolving power of a grating is determined by the number of lines per millimeter (or per
-                inch) on the
-                grating and the angle of incidence of light on the grating.</p>
-            <p>It is defined as the ratio of the wavelength of one of the spectral line to the difference in the
-                wavelengths between
-                them such that the two lines appear to be just resolved.</p>
-            Resolving power of grating is given by relation,
-            $$\boxed{ \frac{\lambda}{d \lambda} = N n }$$
-            where n is the order of spectrum and N is the number of lines per unit length of grating.
-        </section>
-        <section id="dispersive">
-            <h3>Dispersive power</h3>
-            <p>The dispersive power of a grating refers to its ability to spread out different wavelengths of light into
-                a spectrum. A
-                grating's dispersive power is determined by the spacing between the lines on the grating and the angle
-                of incidence of
-                light on the grating.</p>
-            Mathematically dispersive power can be defined change in angle of diffraction ( \( \theta \)) with respect
-            to wavelength \( \lambda \). Dispersive power of grating is given by equation,
-            $$\boxed{\frac{d\theta}{d \lambda}=\frac{N n}{cos\;\theta} }$$
-            where n is the order of spectrum, N is the number of lines per unit length of grating and \( \theta \) is
-            the angle of diffraction.
-        </section>
-        <!-- <section>
-            <h4>Attempt a quiz</h4>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfOxyDdhCSkhELKg7siGZ_IC2HJGv4qWHXmUhBnM2euAenXkg/viewform?embedded=true" width="105%" height="900px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-
-        </section> -->
-
-        <script src="pht110.js"></script>
-        
 </body>
 
 </html>
