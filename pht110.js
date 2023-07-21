@@ -378,9 +378,48 @@ var number = parseInt(inputField.value);
     });
  
 }else if (moduleField.value == 4){
-  createDynamicQuestion(inputField.value,'what is displacement?','number + 3','m/s');
-  questionSpace.classList.add('active');
-  questionSpace.style.fontFamily = "Times New Roman";
+  var number = parseInt(inputField.value);
+        var divisionTime = Math.floor(number / 10);
+        var questionSpace = document.getElementById("questions");
+        var questionList = questionSpace.querySelector("ol");
+        var Question1 = document.createElement("li");
+        Question1.textContent = "Calculate the value of Poynting vector for a "+number*10+"W bulb at a distance of "+number+" cm from it.";
+        questionList.appendChild(Question1);
+        var Question2 = document.createElement("li");
+        Question2.textContent = "For a material the critical fields are "+number*20000+" and "+number*50000+" at 20K and 10K respectively. Calculate transition temperature and critical fields at a) 0K and b) 15K.";
+        questionList.appendChild(Question2);
+        var Question3 = document.createElement("li");
+        Question3.textContent = "An optical fibre made with core of refractive index 1.5 and cladding with a fractional index difference of 0.0006. Find refractive index of cladding and numerical aperture. ";
+        questionList.appendChild(Question3);
+        var Question4 = document.createElement("li");
+        Question4.textContent = "Numerical aperture of an optic fibre cable is "+(number/100).toFixed(2)+" and refractive index of cladding is 1.464. Calculate the refractive index of core and acceptance angle";
+        questionList.appendChild(Question4);
+        var Question5 = document.createElement("li");
+        Question5.textContent = "Calculate the numerical aperture, acceptance angle and the critical angle of an optical fibre which is immersed in water of refractive index 1.33. The refractive index of the core is 1.5 and that of cladding is 1.45.";
+        questionList.appendChild(Question5);
+        
+        questionSpace.classList.add('active');
+        questionSpace.style.fontFamily = "Times New Roman";
+        var answerSpace = document.getElementById("answers");
+        var answerList = answerSpace.querySelector("ol");
+        var answer1 = ((Math.log(divisionTime +2))/(2*0.125)).toFixed(1);
+        var mass = divisionTime +10 ;
+        var forceConstant = number+50 ;
+        var dampingConstant = divisionTime + 1 ;
+        var answer2 = Math.sqrt((forceConstant/mass)-((dampingConstant/(2*mass))**2)).toFixed(1);
+        var newAnswer = document.createElement("li");
+        newAnswer.textContent = answer1+" seconds.";
+        var newAnswer1 = document.createElement("li");
+        newAnswer1.textContent = answer2+" Hz.";
+        const answerButton = document.getElementById("answerbutton");
+        
+    answerButton.addEventListener('click', event => {
+        answerList.appendChild(newAnswer);
+        answerList.appendChild(newAnswer1);
+        answerSpace.style.display="block";
+        
+        
+    });
 }else if (moduleField.value == 5){
   var number = parseInt(inputField.value);
   var divisionTime = Math.floor(number / 10);
