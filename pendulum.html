@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>My first three.js app</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<style>
+			body { margin: 0; }
+		</style>
+        
+	</head>
+	<body style="background-color: rgb(205, 212, 218);">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-6 mt-5 border border-success rounded-lg" style="background-color: aqua;">
+				<div id="controls">
+				  <div class="form-group">
+					<label for="amplitude">Amplitude:</label>
+					<input type="range" class="form-control-range" id="amplitude" min="0" max="90" value="45" step="5"> <!-- Default value: 4 units -->
+				  </div>
+				  <div class="form-group">
+					<label for="frequency">Frequency</label>
+					<input type="range" class="form-control-range" id="frequency" min="0.00008" max="0.001" value="0.0001" step="0.000005"> <!-- Default value: 4 units -->
+				  </div>
+				  
+				  <div class="form-group">
+					<label for="cameraDistanceX">Camera Distance (X):</label>
+					<input type="range" class="form-control-range" id="cameraDistanceX" min="-30" max="30" value="0" step="2"> <!-- Default value: 0 units -->
+				  </div>
+				  <div class="form-group">
+					<label for="cameraDistanceY">Camera Distance (Y):</label>
+					<input type="range" class="form-control-range" id="cameraDistanceY" min="-30" max="30" value="0" step="2"> <!-- Default value: 0 units -->
+				  </div>
+				  <div class="form-group">
+					<label for="cameraDistanceZ">Camera Distance (Z):</label>
+					<input type="range" class="form-control-range" id="cameraDistanceZ" min="-30" max="30" value="20" step="2"> <!-- Default value: 4 units -->
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-6 mt-5 shadow shadow-lg" id="canvas" style="height: 80vh;">
+				
+		
+				
+			  </div>
+			</div>
+		  </div>
+		  <!-- Bootstrap JS (Place this at the end of the body) -->
+		  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		  <!-- Your main.js script -->
+		  <script type="module" src="main.js"></script>
+	</body>
+</html>
